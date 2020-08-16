@@ -1,0 +1,282 @@
+import React from 'react';
+import {
+  Layout,
+  Row,
+  Col,
+  Typography,
+  List,
+  Collapse,
+  Card,
+  Anchor,
+} from 'antd';
+import PricingComponent from './PricingComponent';
+import gstrCase from '../assets/gstrCases.svg';
+import { CaretRightOutlined } from '@ant-design/icons';
+import OtherServicesComponent from './OtherServicesComponent';
+import TableComponent from './TableComponent';
+import {
+  gstReturnBasic,
+  gstReturnStandard,
+  gstReturnPremium,
+} from './PricingDetails';
+
+const GstreturnComponent = () => {
+  const columns = [
+    {
+      title: 'Type of GST Offencee',
+      dataIndex: 'name',
+      render: (text) => (
+        <Paragraph strong style={{ color: '#1890ff' }}>
+          {text}
+        </Paragraph>
+      ),
+    },
+    {
+      title: 'Applicable GST Penalty Amount',
+      dataIndex: 'description',
+    },
+    {
+      title: 'Due Dates',
+      dataIndex: 'duedates',
+    },
+  ];
+
+  const data = [
+    {
+      key: '1',
+      name: 'GSTR - 1',
+      description:
+        'Outward return (Details about your sales/ Supplies made during month)',
+      duedates: '10 th  of next month',
+    },
+    {
+      key: '2',
+      name: 'GSTR - 2',
+      description:
+        'Inward return (Details about your purchases made during month)',
+      duedates: '15 th  of next month',
+    },
+    {
+      key: '3',
+      name: 'GSTR - 3',
+      description:
+        'Month return (for cumulative records of inward and outward made during month',
+      duedates: '20 th  of next month',
+    },
+    {
+      key: '4',
+      name: 'GSTR - 4',
+      description:
+        'A return by Composite dealer (a person availing such service with supplies Rs. 50 lakh)',
+      duedates: '18 th  of next quarter',
+    },
+    {
+      key: '5',
+      name: 'GSTR - 5',
+      description: 'Monthly return by Non resident taxable person',
+      duedates: '13 th  of next month',
+    },
+    {
+      key: '6',
+      name: 'GSTR - 6',
+      description: 'Monthly return by input service distributor',
+      duedates: '13 th  of next month',
+    },
+    {
+      key: '7',
+      name: 'GSTR - 7',
+      description: 'Person who are required to deduct TDS',
+      duedates: '10 th  of next month',
+    },
+    {
+      key: '8',
+      name: 'GSTR - 8',
+      description: 'E-commerce market places who are required to deduct TDS',
+      duedates: '18 th  of next quarter',
+    },
+    {
+      key: '9',
+      name: 'GSTR - 9',
+      description: 'Annual Return',
+      duedates: '30 th september of next financial year.',
+    },
+  ];
+  const otherServices = [
+    { id: 1, item: 'GST return', link: 'gst-return' },
+    { id: 2, item: 'Income Tax return', link: 'income-tax-return' },
+    { id: 3, item: 'Excise Return', link: 'excise-return' },
+    { id: 4, item: 'Trademark registration', link: 'trademark-registration' },
+    { id: 5, item: 'Provident Fund Registration', link: 'provident-fund' },
+  ];
+  const tab1 = [
+    {
+      id: 1,
+      title: 'How to get a company registered ?',
+      details:
+        'Picking the right company structure for your business is as important as any other business-related activity. The right business structure will allow your enterprise to operate efficiently and meet your required business targets. In India, every business must register themselves as part of the mandatory legal compliance. Before we learn how to register a company, let’s try and understand the types of business structures in India.',
+    },
+    {
+      id: 2,
+      title: 'What is trademark registration ?',
+      details:
+        'A trademark is a type of intellectual property consisting of a recognizable sign, design, or expression which identifies products or services of a particular source from those of others, although trademarks used to identify services are usually called service marks.',
+    },
+    {
+      id: 3,
+      title: 'What is import export code registration ?',
+      details:
+        'In this age of cut- throat competition, everyone wants to grow their business beyond the limits of the domestic market.However, doing business globally isn’t just a cup of tea for everyone.Before going global, you need to follow several procedures and laws in place and get different registration and license.IEC(Import Export Code) license is one of such prerequisite when you’re thinking of importing or exporting from India.',
+    },
+  ];
+  const gstreturnCaseOne = [
+    'Taxpayers opting composition scheme (They must file GSTR-9A)',
+    'Casual taxable person under GST',
+    'Inter State Supply(sale outside state)',
+    'Non resident taxable person under GST law explained',
+    'Persons paying TDS under section 51 of CGST Act',
+  ];
+  const gstReturnCasesTwo = [
+    {
+      id: 1,
+      head: 'GSTR-9',
+      case:
+        'All entities having GST registration are required to file GST annual return in form GSTR- 9.',
+    },
+    {
+      id: 2,
+      head: 'GSTR-9A',
+      case:
+        'GST registered taxpayers who have opted for the GST Composition Scheme under Goods and Services Tax(GST) are required to file GSTR- 9A.',
+    },
+    {
+      id: 3,
+      head: 'GSTR-9C',
+      case:
+        'Form GSTR 9C is meant for filing the reconciliation statement of taxpayers pertaining to a particular financial year.The form is a statement of reconciliation between the Annual Returns in GSTR - 9and the figures mentioned in the Audited Financial Statements of the taxpayer. GSTR 9C is applicable to taxpayers who are required to obtain an annual GST audit of their accounts.GSTR - 9C must be prepared and certified by a Chartered Accountant or Cost Accountant.GST audit is applicable for person having GST registration with an annual aggregate turnover of above Rs. 2 crores',
+    },
+  ];
+  const { Title, Paragraph, Text } = Typography;
+  const { Panel } = Collapse;
+  const { Link } = Anchor;
+  return (
+    <React.Fragment>
+      <Layout>
+        <div className='gst-main'>
+          <Row gutter={16}>
+            <Col className='ant-col-md-8 ant-col-lg-6'>
+              <Anchor className='gst-tab-link'>
+                <Link href='#gstr-filing' title='GST Return' />
+                <Link href='#gstr-pricing' title='Pricing' />
+                <Link href='#gstr-cases' title='Eligibility' />
+                <Link href='#gstr-type' title='GST Return Type' />
+                <Link href='#gst-faq' title='FAQ' />
+              </Anchor>
+            </Col>
+            <Col className='ant-col-md-16 ant-col-lg-18'>
+              {/* registration info */}
+              <div className='gstr-filing service' id='gstr-filing'>
+                <Typography>
+                  <Title>GST Return Filing</Title>
+                  <Paragraph strong>
+                    A return is a document containing details of income which a
+                    taxpayer is required to file with the tax administrative
+                    authorities. This is used by tax authorities to calculate
+                    tax liability.
+                  </Paragraph>
+                  <Paragraph strong>
+                    Under GST, a registered dealer has to file GST returns that
+                    include: Purchases, Sales, Output GST (On sales), Input tax
+                    credit (GST paid on purchases) To file GST returns, GST
+                    compliant sales and purchase invoices are required. You can
+                    generate GST compliant invoices for free on ClientFiling.
+                  </Paragraph>
+                </Typography>
+              </div>
+              {/* Pricing info */}
+              <div className='pricing service' id='gstr-pricing'>
+                <PricingComponent
+                  dataOne={gstReturnBasic}
+                  dataTwo={gstReturnStandard}
+                  dataThree={gstReturnPremium}
+                  basic='2899'
+                  standard='4899'
+                  premium='6899'
+                />
+              </div>
+              {/* mandatory cases */}
+              <div className='gst-cases service' id='gstr-cases'>
+                <Title>Who should file GSTR-9, the annual return ?</Title>
+                <Paragraph strong>
+                  All taxpayers/taxable persons registered under GST must file
+                  their GSTR 9. However, the following are NOT required to file
+                  GSTR 9:
+                </Paragraph>
+                <Row gutter={14} align='middle'>
+                  <Col className='ant-col-lg-12 ant-col-sm-24'>
+                    <List
+                      dataSource={gstreturnCaseOne}
+                      renderItem={(item) => (
+                        <List.Item>
+                          <Text>{item}</Text>
+                        </List.Item>
+                      )}
+                    />
+                  </Col>
+                  <Col className='ant-col-lg-12 ant-col-sm-24'>
+                    <img src={gstrCase} alt='gstr-cases' />
+                  </Col>
+                </Row>
+              </div>
+              {/* gstr - 9 */}
+              <div className='gstr-type service' id='gstr-type'>
+                <TableComponent
+                  title='What are the different types of GST Returns?'
+                  para='Here is a list of all the returns to be filed as prescribed under the GST Law along with the due dates. As per the CGST Act subject to changes by CBIC Notifications'
+                  columns={columns}
+                  data={data}
+                />
+                <Card>
+                  {gstReturnCasesTwo.map((cases) => (
+                    <Col className='ant-col-lg-24' key={cases.id}>
+                      <Title level={4}>{cases.head}</Title>
+                      <Paragraph strong>{cases.case}</Paragraph>
+                    </Col>
+                  ))}
+                </Card>
+              </div>
+              {/* faq */}
+              <div className='gst-faq service' id='gst-faq'>
+                <Title className='faq-head'>Frequently Asked Questions</Title>
+                <Row gutter={24} align='middle'>
+                  <Col className='ant-col-sm-24 ant-col-lg-16'>
+                    <Collapse
+                      bordered={false}
+                      defaultActiveKey={['1']}
+                      expandIcon={({ isActive }) => (
+                        <CaretRightOutlined rotate={isActive ? 90 : 0} />
+                      )}
+                      className='site-collapse-custom-collapse'>
+                      {tab1.map((tab) => (
+                        <Panel
+                          header={tab.title}
+                          key={tab.id}
+                          className='site-collapse-custom-panel'>
+                          <p>{tab.details}</p>
+                        </Panel>
+                      ))}
+                    </Collapse>
+                  </Col>
+                  <Col className='ant-col-sm-24 ant-col-lg-8'>
+                    <OtherServicesComponent services={otherServices} />
+                  </Col>
+                </Row>
+              </div>
+            </Col>
+          </Row>
+        </div>
+      </Layout>
+    </React.Fragment>
+  );
+};
+
+export default GstreturnComponent;

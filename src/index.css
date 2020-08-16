@@ -94,6 +94,7 @@ img {
 
 .statistic .ant-card {
   background: none;
+  border: none;
 }
 
 .statistic .text-light {
@@ -126,6 +127,10 @@ img {
 
 .quotes .director-img {
   width: 100%;
+}
+
+.support .ant-card {
+  border: none;
 }
 
 .support .support-team {
@@ -208,22 +213,22 @@ img {
   margin-bottom: 32px;
 }
 
-.gst-pricing .ant-typography {
-  margin-top: 24px;
+.pricing .ant-typography {
+  margin-top: 32px;
 }
 
-.gst-pricing .ant-card .card-head {
+.pricing .ant-card .card-head {
   margin-bottom: 24px;
   background: #1890ff;
   padding: 16px;
 }
 
-.gst-pricing .ant-statistic-title,
+.pricing .ant-statistic-title,
 .ant-statistic-content-value {
   color: #fff;
 }
 
-.gst-pricing .card-body .ant-btn-primary {
+.pricing .card-body .ant-btn-primary {
   margin-top: 24px;
 }
 
@@ -233,10 +238,7 @@ img {
   margin: 24px 0;
 }
 
-.gst-docs,
-.gst-faq,
-.gst-pricing,
-.gst-reg {
+.service {
   width: 100%;
   text-align: left;
 }
@@ -252,6 +254,19 @@ img {
 
 .gst-docs .ant-timeline {
   margin: 32px 0;
+}
+
+.gstr-type .ant-pagination {
+  display: none;
+}
+
+.gstr-type .ant-card {
+  margin: 24px 0;
+}
+
+.gstr-type div.ant-typography,
+.ant-typography p {
+  margin-bottom: 24px;
 }
 
 @media screen and (max-width: 995px) {
