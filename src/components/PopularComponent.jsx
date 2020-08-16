@@ -1,0 +1,74 @@
+import React, { Component } from 'react';
+import { Layout, Row, Col, Card, Typography, Button } from 'antd';
+import serviceOne from '../assets/services_1.jpg';
+import serviceTwo from '../assets/services_2.jpg';
+import serviceThree from '../assets/services_3.jpg';
+import serviceFour from '../assets/services_4.jpg';
+
+export class PopularComponent extends Component {
+  render() {
+    const { Meta } = Card;
+    return (
+      <React.Fragment>
+        <Layout>
+          <div className='container'>
+            <div className='popular-entities'>
+              <Typography.Title>
+                We Provide Multi Professional Services
+              </Typography.Title>
+              <Row gutter={16}>
+                <Col className='ant-col-sm-24 ant-col-lg-6'>
+                  <Card
+                    hoverable
+                    cover={<img alt='example' src={serviceOne} />}>
+                    <Meta
+                      title='Company Filing'
+                      description='A company register is a register of organizations in the jurisdiction they operate under.'
+                    />
+                    <Button type='primary'>Buy now</Button>
+                  </Card>
+                </Col>
+                <Col className='ant-col-sm-24 ant-col-lg-6'>
+                  <Card
+                    hoverable
+                    cover={<img alt='example' src={serviceTwo} />}>
+                    <Meta
+                      title='Tax Filing'
+                      description='The Income Tax Department is a government agency undertaking direct tax collection of the Government of India.'
+                    />
+                    <Button type='primary'>Buy now</Button>
+                  </Card>
+                </Col>
+                <Col className='ant-col-sm-24 ant-col-lg-6 '>
+                  <Card
+                    hoverable
+                    cover={<img alt='example' src={serviceThree} />}>
+                    <Meta
+                      title='Property Filing'
+                      description='The Income Tax Department is a government agency undertaking direct tax collection of the Government of India.'
+                    />
+                    <Button type='primary'>Buy now</Button>
+                  </Card>
+                </Col>
+
+                <Col className='ant-col-sm-24 ant-col-lg-6'>
+                  <Card
+                    hoverable
+                    cover={<img alt='example' src={serviceFour} />}>
+                    <Meta
+                      title='Compliances Filing'
+                      description='In general, compliance means conforming to a rule, such as a specification, policy, standard or law.'
+                    />
+                    <Button type='primary'>Buy now</Button>
+                  </Card>
+                </Col>
+              </Row>
+            </div>
+          </div>
+        </Layout>
+      </React.Fragment>
+    );
+  }
+}
+
+export default PopularComponent;
