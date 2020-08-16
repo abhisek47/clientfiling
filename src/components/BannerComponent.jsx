@@ -1,35 +1,37 @@
 import React from 'react';
 import { Layout, Typography, Button, Row, Col } from 'antd';
-import banner from '../assets/banner.svg';
+import ProgressiveImage from 'react-progressive-image-loading';
 
-const BannerComponent = () => {
+const BannerComponent = ({ head, para, btn, img }) => {
   const { Content } = Layout;
   const { Title, Text } = Typography;
-
   return (
     <React.Fragment>
       <Layout>
         <Content>
           <div className='banner-container'>
-            <Row gutter={16}>
+            <Row gutter={16} align='middle'>
               <Col className='ant-col-sm-24 ant-col-md-12'>
                 <Typography>
-                  <Title>We Are Helping Startup To Grow Their Business</Title>
-                  <Text strong>
-                    we have over 8+ years of corporate and consulting experience
-                    with top firms. Our network includes experienced Chartered
-                    Accountants, Company Secretaries, Lawyers, Cost Accountants
-                    and many more.
-                  </Text>
+                  <Title>{head}</Title>
+                  <Text strong>{para}</Text>
                   <div className='get-btn'>
                     <Button size='large' type='primary'>
-                      Get started
+                      {btn}
                     </Button>
                   </div>
                 </Typography>
               </Col>
               <Col className='ant-col-sm-24 ant-col-md-12'>
-                <img src={banner} alt='' className='banner-img' />
+                <ProgressiveImage
+                  preview={img}
+                  src={img}
+                  transitionTime={500}
+                  transitionFunction='ease'
+                  render={(src, style) => (
+                    <img src={src} alt='banner' style={style} />
+                  )}
+                />
               </Col>
             </Row>
           </div>

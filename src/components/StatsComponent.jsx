@@ -8,7 +8,7 @@ import {
 } from '@ant-design/icons';
 import CountUp from 'react-countup';
 
-export class StatsComponent extends Component {
+class StatsComponent extends Component {
   render() {
     const { Title, Paragraph } = Typography;
     return (
@@ -18,7 +18,7 @@ export class StatsComponent extends Component {
             <div className='container'>
               <Row gutter={16}>
                 <Col className='ant-col-sm-24 ant-col-md-6'>
-                  <Card hoverable>
+                  <Card>
                     <Title>
                       <NotificationFilled style={{ color: '#2f54eb' }} />
                     </Title>
@@ -29,7 +29,7 @@ export class StatsComponent extends Component {
                   </Card>
                 </Col>
                 <Col className='ant-col-sm-24 ant-col-md-6'>
-                  <Card hoverable>
+                  <Card>
                     <Title>
                       <BulbFilled style={{ color: '#faad14' }} />
                     </Title>
@@ -40,7 +40,7 @@ export class StatsComponent extends Component {
                   </Card>
                 </Col>
                 <Col className='ant-col-sm-24 ant-col-md-6'>
-                  <Card hoverable>
+                  <Card>
                     <Title>
                       <HomeFilled style={{ color: '#52c41a' }} />
                     </Title>
@@ -51,7 +51,7 @@ export class StatsComponent extends Component {
                   </Card>
                 </Col>
                 <Col className='ant-col-sm-24 ant-col-md-6'>
-                  <Card hoverable>
+                  <Card>
                     <Title>
                       <SmileFilled style={{ color: '#ff7a45' }} />
                     </Title>

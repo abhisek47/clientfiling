@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Layout, Row, Col, Typography } from 'antd';
 import director from '../assets/chief@2x.png';
 
-export class QuotesComponent extends Component {
+class QuotesComponent extends Component {
   render() {
     const { Title, Paragraph, Text } = Typography;
 
@@ -10,7 +10,7 @@ export class QuotesComponent extends Component {
       <React.Fragment>
         <Layout className='quotes'>
           <div className='container'>
-            <Row gutter={16}>
+            <Row gutter={16} align='middle'>
               <Col className='ant-col-sm-24 ant-col-lg-16'>
                 <Typography>
                   <Title className='quotes-head'>PAN India Services</Title>

@@ -6,7 +6,7 @@ import {
   SafetyCertificateFilled,
 } from '@ant-design/icons';
 
-export class SupportComponent extends Component {
+class SupportComponent extends Component {
   render() {
     const { Title, Paragraph } = Typography;
     return (

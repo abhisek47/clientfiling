@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Layout, Row, Col, Typography, Collapse } from 'antd';
 import { CaretRightOutlined } from '@ant-design/icons';
 
-export class FaqComponent extends Component {
+class FaqComponent extends Component {
   render() {
     const { Title } = Typography;
     const { Panel } = Collapse;

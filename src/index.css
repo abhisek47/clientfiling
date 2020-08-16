@@ -4,6 +4,9 @@ body {
   margin: 0;
   font-family: 'Source Sans Pro', 'Alegreya Sans', sans-serif;
 }
+a {
+  color: #fff;
+}
 
 .logo {
   display: block;
@@ -52,14 +55,12 @@ body {
   justify-content: space-between;
 }
 
-.banner-container h1.ant-typography {
-  font-size: 48px;
+h1.ant-typography {
   font-family: 'Alegreya Sans';
 }
 
 .ant-row {
   justify-content: space-between;
-  align-items: center;
 }
 
 .banner-container .get-btn {
@@ -74,7 +75,7 @@ body {
   margin: 12px auto;
 }
 
-.banner-img {
+img {
   width: 100%;
   margin: 0 auto;
 }
@@ -89,6 +90,10 @@ body {
   width: 100%;
   padding: 24px 0;
   background-color: #f0f5ff;
+}
+
+.statistic .ant-card {
+  background: none;
 }
 
 .statistic .text-light {
@@ -183,6 +188,72 @@ body {
   height: 100%;
 }
 
+.breadcrumb .ant-breadcrumb {
+  font-family: 'Source Sans Pro';
+  width: 100%;
+  padding: 24px 0;
+  text-align: left;
+}
+
+.gst-main .gst-tab-link {
+  text-align: left;
+}
+
+.gst-main .gst-tab-link .ant-anchor-link-title {
+  font-size: 16px;
+  padding: 5px 0;
+}
+
+.gst-reg {
+  margin-bottom: 32px;
+}
+
+.gst-pricing .ant-typography {
+  margin-top: 24px;
+}
+
+.gst-pricing .ant-card .card-head {
+  margin-bottom: 24px;
+  background: #1890ff;
+  padding: 16px;
+}
+
+.gst-pricing .ant-statistic-title,
+.ant-statistic-content-value {
+  color: #fff;
+}
+
+.gst-pricing .card-body .ant-btn-primary {
+  margin-top: 24px;
+}
+
+.gst-cases {
+  width: 100%;
+  text-align: left;
+  margin: 24px 0;
+}
+
+.gst-docs,
+.gst-faq,
+.gst-pricing,
+.gst-reg {
+  width: 100%;
+  text-align: left;
+}
+
+.gst-faq {
+  margin-bottom: 24px;
+}
+
+.tick-icon {
+  color: #52c41a;
+  padding-right: 24px;
+}
+
+.gst-docs .ant-timeline {
+  margin: 32px 0;
+}
+
 @media screen and (max-width: 995px) {
   .navbar {
     display: none;
@@ -196,11 +267,17 @@ body {
   .ant-layout-header {
     padding: 0 30px;
   }
-  .banner-container h1.ant-typography {
+  h1.ant-typography {
     font-size: 32px;
     font-family: 'Alegreya Sans';
   }
   .banner-img {
     width: 300px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .gst-tab-link {
+    display: none;
   }
 }

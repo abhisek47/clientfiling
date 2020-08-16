@@ -4,8 +4,9 @@ import serviceOne from '../assets/services_1.jpg';
 import serviceTwo from '../assets/services_2.jpg';
 import serviceThree from '../assets/services_3.jpg';
 import serviceFour from '../assets/services_4.jpg';
+import { Link } from 'react-router-dom';
 
-export class PopularComponent extends Component {
+class PopularComponent extends Component {
   render() {
     const { Meta } = Card;
     return (
@@ -22,10 +23,12 @@ export class PopularComponent extends Component {
                     hoverable
                     cover={<img alt='example' src={serviceOne} />}>
                     <Meta
-                      title='Company Filing'
+                      title='GST Registration'
                       description='A company register is a register of organizations in the jurisdiction they operate under.'
                     />
-                    <Button type='primary'>Buy now</Button>
+                    <Link to='/gst'>
+                      <Button type='primary'>Buy now</Button>
+                    </Link>
                   </Card>
                 </Col>
                 <Col className='ant-col-sm-24 ant-col-lg-6'>
@@ -33,7 +36,7 @@ export class PopularComponent extends Component {
                     hoverable
                     cover={<img alt='example' src={serviceTwo} />}>
                     <Meta
-                      title='Tax Filing'
+                      title='Company Registration'
                       description='The Income Tax Department is a government agency undertaking direct tax collection of the Government of India.'
                     />
                     <Button type='primary'>Buy now</Button>
@@ -44,7 +47,7 @@ export class PopularComponent extends Component {
                     hoverable
                     cover={<img alt='example' src={serviceThree} />}>
                     <Meta
-                      title='Property Filing'
+                      title='Income Tax Return'
                       description='The Income Tax Department is a government agency undertaking direct tax collection of the Government of India.'
                     />
                     <Button type='primary'>Buy now</Button>
@@ -56,7 +59,7 @@ export class PopularComponent extends Component {
                     hoverable
                     cover={<img alt='example' src={serviceFour} />}>
                     <Meta
-                      title='Compliances Filing'
+                      title='Trademark Registration'
                       description='In general, compliance means conforming to a rule, such as a specification, policy, standard or law.'
                     />
                     <Button type='primary'>Buy now</Button>

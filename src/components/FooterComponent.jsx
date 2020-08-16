@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Layout, Row, Col, Typography } from 'antd';
 
-export class FooterComponent extends Component {
+class FooterComponent extends Component {
   render() {
     const footerHead = [
       {
