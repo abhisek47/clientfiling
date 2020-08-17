@@ -1,16 +1,16 @@
 import React from 'react';
 import { Layout, Row, Col, Typography, List, Collapse, Anchor } from 'antd';
-import PricingComponent from './PricingComponent';
+// import PricingComponent from './PricingComponent';
 import itrOneEligibility from '../assets/itrOne-eligibility.svg';
 import itrOneIneligibility from '../assets/itrOne-ineligibility.svg';
 import { CaretRightOutlined } from '@ant-design/icons';
 import OtherServicesComponent from './OtherServicesComponent';
-import TableComponent from './TableComponent';
-import {
-  gstReturnBasic,
-  gstReturnStandard,
-  gstReturnPremium,
-} from './PricingDetails';
+// import TableComponent from './TableComponent';
+// import {
+//   gstReturnBasic,
+//   gstReturnStandard,
+//   gstReturnPremium,
+// } from './PricingDetails';
 
 const ItrOneComponent = () => {
   const otherServices = [

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Layout, Typography, Button, Row, Col } from 'antd';
-import ProgressiveImage from 'react-progressive-image-loading';
+// import ProgressiveImage from 'react-progressive-image-loading';
 
 const BannerComponent = ({ head, para, btn, img }) => {
   const { Content } = Layout;
@@ -23,7 +23,7 @@ const BannerComponent = ({ head, para, btn, img }) => {
                 </Typography>
               </Col>
               <Col className='ant-col-sm-24 ant-col-md-12'>
-                <ProgressiveImage
+                {/* <ProgressiveImage
                   preview={img}
                   src={img}
                   transitionTime={500}
@@ -31,7 +31,8 @@ const BannerComponent = ({ head, para, btn, img }) => {
                   render={(src, style) => (
                     <img src={src} alt='banner' style={style} />
                   )}
-                />
+                /> */}
+                <img src={img} alt='banner' />
               </Col>
             </Row>
           </div>
