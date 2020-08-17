@@ -58,11 +58,21 @@ class HeaderComponent extends Component {
                   <Menu.Item key='setting:11'>
                     <Link to='/income-tax-return-2'>Income Tax Return - 2</Link>
                   </Menu.Item>
-                  <Menu.Item key='setting:12'>Income Tax Return - 3</Menu.Item>
-                  <Menu.Item key='setting:13'>Income Tax Return - 4</Menu.Item>
-                  <Menu.Item key='setting:14'>Income Tax Return - 5</Menu.Item>
-                  <Menu.Item key='setting:15'>Income Tax Return - 6</Menu.Item>
-                  <Menu.Item key='setting:16'>Income Tax Return - 7</Menu.Item>
+                  <Menu.Item key='setting:12'>
+                    <Link to='/income-tax-return-3'>Income Tax Return - 3</Link>
+                  </Menu.Item>
+                  <Menu.Item key='setting:13'>
+                    <Link to='/income-tax-return-4'>Income Tax Return - 4</Link>
+                  </Menu.Item>
+                  <Menu.Item key='setting:14'>
+                    <Link to='/income-tax-return-5'>Income Tax Return - 5</Link>
+                  </Menu.Item>
+                  <Menu.Item key='setting:15'>
+                    <Link to='/income-tax-return-6'>Income Tax Return - 6</Link>
+                  </Menu.Item>
+                  <Menu.Item key='setting:16'>
+                    <Link to='/income-tax-return-7'>Income Tax Return - 7</Link>
+                  </Menu.Item>
                 </SubMenu>
                 <SubMenu title='Compliances'>
                   <Menu.Item key='setting:17'>

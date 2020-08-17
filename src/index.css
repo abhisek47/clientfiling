@@ -297,6 +297,14 @@ img {
   margin-right: 12px;
 }
 
+.check {
+  color: #52c41a;
+}
+
+.uncheck {
+  color: #ff4d4f;
+}
+
 .itrOne-eligibility {
   margin-top: 32px;
 }

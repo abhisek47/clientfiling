@@ -1,7 +1,7 @@
 import React from 'react';
 import { Layout, Row, Col, Typography, List, Collapse, Anchor } from 'antd';
 import gstCase from '../assets/gstCases.svg';
-import { CaretRightOutlined } from '@ant-design/icons';
+import { CaretRightOutlined, CheckCircleFilled } from '@ant-design/icons';
 import DocumentComponent from './DocumentComponent';
 
 const GstComponent = () => {
@@ -104,11 +104,8 @@ const GstComponent = () => {
                       renderItem={(item) => (
                         <List.Item>
                           <Text>
-                            <span
-                              className='emoji'
-                              role='img'
-                              aria-label='not-eligible'>
-                              ✅
+                            <span className='emoji check'>
+                              <CheckCircleFilled />
                             </span>
                             {item}
                           </Text>

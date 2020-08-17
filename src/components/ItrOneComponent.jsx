@@ -3,7 +3,11 @@ import { Layout, Row, Col, Typography, List, Collapse, Anchor } from 'antd';
 // import PricingComponent from './PricingComponent';
 import itrOneEligibility from '../assets/itrOne-eligibility.svg';
 import itrOneIneligibility from '../assets/itrOne-ineligibility.svg';
-import { CaretRightOutlined } from '@ant-design/icons';
+import {
+  CaretRightOutlined,
+  ExclamationCircleFilled,
+  CheckCircleFilled,
+} from '@ant-design/icons';
 // import TableComponent from './TableComponent';
 // import {
 //   gstReturnBasic,
@@ -108,11 +112,8 @@ const ItrOneComponent = () => {
                       renderItem={(item) => (
                         <List.Item>
                           <Text>
-                            <span
-                              className='emoji'
-                              role='img'
-                              aria-label='eligible'>
-                              ✅
+                            <span className='emoji check'>
+                              <CheckCircleFilled />
                             </span>
                             {item}
                           </Text>
@@ -144,11 +145,8 @@ const ItrOneComponent = () => {
                       renderItem={(item) => (
                         <List.Item>
                           <Text>
-                            <span
-                              className='emoji'
-                              role='img'
-                              aria-label='not-eligible'>
-                              ❗️
+                            <span className='emoji uncheck'>
+                              <ExclamationCircleFilled />
                             </span>
                             {item}
                           </Text>

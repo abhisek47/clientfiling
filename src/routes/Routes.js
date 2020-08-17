@@ -6,6 +6,7 @@ import GstPage from '../pages/GstPage';
 import GstreturnPage from '../pages/GstreturnPage';
 import ItrOnePage from '../pages/ItrOnePage';
 import ItrTwoPage from '../pages/ItrTwoPage';
+import ItrThreePage from '../pages/ItrThreePage';
 
 export class Routes extends Component {
   render() {
@@ -18,6 +19,7 @@ export class Routes extends Component {
             <Route exact path='/gst-return' component={GstreturnPage} />
             <Route exact path='/income-tax-return-1' component={ItrOnePage} />
             <Route exact path='/income-tax-return-2' component={ItrTwoPage} />
+            <Route exact path='/income-tax-return-3' component={ItrThreePage} />
             <Route exact path='*' component={NotfoundPage} />
           </Switch>
         </Router>
