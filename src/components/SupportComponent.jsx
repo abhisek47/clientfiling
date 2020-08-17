@@ -1,10 +1,13 @@
 import React, { Component } from 'react';
 import { Layout, Row, Col, Card, Typography } from 'antd';
-import {
-  HeartFilled,
-  MessageFilled,
-  SafetyCertificateFilled,
-} from '@ant-design/icons';
+// import {
+//   HeartFilled,
+//   MessageFilled,
+//   SafetyCertificateFilled,
+// } from '@ant-design/icons';
+import one from '../assets/one.jpg';
+import two from '../assets/two.jpg';
+import three from '../assets/three.jpg';
 
 class SupportComponent extends Component {
   render() {
@@ -18,7 +21,7 @@ class SupportComponent extends Component {
                 <Card>
                   <Typography>
                     <Title className='support-team'>
-                      <HeartFilled />
+                      <img src={one} alt='' />
                     </Title>
                     <Title level={4}>Vibrant Team</Title>
                     <Paragraph>
@@ -32,7 +35,7 @@ class SupportComponent extends Component {
                 <Card>
                   <Typography>
                     <Title className='support-time'>
-                      <MessageFilled />
+                      <img src={two} alt='' />
                     </Title>
                     <Title level={4}>24/7 Support</Title>
                     <Paragraph>
@@ -46,7 +49,7 @@ class SupportComponent extends Component {
                 <Card>
                   <Typography>
                     <Title className='support-payment'>
-                      <SafetyCertificateFilled />
+                      <img src={three} alt='' />
                     </Title>
                     <Title level={4}>Secure Payment</Title>
                     <Paragraph>

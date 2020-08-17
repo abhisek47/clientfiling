@@ -2,17 +2,9 @@ import React from 'react';
 import { Layout, Row, Col, Typography, List, Collapse, Anchor } from 'antd';
 import gstCase from '../assets/gstCases.svg';
 import { CaretRightOutlined } from '@ant-design/icons';
-import OtherServicesComponent from './OtherServicesComponent';
 import DocumentComponent from './DocumentComponent';
 
 const GstComponent = () => {
-  const otherServices = [
-    { id: 1, item: 'GST return', link: 'gst-return' },
-    { id: 2, item: 'Income Tax return', link: 'income-tax-return' },
-    { id: 3, item: 'Excise Return', link: 'excise-return' },
-    { id: 4, item: 'Trademark registration', link: 'trademark-registration' },
-    { id: 5, item: 'Provident Fund Registration', link: 'provident-fund' },
-  ];
   const tab1 = [
     {
       id: 1,
@@ -111,7 +103,15 @@ const GstComponent = () => {
                       dataSource={gstCases}
                       renderItem={(item) => (
                         <List.Item>
-                          <Text>{item}</Text>
+                          <Text>
+                            <span
+                              className='emoji'
+                              role='img'
+                              aria-label='not-eligible'>
+                              ✅
+                            </span>
+                            {item}
+                          </Text>
                         </List.Item>
                       )}
                     />
@@ -128,29 +128,22 @@ const GstComponent = () => {
               {/* faq */}
               <div className='gst-faq service' id='gst-faq'>
                 <Title className='faq-head'>Frequently Asked Questions</Title>
-                <Row gutter={24} align='middle'>
-                  <Col className='ant-col-sm-24 ant-col-lg-16'>
-                    <Collapse
-                      bordered={false}
-                      defaultActiveKey={['1']}
-                      expandIcon={({ isActive }) => (
-                        <CaretRightOutlined rotate={isActive ? 90 : 0} />
-                      )}
-                      className='site-collapse-custom-collapse'>
-                      {tab1.map((tab) => (
-                        <Panel
-                          header={tab.title}
-                          key={tab.id}
-                          className='site-collapse-custom-panel'>
-                          <p>{tab.details}</p>
-                        </Panel>
-                      ))}
-                    </Collapse>
-                  </Col>
-                  <Col className='ant-col-sm-24 ant-col-lg-8'>
-                    <OtherServicesComponent services={otherServices} />
-                  </Col>
-                </Row>
+                <Collapse
+                  bordered={false}
+                  defaultActiveKey={['1']}
+                  expandIcon={({ isActive }) => (
+                    <CaretRightOutlined rotate={isActive ? 90 : 0} />
+                  )}
+                  className='site-collapse-custom-collapse'>
+                  {tab1.map((tab) => (
+                    <Panel
+                      header={tab.title}
+                      key={tab.id}
+                      className='site-collapse-custom-panel'>
+                      <p>{tab.details}</p>
+                    </Panel>
+                  ))}
+                </Collapse>
               </div>
             </Col>
           </Row>

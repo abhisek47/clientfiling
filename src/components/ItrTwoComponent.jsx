@@ -1,8 +1,8 @@
 import React from 'react';
 import { Layout, Row, Col, Typography, List, Collapse, Anchor } from 'antd';
 // import PricingComponent from './PricingComponent';
-import itrOneEligibility from '../assets/itrOne-eligibility.svg';
-import itrOneIneligibility from '../assets/itrOne-ineligibility.svg';
+import itrTwoEligibility from '../assets/itrTwo-eligibility.svg';
+import itrTwoIneligibility from '../assets/itrTwo-ineligibility.svg';
 import { CaretRightOutlined } from '@ant-design/icons';
 // import TableComponent from './TableComponent';
 // import {
@@ -11,7 +11,7 @@ import { CaretRightOutlined } from '@ant-design/icons';
 //   gstReturnPremium,
 // } from './PricingDetails';
 
-const ItrOneComponent = () => {
+const ItrTwoComponent = () => {
   const tab1 = [
     {
       id: 1,
@@ -33,20 +33,18 @@ const ItrOneComponent = () => {
     },
   ];
   const eligibility = [
-    'If the source of income is from one house property',
-    'If the source of income is from pension or salary',
-    'If the source of income is from other sources',
+    'Taxpayer having income exceeding Rs. 50 Lakhsfrom salary,profession etc',
+    'Taxpayer Having foreign assets / income',
+    'Taxpayer Having agricultural income in excess of Rs. 5,000',
+    'Taxpayer having income under capiatal gain',
+    'Taxpayer Having income from business or profession as a partner',
+    'Taxpayer Having more than one house property',
+    'Taxpayers having DIN or owing private limited company shares.',
   ];
   const ineligibility = [
-    'The taxpayer whose income is more than Rs 50 lakhs',
-    'Non-residents and Residents but not ordinarily resident',
-    'Taxpayers who have two or more house properties',
-    'Taxpayer having income under business or profession',
-    'Taxpayers who have long or short-term capital gains',
-    'Taxpayers whose income from agriculture means is greater than Rs. 5,000',
-    'The taxpayer who claims relief for foreign taxes paid or claim double taxation relief as mentioned in section 90/90A/91.',
-    'ITR 1 cannot be used by residents having any asset (including financial interest in any entity) located outside India or signing authority in any account located outside India.',
-    'Form ITR-1 can no longer be filed by an individual who has brought forward/carry forward loss under the head “Income from house property.”',
+    'Itr2 cannot be filed by LLP',
+    'Itr2cannot be filled by company,society,trust,partnership etc',
+    'Itr2 cannot be filled by proprietor having business or professional income',
   ];
   const { Title, Paragraph, Text } = Typography;
   const { Panel } = Collapse;
@@ -58,26 +56,28 @@ const ItrOneComponent = () => {
           <Row gutter={16}>
             <Col className='ant-col-md-8 ant-col-lg-6'>
               <Anchor className='gst-tab-link'>
-                <Link href='#itrOne-filing' title='Income Tax Return - 1' />
+                <Link href='#itrTwo-filing' title='Income Tax Return - 2' />
                 {/* <Link href='#gstr-pricing' title='Pricing' /> */}
-                <Link href='#itrOne-eligibility' title='Eligibility' />
-                <Link href='#itrOne-ineligibility' title='Ineligibility' />
-                <Link href='#itrOne-faq' title='FAQ' />
+                <Link href='#itrTwo-eligibility' title='Eligibility' />
+                <Link href='#itrTwo-ineligibility' title='Ineligibility' />
+                <Link href='#itrTwo-faq' title='FAQ' />
               </Anchor>
             </Col>
             <Col className='ant-col-md-16 ant-col-lg-18'>
               {/* registration info */}
-              <div className='itrOne-filing service' id='itrOne-filing'>
+              <div className='itrTwo-filing service' id='itrTwo-filing'>
                 <Typography>
-                  <Title>Income Tax Return - 1</Title>
+                  <Title>Income Tax Return - 2</Title>
                   <Paragraph strong>
-                    ITR 1 - This Form is filed by the taxpayers and the
-                    individuals being a Resident (other thanNot Ordinarily
-                    Resident) having Total Income up to INR 50 lakhs, having
-                    Income from Salaries, One House Property, Other Sources
-                    (Interest etc.), and Agricultural Income up to INR 5
-                    thousand. (Not for an Individual who is either Director in a
-                    company or has invested in Unlisted Equity Shares).
+                    Individuals and Hindu Undivided Families who have their
+                    Income for the Financial Year through Salary or Pension,
+                    more than One House Property, Income from Capital Gains,
+                    Income from foreign assets/Income, Income from business or
+                    profession as a partner (not proprietor) and other sources
+                    including lottery, racehorses, legal gambling are eligible
+                    to file their IT Return using ITR-2. Individuals who are not
+                    eligible to file using ITR-1, because of their income
+                    exceeding ₹ 50 Lakhs are also eligible to file itr2.
                   </Paragraph>
                 </Typography>
               </div>
@@ -92,13 +92,13 @@ const ItrOneComponent = () => {
                   premium='6899'
                 />
               </div> */}
-              {/* itrOne eligibility */}
+              {/* itrTwo eligibility */}
               <div
-                className='itrOne-eligibility service'
-                id='itrOne-eligibility'>
-                <Title>Eligibility to file ITR-1</Title>
+                className='itrTwo-eligibility service'
+                id='itrTwo-eligibility'>
+                <Title>Eligibility to file ITR-2</Title>
                 <Paragraph strong>
-                  ITR-1 is filed by the taxpayers whose income is up to Rs 50
+                  ITR-2 is filed by the taxpayers whose income is up to Rs 50
                   lakhs from below- mentioned sources:
                 </Paragraph>
                 <Row gutter={14} align='middle'>
@@ -121,22 +121,22 @@ const ItrOneComponent = () => {
                     />
                   </Col>
                   <Col className='ant-col-lg-12 ant-col-sm-24'>
-                    <img src={itrOneEligibility} alt='gstr-cases' />
+                    <img src={itrTwoEligibility} alt='gstr-cases' />
                   </Col>
                 </Row>
               </div>
-              {/* itrOne ineligibility */}
+              {/* itrTwo ineligibility */}
               <div
-                className='itrOne-ineligibility service'
-                id='itrOne-ineligibility'>
-                <Title> Ineligibility to file ITR-1</Title>
+                className='itrTwo-ineligibility service'
+                id='itrTwo-ineligibility'>
+                <Title>Ineligibility to file ITR-2</Title>
                 <Paragraph strong>
-                  ITR-1 is filed by the taxpayers whose income is up to Rs 50
+                  ITR-2 is filed by the taxpayers whose income is up to Rs 50
                   lakhs from below- mentioned sources:
                 </Paragraph>
                 <Row gutter={14} align='middle'>
                   <Col className='ant-col-lg-12 ant-col-sm-24'>
-                    <img src={itrOneIneligibility} alt='gstr-cases' />
+                    <img src={itrTwoIneligibility} alt='gstr-cases' />
                   </Col>
                   <Col className='ant-col-lg-12 ant-col-sm-24'>
                     <List
@@ -158,9 +158,9 @@ const ItrOneComponent = () => {
                   </Col>
                   {/* due date */}
                   <div className='itr-duedate'>
-                    <Title>Due Date for Filing ITR 1 Online AY 2020-21</Title>
+                    <Title>Due Date for Filing ITR 2 Online AY 2020-21</Title>
                     <Paragraph strong>
-                      ITR -1 has to be filed on or before 30 Nov of the
+                      ITR -2 has to be filed on or before 30 Nov of the
                       following year. After that, a late fee under section 234F
                       is levied
                     </Paragraph>
@@ -168,7 +168,7 @@ const ItrOneComponent = () => {
                 </Row>
               </div>
               {/* faq */}
-              <div className='itrOne-faq service' id='itrOne-faq'>
+              <div className='itrTwo-faq service' id='itrTwo-faq'>
                 <Title className='faq-head'>Frequently Asked Questions</Title>
                 <Collapse
                   bordered={false}
@@ -195,4 +195,4 @@ const ItrOneComponent = () => {
   );
 };
 
-export default ItrOneComponent;
+export default ItrTwoComponent;
