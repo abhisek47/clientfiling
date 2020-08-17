@@ -4,6 +4,7 @@ import HomePage from '../pages/HomePage';
 import NotfoundPage from '../pages/NotfoundPage';
 import GstPage from '../pages/GstPage';
 import GstreturnPage from '../pages/GstreturnPage';
+import ItrOnePage from '../pages/ItrOnePage';
 
 export class Routes extends Component {
   render() {
@@ -14,6 +15,7 @@ export class Routes extends Component {
             <Route exact path='/' component={HomePage} />
             <Route exact path='/gst' component={GstPage} />
             <Route exact path='/gst-return' component={GstreturnPage} />
+            <Route exact path='/income-tax-return-1' component={ItrOnePage} />
             <Route exact path='*' component={NotfoundPage} />
           </Switch>
         </Router>

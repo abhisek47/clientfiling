@@ -50,7 +50,9 @@ class PopularComponent extends Component {
                       title='Income Tax Return'
                       description='The Income Tax Department is a government agency undertaking direct tax collection of the Government of India.'
                     />
-                    <Button type='primary'>Buy now</Button>
+                    <Link to='/income-tax-return-1'>
+                      <Button type='primary'>Buy now</Button>
+                    </Link>
                   </Card>
                 </Col>
 

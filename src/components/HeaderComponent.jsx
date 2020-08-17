@@ -21,7 +21,9 @@ class HeaderComponent extends Component {
                 <Menu.Item key='3'>
                   <Link to='/gst'>GST</Link>
                 </Menu.Item>
-                <Menu.Item key='4'>Income Tax</Menu.Item>
+                <Menu.Item key='4'>
+                  <Link to='/income-tax-return-1'>Income Tax</Link>
+                </Menu.Item>
                 <Menu.Item key='5'>Compliances</Menu.Item>
                 <Menu.Item key='6'>Resources</Menu.Item>
               </Menu>
