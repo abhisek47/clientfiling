@@ -305,6 +305,10 @@ img {
   color: #ff4d4f;
 }
 
+.softcopy {
+  color: #1890ff;
+}
+
 .itrOne-eligibility {
   margin-top: 32px;
 }
@@ -337,6 +341,9 @@ img {
 
 @media screen and (max-width: 767px) {
   .gst-tab-link {
+    display: none;
+  }
+  .trademark-docs img {
     display: none;
   }
 }

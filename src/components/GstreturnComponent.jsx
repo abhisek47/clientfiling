@@ -11,7 +11,7 @@ import {
 } from 'antd';
 import PricingComponent from './PricingComponent';
 import gstrCase from '../assets/gstrCases.svg';
-import { CaretRightOutlined } from '@ant-design/icons';
+import { CaretRightOutlined, CheckCircleFilled } from '@ant-design/icons';
 // import OtherServicesComponent from './OtherServicesComponent';
 import TableComponent from './TableComponent';
 import {
@@ -218,11 +218,8 @@ const GstreturnComponent = () => {
                       renderItem={(item) => (
                         <List.Item>
                           <Text>
-                            <span
-                              className='emoji'
-                              role='img'
-                              aria-label='not-eligible'>
-                              ✅
+                            <span className='emoji check'>
+                              <CheckCircleFilled />
                             </span>
                             {item}
                           </Text>

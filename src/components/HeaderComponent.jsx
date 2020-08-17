@@ -39,7 +39,9 @@ class HeaderComponent extends Component {
                   <Menu.Item key='setting:4'>ISO Registration</Menu.Item>
                 </SubMenu>
                 <SubMenu title='Property'>
-                  <Menu.Item key='setting:5'>Trademark Registration</Menu.Item>
+                  <Menu.Item key='setting:5'>
+                    <Link to='/trademark'>Trademark Registration</Link>
+                  </Menu.Item>
                   <Menu.Item key='setting:6'>Trademark Renewal</Menu.Item>
                   <Menu.Item key='setting:7'>Copyright Registration</Menu.Item>
                 </SubMenu>

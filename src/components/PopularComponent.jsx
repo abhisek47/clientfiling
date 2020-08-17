@@ -64,7 +64,9 @@ class PopularComponent extends Component {
                       title='Trademark Registration'
                       description='In general, compliance means conforming to a rule, such as a specification, policy, standard or law.'
                     />
-                    <Button type='primary'>Buy now</Button>
+                    <Link to='/trademark'>
+                      <Button type='primary'>Buy now</Button>
+                    </Link>
                   </Card>
                 </Col>
               </Row>
