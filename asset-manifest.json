@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.da2013d4.chunk.css",
-    "main.js": "/static/js/main.6a992ef3.chunk.js",
-    "main.js.map": "/static/js/main.6a992ef3.chunk.js.map",
+    "main.css": "/static/css/main.16339475.chunk.css",
+    "main.js": "/static/js/main.177853f8.chunk.js",
+    "main.js.map": "/static/js/main.177853f8.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.8eac0563.js",
     "runtime-main.js.map": "/static/js/runtime-main.8eac0563.js.map",
     "static/css/2.04ff9426.chunk.css": "/static/css/2.04ff9426.chunk.css",
-    "static/js/2.76dd432d.chunk.js": "/static/js/2.76dd432d.chunk.js",
-    "static/js/2.76dd432d.chunk.js.map": "/static/js/2.76dd432d.chunk.js.map",
+    "static/js/2.bd2acddc.chunk.js": "/static/js/2.bd2acddc.chunk.js",
+    "static/js/2.bd2acddc.chunk.js.map": "/static/js/2.bd2acddc.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.b30d0906f32352b3a53d94d9f6e6966a.js": "/precache-manifest.b30d0906f32352b3a53d94d9f6e6966a.js",
+    "precache-manifest.1a2c4101a369f215610243b019c07e83.js": "/precache-manifest.1a2c4101a369f215610243b019c07e83.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.04ff9426.chunk.css.map": "/static/css/2.04ff9426.chunk.css.map",
-    "static/css/main.da2013d4.chunk.css.map": "/static/css/main.da2013d4.chunk.css.map",
-    "static/js/2.76dd432d.chunk.js.LICENSE.txt": "/static/js/2.76dd432d.chunk.js.LICENSE.txt",
+    "static/css/main.16339475.chunk.css.map": "/static/css/main.16339475.chunk.css.map",
+    "static/js/2.bd2acddc.chunk.js.LICENSE.txt": "/static/js/2.bd2acddc.chunk.js.LICENSE.txt",
     "static/media/banner.svg": "/static/media/banner.febfd09e.svg",
     "static/media/chief@2x.png": "/static/media/chief@2x.b38822b6.png",
     "static/media/gst.svg": "/static/media/gst.6a23b90b.svg",
@@ -29,6 +29,7 @@
     "static/media/itrTwo-ineligibility.svg": "/static/media/itrTwo-ineligibility.70a9ae17.svg",
     "static/media/itrTwo.svg": "/static/media/itrTwo.24f3a609.svg",
     "static/media/one.jpg": "/static/media/one.69b0e614.jpg",
+    "static/media/rupee-indian.svg": "/static/media/rupee-indian.1e59e6da.svg",
     "static/media/services_1.jpg": "/static/media/services_1.6282dd71.jpg",
     "static/media/services_2.jpg": "/static/media/services_2.30a39329.jpg",
     "static/media/services_3.jpg": "/static/media/services_3.aca959b4.jpg",
@@ -45,8 +46,8 @@
   "entrypoints": [
     "static/js/runtime-main.8eac0563.js",
     "static/css/2.04ff9426.chunk.css",
-    "static/js/2.76dd432d.chunk.js",
-    "static/css/main.da2013d4.chunk.css",
-    "static/js/main.6a992ef3.chunk.js"
+    "static/js/2.bd2acddc.chunk.js",
+    "static/css/main.16339475.chunk.css",
+    "static/js/main.177853f8.chunk.js"
   ]
 }
