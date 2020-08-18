@@ -1,6 +1,7 @@
 import React from 'react';
 import { Row, Col, Typography, Button, Card, Statistic, List } from 'antd';
 import { TagsFilled } from '@ant-design/icons';
+import rupeeIndian from '../assets/rupee-indian.svg';
 
 const PricingComponent = ({
   dataOne,
@@ -18,7 +19,13 @@ const PricingComponent = ({
         <Col className='ant-col-sm-24 ant-col-lg-8'>
           <Card hoverable>
             <div className='card-head'>
-              <Statistic title='Basic' value={basic} prefix='Rs.' />
+              <Statistic
+                title='Basic'
+                value={basic}
+                prefix={
+                  <img src={rupeeIndian} className='rupees' alt='basic' />
+                }
+              />
             </div>
             <div className='card-body'>
               <List
@@ -34,7 +41,13 @@ const PricingComponent = ({
         <Col className='ant-col-sm-24 ant-col-lg-8'>
           <Card hoverable>
             <div className='card-head'>
-              <Statistic title='Standard' value={standard} />
+              <Statistic
+                title='Standard'
+                value={standard}
+                prefix={
+                  <img src={rupeeIndian} className='rupees' alt='standard' />
+                }
+              />
             </div>
             <div className='card-body'>
               <List
@@ -50,7 +63,13 @@ const PricingComponent = ({
         <Col className='ant-col-sm-24 ant-col-lg-8'>
           <Card hoverable>
             <div className='card-head'>
-              <Statistic title='Premium' value={premium} />
+              <Statistic
+                title='Premium'
+                value={premium}
+                prefix={
+                  <img src={rupeeIndian} className='rupees' alt='premium' />
+                }
+              />
             </div>
             <div className='card-body'>
               <List

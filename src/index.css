@@ -317,6 +317,10 @@ img {
   margin: 24px 0;
 }
 
+.rupees {
+  width: 14px;
+}
+
 @media screen and (max-width: 995px) {
   .navbar {
     display: none;
