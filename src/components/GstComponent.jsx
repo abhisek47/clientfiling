@@ -120,7 +120,10 @@ const GstComponent = () => {
               </div>
               {/* documents */}
               <div className='gst-docs service' id='gst-docs'>
-                <DocumentComponent documents={GstDocument} />
+                <DocumentComponent
+                  documents={GstDocument}
+                  title='Documents required for gst registration'
+                />
               </div>
               {/* faq */}
               <div className='gst-faq service' id='gst-faq'>

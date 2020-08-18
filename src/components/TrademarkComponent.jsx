@@ -149,7 +149,10 @@ const TrademarkComponent = () => {
                     <img src={tdDocs} alt='gstr-cases' />
                   </Col>
                   <Col className='ant-col-lg-12 ant-col-sm-24'>
-                    <DocumentComponent documents={trademarkDocument} />
+                    <DocumentComponent
+                      title='Documents Required for Renewal Registration'
+                      documents={trademarkDocument}
+                    />
                   </Col>
                 </Row>
               </div>

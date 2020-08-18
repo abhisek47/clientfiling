@@ -1,11 +1,11 @@
 import React from 'react';
 import { Timeline, Typography } from 'antd';
 
-const DocumentComponent = ({ documents }) => {
+const DocumentComponent = ({ documents, title }) => {
   const { Paragraph, Title } = Typography;
   return (
     <React.Fragment>
-      <Title>Documents required for gst registration</Title>
+      <Title>{title}</Title>
       <Paragraph strong>In below all the documents is required</Paragraph>
       <Timeline>
         {documents.map((cases) => (

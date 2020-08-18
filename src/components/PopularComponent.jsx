@@ -5,6 +5,7 @@ import serviceTwo from '../assets/services_2.jpg';
 import serviceThree from '../assets/services_3.jpg';
 import serviceFour from '../assets/services_4.jpg';
 import { Link } from 'react-router-dom';
+import { TagsFilled } from '@ant-design/icons';
 
 class PopularComponent extends Component {
   render() {
@@ -27,7 +28,9 @@ class PopularComponent extends Component {
                       description='A company register is a register of organizations in the jurisdiction they operate under.'
                     />
                     <Link to='/gst'>
-                      <Button type='primary'>Buy now</Button>
+                      <Button icon={<TagsFilled />} type='primary'>
+                        Buy now
+                      </Button>
                     </Link>
                   </Card>
                 </Col>
@@ -39,7 +42,9 @@ class PopularComponent extends Component {
                       title='Company Registration'
                       description='The Income Tax Department is a government agency undertaking direct tax collection of the Government of India.'
                     />
-                    <Button type='primary'>Buy now</Button>
+                    <Button icon={<TagsFilled />} type='primary'>
+                      Buy now
+                    </Button>
                   </Card>
                 </Col>
                 <Col className='ant-col-sm-24 ant-col-lg-6 '>
@@ -51,7 +56,9 @@ class PopularComponent extends Component {
                       description='The Income Tax Department is a government agency undertaking direct tax collection of the Government of India.'
                     />
                     <Link to='/income-tax-return-1'>
-                      <Button type='primary'>Buy now</Button>
+                      <Button icon={<TagsFilled />} type='primary'>
+                        Buy now
+                      </Button>
                     </Link>
                   </Card>
                 </Col>
@@ -65,7 +72,9 @@ class PopularComponent extends Component {
                       description='In general, compliance means conforming to a rule, such as a specification, policy, standard or law.'
                     />
                     <Link to='/trademark'>
-                      <Button type='primary'>Buy now</Button>
+                      <Button icon={<TagsFilled />} type='primary'>
+                        Buy now
+                      </Button>
                     </Link>
                   </Card>
                 </Col>

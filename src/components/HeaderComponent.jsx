@@ -42,7 +42,9 @@ class HeaderComponent extends Component {
                   <Menu.Item key='setting:5'>
                     <Link to='/trademark'>Trademark Registration</Link>
                   </Menu.Item>
-                  <Menu.Item key='setting:6'>Trademark Renewal</Menu.Item>
+                  <Menu.Item key='setting:6'>
+                    <Link to='/trademark-renewal'>Trademark Renewal</Link>
+                  </Menu.Item>
                   <Menu.Item key='setting:7'>Copyright Registration</Menu.Item>
                 </SubMenu>
                 <SubMenu title='GST'>

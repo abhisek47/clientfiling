@@ -1,5 +1,6 @@
 import React from 'react';
 import { Row, Col, Typography, Button, Card, Statistic, List } from 'antd';
+import { TagsFilled } from '@ant-design/icons';
 
 const PricingComponent = ({
   dataOne,
@@ -17,14 +18,16 @@ const PricingComponent = ({
         <Col className='ant-col-sm-24 ant-col-lg-8'>
           <Card hoverable>
             <div className='card-head'>
-              <Statistic title='Basic' value={basic} />
+              <Statistic title='Basic' value={basic} prefix='Rs.' />
             </div>
             <div className='card-body'>
               <List
                 dataSource={dataOne}
                 renderItem={(item) => <List.Item>{item}</List.Item>}
               />
-              <Button type='primary'>Buy now</Button>
+              <Button icon={<TagsFilled />} type='primary'>
+                Buy now
+              </Button>
             </div>
           </Card>
         </Col>
@@ -38,7 +41,9 @@ const PricingComponent = ({
                 dataSource={dataTwo}
                 renderItem={(item) => <List.Item>{item}</List.Item>}
               />
-              <Button type='primary'>Buy now</Button>
+              <Button icon={<TagsFilled />} type='primary'>
+                Buy now
+              </Button>
             </div>
           </Card>
         </Col>
@@ -52,7 +57,9 @@ const PricingComponent = ({
                 dataSource={dataThree}
                 renderItem={(item) => <List.Item>{item}</List.Item>}
               />
-              <Button type='primary'>Buy now</Button>
+              <Button icon={<TagsFilled />} type='primary'>
+                Buy now
+              </Button>
             </div>
           </Card>
         </Col>
