@@ -1,6 +1,6 @@
 import React from 'react';
 import { Layout, Row, Col, Typography, List, Collapse, Anchor } from 'antd';
-// import PricingComponent from './PricingComponent';
+import PricingComponent from './PricingComponent';
 import itrThreeEligibility from '../assets/itrThree-eligibility.svg';
 import itrThreeIneligibility from '../assets/itrThree-ineligibility.svg';
 import {
@@ -9,11 +9,11 @@ import {
   ExclamationCircleFilled,
 } from '@ant-design/icons';
 // import TableComponent from './TableComponent';
-// import {
-//   gstReturnBasic,
-//   gstReturnStandard,
-//   gstReturnPremium,
-// } from './PricingDetails';
+import {
+  itrThreeBasic,
+  itrThreeStandard,
+  itrThreePremium,
+} from './PricingDetails';
 
 const ItrThreeComponent = () => {
   const tab1 = [
@@ -59,7 +59,7 @@ const ItrThreeComponent = () => {
             <Col className='ant-col-md-8 ant-col-lg-6'>
               <Anchor className='gst-tab-link'>
                 <Link href='#itrThree-filing' title='Income Tax Return - 3' />
-                {/* <Link href='#gstr-pricing' title='Pricing' /> */}
+                <Link href='#itrThree-pricing' title='Pricing' />
                 <Link href='#itrThree-eligibility' title='Eligibility' />
                 <Link href='#itrThree-ineligibility' title='Ineligibility' />
                 <Link href='#itrThree-faq' title='FAQ' />
@@ -82,16 +82,16 @@ const ItrThreeComponent = () => {
                 </Typography>
               </div>
               {/* Pricing info */}
-              {/* <div className='pricing service' id='gstr-pricing'>
+              <div className='pricing service' id='itrThree-pricing'>
                 <PricingComponent
-                  dataOne={gstReturnBasic}
-                  dataTwo={gstReturnStandard}
-                  dataThree={gstReturnPremium}
+                  dataOne={itrThreeBasic}
+                  dataTwo={itrThreeStandard}
+                  dataThree={itrThreePremium}
                   basic='2899'
                   standard='4899'
                   premium='6899'
                 />
-              </div> */}
+              </div>
               {/* #itrThree eligibility */}
               <div
                 className='itrThree-eligibility service'

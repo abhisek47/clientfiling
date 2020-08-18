@@ -29,6 +29,13 @@ class FooterComponent extends Component {
         sub1: 'Siliguri',
         sub2: 'Ward 8 , Khalpara , Siliguri - 734005',
       },
+      {
+        id: 5,
+        title: 'Website Policies',
+        sub1: 'Terms and Conditions',
+        sub2: 'Privacy Policy',
+        sub3: 'Disclaimer Policy',
+      },
     ];
     const { Footer } = Layout;
     const { Paragraph } = Typography;
@@ -39,7 +46,7 @@ class FooterComponent extends Component {
             <Footer className='footer-top'>
               <Row gutter={16} style={{ alignItems: 'flex-start' }}>
                 {footerHead.map((footer) => (
-                  <Col className='ant-col-sm-12 ant-col-lg-6' key={footer.id}>
+                  <Col className='ant-col-sm-12 ant-col-lg-4' key={footer.id}>
                     <div className='footer-content'>
                       <Typography>
                         <Paragraph strong level={4}>
@@ -47,6 +54,7 @@ class FooterComponent extends Component {
                         </Paragraph>
                         <Paragraph>{footer.sub1}</Paragraph>
                         <Paragraph>{footer.sub2}</Paragraph>
+                        <Paragraph>{footer.sub3}</Paragraph>
                       </Typography>
                     </div>
                   </Col>

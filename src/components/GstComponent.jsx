@@ -3,6 +3,8 @@ import { Layout, Row, Col, Typography, List, Collapse, Anchor } from 'antd';
 import gstCase from '../assets/gstCases.svg';
 import { CaretRightOutlined, CheckCircleFilled } from '@ant-design/icons';
 import DocumentComponent from './DocumentComponent';
+import PricingComponent from './PricingComponent';
+import { gstBasic, gstStandard, gstPremium } from './PricingDetails';
 
 const GstComponent = () => {
   const tab1 = [
@@ -56,7 +58,7 @@ const GstComponent = () => {
             <Col className='ant-col-md-8 ant-col-lg-6'>
               <Anchor className='gst-tab-link'>
                 <Link href='#gst-reg' title='GST Registration' />
-                {/* <Link href='#gst-pricing' title='Pricing' /> */}
+                <Link href='#gst-pricing' title='Pricing' />
                 <Link href='#gst-cases' title='Eligibility' />
                 <Link href='#gst-docs' title='Documents required' />
                 <Link href='#gst-faq' title='FAQ' />
@@ -83,14 +85,16 @@ const GstComponent = () => {
                 </Typography>
               </div>
               {/* Pricing info */}
-              {/* <div className='pricing service' id='gst-pricing'>
+              <div className='pricing service' id='gst-pricing'>
                 <PricingComponent
-                  data={data}
+                  dataOne={gstBasic}
+                  dataTwo={gstStandard}
+                  dataThree={gstPremium}
                   basic='3500'
                   standard='3500'
                   premium='3500'
                 />
-              </div> */}
+              </div>
               {/* mandatory cases */}
               <div className='gst-cases service' id='gst-cases'>
                 <Title>When GST Registration is mandatory ?</Title>

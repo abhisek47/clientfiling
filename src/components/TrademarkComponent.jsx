@@ -9,7 +9,7 @@ import {
   Anchor,
   Card,
 } from 'antd';
-// import PricingComponent from './PricingComponent';
+import PricingComponent from './PricingComponent';
 import tdRequired from '../assets/td-required.svg';
 import tdDocs from '../assets/td-docs.svg';
 import {
@@ -19,11 +19,11 @@ import {
 } from '@ant-design/icons';
 import DocumentComponent from './DocumentComponent';
 // import TableComponent from './TableComponent';
-// import {
-//   gstReturnBasic,
-//   gstReturnStandard,
-//   gstReturnPremium,
-// } from './PricingDetails';
+import {
+  trademarkBasic,
+  trademarkStandard,
+  trademarkPremium,
+} from './PricingDetails';
 
 const TrademarkComponent = () => {
   const tab1 = [
@@ -78,7 +78,7 @@ const TrademarkComponent = () => {
             <Col className='ant-col-md-8 ant-col-lg-6'>
               <Anchor className='gst-tab-link'>
                 <Link href='#trademark-filing' title='Trademark Registration' />
-                {/* <Link href='#gstr-pricing' title='Pricing' /> */}
+                <Link href='#trademark-pricing' title='Pricing' />
                 <Link href='#trademark-eligibility' title='Eligibility' />
                 <Link href='#trademark-docs' title='Document Required' />
                 <Link href='#trademark-benefit' title='Benefits' />
@@ -106,16 +106,16 @@ const TrademarkComponent = () => {
                 </Typography>
               </div>
               {/* Pricing info */}
-              {/* <div className='pricing service' id='gstr-pricing'>
+              <div className='pricing service' id='trademark-pricing'>
                 <PricingComponent
-                  dataOne={gstReturnBasic}
-                  dataTwo={gstReturnStandard}
-                  dataThree={gstReturnPremium}
+                  dataOne={trademarkBasic}
+                  dataTwo={trademarkStandard}
+                  dataThree={trademarkPremium}
                   basic='2899'
                   standard='4899'
                   premium='6899'
                 />
-              </div> */}
+              </div>
               {/* #trademark eligibility */}
               <div
                 className='trademark-eligibility service'

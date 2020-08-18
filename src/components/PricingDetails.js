@@ -1,3 +1,19 @@
+// gst
+export const gstBasic = [
+  'Business Bank Account Opening',
+  'LEDGERS GST Software',
+];
+export const gstStandard = [
+  'Business Bank Account Opening',
+  'LEDGERS GST Software',
+  '3 Months Outsourced GST Filing',
+];
+export const gstPremium = [
+  'Business Bank Account Opening',
+  'LEDGERS GST Software',
+  '6 Months Outsourced GST Filing',
+];
+
 // gst return
 export const gstReturnBasic = [
   '3 months GST return filing',
@@ -33,10 +49,56 @@ export const gstReturnPremium = [
 export const pfBasic = ['Up to 20 employee', ' Alone Without ESI'];
 export const pfStandard = ['Up to 20 employee', ' Alone With ESI'];
 export const pfPremium = ['Up to 50 employee', ' Alone With ESI'];
+// provident fund return
+export const pfReturnBasic = [
+  'Upto 10 Employees',
+  'Attendance Management',
+  'Leave Management',
+  'Payroll Processing',
+  'Employee Portal',
+  'Payslips',
+  'TDS Compliance',
+  'TDS Filing',
+  'Form 16 Issuance',
+];
+export const pfReturnStandard = [
+  'Upto 20 Employees',
+  'Attendance Management',
+  'Leave Management',
+  'Payroll Processing',
+  'Employee Portal',
+  'Payslips',
+  'TDS Compliance',
+  'TDS Filing',
+  'Form 16 Issuance',
+  'Employee Onboarding',
+  'ESI Compliance',
+];
+export const pfReturnPremium = [
+  'Upto 30 Employees',
+  'Attendance Management',
+  'Leave Management',
+  'Payroll Processing',
+  'Employee Portal',
+  'Payslips',
+  'TDS Compliance',
+  'TDS Filing',
+  'Form 16 Issuance',
+  'Employee Onboarding',
+  'ESI Compliance',
+  'PF Compliance',
+  'Exit Management',
+];
 // esi
-export const esiBasic = ['Up to 20 employee'];
-export const esiStandard = ['Up to 20 employee'];
-export const esiPremium = ['Up to 50 employee'];
+export const esiBasic = [
+  'ESI or PF registration for businesses having less than 20 employees.',
+];
+export const esiStandard = [
+  'ESI and PF registration for businesses having less than 20 employees.',
+];
+export const esiPremium = [
+  'ESI and PF registration for businesses having less than 50 employees.',
+];
 // esi return
 export const esiReturnBasic = ['Up to 20 employee'];
 export const esiReturnStandard = ['Up to 50 employee'];
@@ -45,7 +107,7 @@ export const esiReturnPremium = ['Up to 80 employee'];
 export const tdsBasic = ['One quarter'];
 export const tdsStandard = ['Two quarter'];
 export const tdsPremium = ['Four quarter'];
-// itr
+// itr one
 export const itrOneBasic = [
   'Income tax return filing for an individual with salary income of less than Rs.5 lakhs.',
 ];
@@ -55,19 +117,387 @@ export const itrOneStandard = [
 export const itrOnePremium = [
   'Income tax return filing for an individual with salary income of above than Rs.10 lakhs',
 ];
+// itr two
+export const itrTwoBasic = [
+  'Income tax return filing for persons having DIN or owing private limited company shares.',
+];
+export const itrTwoStandard = [
+  'Income tax return filing for persons having capital gains.',
+];
+export const itrTwoPremium = [
+  'Income tax return filing for persons having foreign assets or foreign income.',
+];
+// itr three
+export const itrThreeBasic = [
+  'Income tax return filing for a taxpayer with taxable income of less than Rs.25 lakhs.',
+];
+export const itrThreeStandard = [
+  'Income tax return filing for a taxpayer with taxable income of less than Rs.50 lakhs',
+];
+export const itrThreePremium = [
+  'Income tax return filing for a taxpayer with taxable income of Rs.20 lakhs to Rs.100 lakhs.',
+];
+// itr four
+export const itrFourBasic = [
+  'Income tax return filing for a taxpayer with taxable income of less than Rs.10 lakhs.',
+];
+export const itrFourStandard = [
+  'Income tax return filing for a taxpayer with taxable income of less than Rs.25 lakhs.',
+];
+export const itrFourPremium = [
+  'Income tax return filing for a taxpayer with taxable income of more than Rs.25 lakhs.',
+];
+// itr five
+export const itrFiveBasic = [
+  'Income tax return filing for a taxpayer with taxable income of less than Rs.10 lakhs.',
+];
+export const itrFiveStandard = [
+  'Income tax return filing for a taxpayer with taxable income of more than Rs.10 lakhs.',
+];
+export const itrFivePremium = [
+  'Income tax return filing for a taxpayer with taxable income of more than Rs.25 lakhs.',
+];
+
+// itr six
+export const itrSixBasic = [
+  'Income tax return filing for a taxpayer with taxable income of less than Rs.10 lakhs.',
+];
+export const itrSixStandard = [
+  'Income tax return filing for a taxpayer with taxable income of more than Rs.10 lakhs.',
+];
+export const itrSixPremium = [
+  'Income tax return filing for a taxpayer with taxable income of more than Rs.25 lakhs.',
+];
+// itr seven
+export const itrSevenBasic = [
+  'Income tax return filing for a taxpayer with taxable income of less than Rs.10 lakhs.',
+];
+export const itrSevenStandard = [
+  'Income tax return filing for a taxpayer with taxable income of more than Rs.10 lakhs.',
+];
+export const itrSevenPremium = [
+  'Income tax return filing for a taxpayer with taxable income of more than Rs.25 lakhs.',
+];
+
 // trademark
-export const trademarkBasic = ['(including govt fees of 4500)', 'Having MSME'];
+export const trademarkBasic = [
+  'Trademark filing under one class for proprietorship and small enterprises. Inclusive of government fee and taxes.',
+  '(including govt fees of 4500)',
+];
 export const trademarkStandard = [
+  'Trademark filing under one class for proprietorship and small enterprises. Logo designing by Graphic Designers. Inclusive of government fee and taxes.',
   '(including govt fees of 9000)',
-  'Not having MSME',
+];
+export const trademarkPremium = [
+  'Trademark filing under one class for large enterprises not eligible of MSME registration. Inclusive of government fee and taxes.',
+  '(including govt fees of 9000)',
 ];
 // trademark renewal
 export const tmrenewBasic = [
-  'if application filed within 6 months of acquisition of TM.',
+  'Drafting and filing of trademark renewal application. For individuals, proprietorships, registered SMEs and registered Startups. Inclusive of government fee and GST.',
 ];
 export const tmrenewStandard = [
-  'if application filed after expiry of 6 months, but before 12 months of acquisition of TM.',
+  'Drafting and filing of trademark renewal application along with MSME registration certificate. Inclusive of government fee and GST.',
 ];
 export const tmrenewPremium = [
-  'if application filed after 12 months from the date of acquisition of TM.',
+  'Drafting and filing of trademark renewal application. For entities without Startup or MSME registration. Inclusive of government fee and GST.',
+];
+
+// proprietorship
+export const proprietorshipBasic = [
+  'GST Registration',
+  'Udyog Aadhar Registration',
+  'LEDGERS Accounting Software 1',
+  'GST eWay Bill Software',
+  'Business Current Account 2',
+  'Online Payment Gateway',
+];
+export const proprietorshipStandard = [
+  'GST Registration',
+  'Udyog Aadhar Registration',
+  'LEDGERS Accounting Software 1',
+  'GST eWay Bill Software',
+  'Business Current Account 2',
+  'Online Payment Gateway',
+  '3 Months GST Return Filing (GSTR-1 or 3B)',
+];
+export const proprietorshipPremium = [
+  'GST Registration',
+  'Udyog Aadhar Registration',
+  'LEDGERS Accounting Software 1',
+  'GST eWay Bill Software',
+  'Business Current Account 2',
+  'Online Payment Gateway',
+  '3 Months GST Return Filing (GSTR-1 or 3B)',
+  'Trademark Filing',
+];
+
+// partnership
+export const partnershipBasic = [
+  'Partnership Deed',
+  'Stamp Paper Purchase 1',
+  'GST Registration',
+  'LEDGERS Accounting Software',
+  'GST eWay Bill Software',
+  'Business Current Account 2',
+  'Online Payment Gateway',
+];
+export const partnershipStandard = [
+  'Partnership Deed',
+  'Stamp Paper Purchase 1',
+  'GST Registration',
+  'LEDGERS Accounting Software',
+  'GST eWay Bill Software',
+  'Business Current Account 2',
+  'Online Payment Gateway',
+  '3 Month GST return filing',
+];
+export const partnershipPremium = [
+  'Partnership Deed',
+  'Stamp Paper Purchase 1',
+  'GST Registration',
+  'LEDGERS Accounting Software',
+  'GST eWay Bill Software',
+  'Business Current Account 2',
+  'Online Payment Gateway',
+  '3 Month GST return filing',
+  'Trademark Filing',
+];
+
+// private
+export const privateBasic = [
+  '3 Class 2 Digital Signatures 1',
+  '2 Director Identification Numbers',
+  '1 RUN Name Approval 2',
+  '1 Lakh Authorized Capital 3',
+  'Incorporation Fee',
+  'Stamp Duty 4',
+  'Incorporation Certificate',
+  'ICICI Bank Current Account',
+  'Online Payment Gateway 5',
+  'GST Registration',
+  'ESI & PF Registration',
+  'PAN & TAN',
+  'Incorporation Kit',
+  'Hard-copy Share Certificates',
+  'Premium LEDGERS Software 6',
+  'GST eWay Bill Software',
+  'Commencement of Business Certificate',
+];
+export const privateStandard = [
+  '3 Class 2 Digital Signatures 1',
+  '2 Director Identification Numbers',
+  '1 RUN Name Approval 2',
+  '1 Lakh Authorized Capital 3',
+  'Incorporation Fee',
+  'Stamp Duty 4',
+  'Incorporation Certificate',
+  'ICICI Bank Current Account',
+  'Online Payment Gateway 5',
+  'GST Registration',
+  'ESI & PF Registration',
+  'PAN & TAN',
+  'Incorporation Kit',
+  'Hard-copy Share Certificates',
+  'Premium LEDGERS Software 6',
+  'GST eWay Bill Software',
+  'Commencement of Business Certificate',
+  'Bookkeeping',
+  'Financial Statement Preparation',
+  'Annual Report',
+  'Directors Report',
+  'Board Resolution Preparation',
+  'MCA Annual Return Filing',
+  'Income Tax Return Filing',
+  '1 Year Dedicated Compliance Manager Support',
+];
+export const privatePremium = [
+  '3 Class 2 Digital Signatures 1',
+  '2 Director Identification Numbers',
+  '1 RUN Name Approval 2',
+  '1 Lakh Authorized Capital 3',
+  'Incorporation Fee',
+  'Stamp Duty 4',
+  'Incorporation Certificate',
+  'ICICI Bank Current Account',
+  'Online Payment Gateway 5',
+  'GST Registration',
+  'ESI & PF Registration',
+  'PAN & TAN',
+  'Incorporation Kit',
+  'Hard-copy Share Certificates',
+  'Premium LEDGERS Software 6',
+  'GST eWay Bill Software',
+  'Commencement of Business Certificate',
+  'Bookkeeping',
+  'Financial Statement Preparation',
+  'Annual Report',
+  'Directors Report',
+  'Board Resolution Preparation',
+  'MCA Annual Return Filing',
+  'Income Tax Return Filing',
+  '1 Year Dedicated Compliance Manager',
+  'Support',
+  '6 Months GST Return Filing',
+  'Udyog Aadhar Registration',
+  'Trademark Filing',
+];
+
+// public
+export const publicBasic = [
+  '8 Class 2 Digital Signatures 1',
+  '3 Director Identification Numbers',
+  '1 RUN Name Approval 2',
+  'Upto 10 Lakhs Authorized Capital 3',
+  'Incorporation Fee',
+  'Stamp Duty 4',
+  'Incorporation Certificate',
+  'ICICI Bank Current Account',
+  'Online Payment Gateway 5',
+  'PAN & TAN',
+  '50+ Document Formats',
+  'Incorporation Kit',
+  'Hard-copy Share Certificates',
+  'GST Registration',
+  'Premium LEDGERS Accounting Software 6',
+  'GST eWay Bill Software',
+];
+export const publicStandard = [
+  '8 Class 2 Digital Signatures 1',
+  '3 Director Identification Numbers',
+  '1 RUN Name Approval 2',
+  'Upto 10 Lakhs Authorized Capital 3',
+  'Incorporation Fee',
+  'Stamp Duty 4',
+  'Incorporation Certificate',
+  'ICICI Bank Current Account',
+  'Online Payment Gateway 5',
+  'PAN & TAN',
+  '50+ Document Formats',
+  'Incorporation Kit',
+  'Hard-copy Share Certificates',
+  'GST Registration',
+  'Premium LEDGERS Accounting Software 6',
+  'GST eWay Bill Software',
+  'Commencement of Business Certificate',
+  'Bookkeeping',
+  'Financial Statement Preparation',
+  'Annual Report',
+  'Directors Report',
+  'Board Resolution Preparation',
+  'MCA Annual Return Filing',
+  'Income Tax Return Filing',
+  '1 Year Dedicated Compliance Manager Support',
+];
+export const publicPremium = [
+  '8 Class 2 Digital Signatures 1',
+  '3 Director Identification Numbers',
+  '1 RUN Name Approval 2',
+  'Upto 10 Lakhs Authorized Capital 3',
+  'Incorporation Fee',
+  'Stamp Duty 4',
+  'Incorporation Certificate',
+  'ICICI Bank Current Account',
+  'Online Payment Gateway 5',
+  'PAN & TAN',
+  '50+ Document Formats',
+  'Incorporation Kit',
+  'Hard-copy Share Certificates',
+  'GST Registration',
+  'Premium LEDGERS Accounting Software 6',
+  'GST eWay Bill Software',
+  'Commencement of Business Certificate',
+  'Bookkeeping',
+  'Financial Statement Preparation',
+  'Annual Report',
+  'Directors Report',
+  'Board Resolution Preparation',
+  'MCA Annual Return Filing',
+  'Income Tax Return Filing',
+  '1 Year Dedicated Compliance Manager Support',
+  '1 Year GST Return Filing (GSTR-3B or GSTR-1)',
+  'Udyog Aadhar Registration',
+  'Trademark Registration',
+];
+
+// llp
+export const llpBasic = [
+  '2 Class 2 Digital Signature 1',
+  '2 Designated Partner Identification',
+  'Number (DPIN)',
+  'LLP Name Approval 2',
+  'LLP Deed Drafting',
+  'Incorporation Fees',
+  '1 Lakh Capital',
+  'Incorporation Certificate',
+  'LLP Incorporation Kit',
+  'PAN & TAN',
+  '50+ Document Formats',
+  'ICICI Bank Current Account',
+  'Online Payment Gateway 3',
+  'GST Registration',
+  'LEDGERS Accounting Software 4',
+  'GST eWay Bill Software',
+];
+export const llpStandard = [
+  '2 Class 2 Digital Signature 1',
+  '2 Designated Partner Identification',
+  'Number (DPIN)',
+  'LLP Name Approval 2',
+  'LLP Deed Drafting',
+  'Incorporation Fees',
+  '1 Lakh Capital',
+  'Incorporation Certificate',
+  'LLP Incorporation Kit',
+  'PAN & TAN',
+  '50+ Document Formats',
+  'ICICI Bank Current Account',
+  'Online Payment Gateway 3',
+  'GST Registration',
+  'LEDGERS Accounting Software 4',
+  'GST eWay Bill Software',
+  'Bookkeeping',
+  'Financial Statement',
+  'Preparation',
+  'Form 8 Filing',
+  'Form 11 Filing',
+  'LLP Income Tax Filing',
+];
+export const llpPremium = [
+  '2 Class 2 Digital Signature 1',
+  '2 Designated Partner Identification',
+  'Number (DPIN)',
+  'LLP Name Approval 2',
+  'LLP Deed Drafting',
+  'Incorporation Fees',
+  '1 Lakh Capital',
+  'Incorporation Certificate',
+  'LLP Incorporation Kit',
+  'PAN & TAN',
+  '50+ Document Formats',
+  'ICICI Bank Current Account',
+  'Online Payment Gateway 3',
+  'GST Registration',
+  'LEDGERS Accounting Software 4',
+  'GST eWay Bill Software',
+  'Bookkeeping',
+  'Financial Statement',
+  'Preparation',
+  'Form 8 Filing',
+  'Form 11 Filing',
+  'LLP Income Tax Filing',
+  '12 GST Return Filing (GSTR-1 or 3B)',
+  'Udyog Aadhaar Registration',
+  'Trademark Filing',
+];
+
+// copyright
+export const copyrightBasic = [
+  'Copyright registration for logos, books, periodicals and magazines.',
+];
+export const copyrightStandard = [
+  'Copyright registration for videos, audio recording and cinematography films.',
+];
+export const copyrightPremium = [
+  'Copyright registration for logos, books, periodicals, magazines,videos, audio recording, cinematography films with trademark registration.',
 ];

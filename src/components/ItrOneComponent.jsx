@@ -1,6 +1,6 @@
 import React from 'react';
 import { Layout, Row, Col, Typography, List, Collapse, Anchor } from 'antd';
-// import PricingComponent from './PricingComponent';
+import PricingComponent from './PricingComponent';
 import itrOneEligibility from '../assets/itrOne-eligibility.svg';
 import itrOneIneligibility from '../assets/itrOne-ineligibility.svg';
 import {
@@ -9,11 +9,7 @@ import {
   CheckCircleFilled,
 } from '@ant-design/icons';
 // import TableComponent from './TableComponent';
-// import {
-//   gstReturnBasic,
-//   gstReturnStandard,
-//   gstReturnPremium,
-// } from './PricingDetails';
+import { itrOneBasic, itrOneStandard, itrOnePremium } from './PricingDetails';
 
 const ItrOneComponent = () => {
   const tab1 = [
@@ -63,7 +59,7 @@ const ItrOneComponent = () => {
             <Col className='ant-col-md-8 ant-col-lg-6'>
               <Anchor className='gst-tab-link'>
                 <Link href='#itrOne-filing' title='Income Tax Return - 1' />
-                {/* <Link href='#gstr-pricing' title='Pricing' /> */}
+                <Link href='#itrOne-pricing' title='Pricing' />
                 <Link href='#itrOne-eligibility' title='Eligibility' />
                 <Link href='#itrOne-ineligibility' title='Ineligibility' />
                 <Link href='#itrOne-faq' title='FAQ' />
@@ -86,16 +82,16 @@ const ItrOneComponent = () => {
                 </Typography>
               </div>
               {/* Pricing info */}
-              {/* <div className='pricing service' id='gstr-pricing'>
+              <div className='pricing service' id='itrOne-pricing'>
                 <PricingComponent
-                  dataOne={gstReturnBasic}
-                  dataTwo={gstReturnStandard}
-                  dataThree={gstReturnPremium}
+                  dataOne={itrOneBasic}
+                  dataTwo={itrOneStandard}
+                  dataThree={itrOnePremium}
                   basic='2899'
                   standard='4899'
                   premium='6899'
                 />
-              </div> */}
+              </div>
               {/* itrOne eligibility */}
               <div
                 className='itrOne-eligibility service'

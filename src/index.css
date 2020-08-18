@@ -45,7 +45,7 @@ a {
 }
 
 .ant-menu-inline {
-  margin-top: 24px;
+  margin-top: 32px;
 }
 .ant-drawer-close {
   right: 20px;
@@ -73,6 +73,12 @@ a {
   align-items: center;
   margin: 0 auto;
   justify-content: space-between;
+}
+
+.banner-container .banner-tagline,
+.banner-para,
+.banner-img {
+  opacity: 0;
 }
 
 h1.ant-typography {
@@ -247,6 +253,10 @@ img {
   padding: 16px;
 }
 
+.pricing .ant-card .ant-statistic-content {
+  font-size: 32px;
+}
+
 .pricing .ant-statistic-title,
 .ant-statistic-content-value {
   color: #fff;
@@ -314,20 +324,26 @@ img {
 }
 
 .service {
-  margin: 24px 0;
+  margin: 0 0 24px 0;
 }
 
 .rupees {
   width: 14px;
 }
 
-@media screen and (max-width: 995px) {
+@media screen and (max-width: 1220px) {
   .navbar {
     display: none;
   }
   .action {
     display: none;
   }
+  .collapse-menu {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 995px) {
   .collapse-menu {
     display: block;
   }
