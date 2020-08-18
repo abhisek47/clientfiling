@@ -75,12 +75,6 @@ a {
   justify-content: space-between;
 }
 
-.banner-container .banner-tagline,
-.banner-para,
-.banner-img {
-  opacity: 0;
-}
-
 h1.ant-typography {
   font-family: 'Alegreya Sans';
 }
@@ -348,7 +342,7 @@ img {
     display: block;
   }
   .ant-layout-header {
-    padding: 0 30px;
+    padding: 0 20px;
   }
   h1.ant-typography {
     font-size: 32px;

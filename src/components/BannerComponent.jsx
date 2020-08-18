@@ -32,7 +32,6 @@ const BannerComponent = ({ head, para, btn, img }) => {
                     <img src={src} alt='banner' style={style} />
                   )}
                 />
-                {/* <img src={img} alt='banner' /> */}
               </Col>
             </Row>
           </div>

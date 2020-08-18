@@ -46,7 +46,7 @@ class FooterComponent extends Component {
             <Footer className='footer-top'>
               <Row gutter={16} style={{ alignItems: 'flex-start' }}>
                 {footerHead.map((footer) => (
-                  <Col className='ant-col-sm-12 ant-col-lg-4' key={footer.id}>
+                  <Col className='ant-col-sm-24  ant-col-lg-4' key={footer.id}>
                     <div className='footer-content'>
                       <Typography>
                         <Paragraph strong level={4}>
