@@ -1,24 +1,28 @@
 import React, { Component } from 'react';
 import HeaderComponent from '../components/HeaderComponent';
-import BannerComponent from '../components/BannerComponent';
 import FooterComponent from '../components/FooterComponent';
-import itrThree from '../assets/itrThree.svg';
+import model from '../assets/model_5.jpg';
 import BreadcrumbComponent from '../components/BreadcrumbComponent';
 import ItrThreeComponent from '../components/ItrThreeComponent';
+import ServiceBannerComponent from '../components/ServiceBanner';
 
 class ItrThreePage extends Component {
-  componentDidMount() {
-    window.scrollTo(0, 0);
-  }
   render() {
+    const services = [
+      'Income tax return filing for persons having capital gains.',
+      'Required Timing - 2 days',
+      'Completely Online – No need to visit office',
+    ];
     return (
       <React.Fragment>
         <HeaderComponent />
-        <BannerComponent
+        <ServiceBannerComponent
           head='Income Tax Return - 3'
           para='Register for your Company. A GST registration is a key business identification number which mandatory for export from India or Import to India.'
           btn='Register now'
-          img={itrThree}
+          img={model}
+          tagline='Get your ITR-3 filing @₹ 3,300 excluding GST'
+          services={services}
         />
         <div className='container'>
           <BreadcrumbComponent title='Income Tax Return - 3' />

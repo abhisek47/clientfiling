@@ -19,7 +19,7 @@ class StatsComponent extends Component {
               <Row gutter={16}>
                 <Col className='ant-col-sm-24 ant-col-md-6'>
                   <Card>
-                    <Title>
+                    <Title className='animate__animated animate__zoomIn animate__delay-1s'>
                       <NotificationFilled style={{ color: '#2f54eb' }} />
                     </Title>
                     <Paragraph>Company Established</Paragraph>
@@ -30,7 +30,7 @@ class StatsComponent extends Component {
                 </Col>
                 <Col className='ant-col-sm-24 ant-col-md-6'>
                   <Card>
-                    <Title>
+                    <Title className='animate__animated animate__zoomIn animate__delay-1s'>
                       <BulbFilled style={{ color: '#faad14' }} />
                     </Title>
                     <Paragraph>Staff Members</Paragraph>
@@ -41,7 +41,7 @@ class StatsComponent extends Component {
                 </Col>
                 <Col className='ant-col-sm-24 ant-col-md-6'>
                   <Card>
-                    <Title>
+                    <Title className='animate__animated animate__zoomIn animate__delay-1s'>
                       <HomeFilled style={{ color: '#52c41a' }} />
                     </Title>
                     <Paragraph>Offices Available</Paragraph>
@@ -52,7 +52,7 @@ class StatsComponent extends Component {
                 </Col>
                 <Col className='ant-col-sm-24 ant-col-md-6'>
                   <Card>
-                    <Title>
+                    <Title className='animate__animated animate__zoomIn animate__delay-1s'>
                       <SmileFilled style={{ color: '#ff7a45' }} />
                     </Title>
                     <Paragraph>Happy Clientele</Paragraph>

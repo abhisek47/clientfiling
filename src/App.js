@@ -1,13 +1,15 @@
-import React from 'react';
+import React, { Component } from 'react';
 import './App.css';
 import Routes from './routes/Routes';
 
-function App() {
-  return (
-    <React.Fragment>
-      <Routes />
-    </React.Fragment>
-  );
+class App extends Component {
+  render() {
+    return (
+      <React.Fragment>
+        <Routes />
+      </React.Fragment>
+    );
+  }
 }
 
 export default App;

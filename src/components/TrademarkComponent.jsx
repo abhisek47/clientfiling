@@ -111,9 +111,9 @@ const TrademarkComponent = () => {
                   dataOne={trademarkBasic}
                   dataTwo={trademarkStandard}
                   dataThree={trademarkPremium}
-                  basic='2899'
-                  standard='4899'
-                  premium='6899'
+                  basic='6490'
+                  standard='6490'
+                  premium='11988'
                 />
               </div>
               {/* #trademark eligibility */}

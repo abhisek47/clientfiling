@@ -8,14 +8,18 @@ const BannerComponent = ({ head, para, btn, img }) => {
   return (
     <React.Fragment>
       <Layout>
-        <Content>
+        <Content style={{ background: '#D8EFEF' }}>
           <div className='banner-container'>
             <Row gutter={16} align='middle'>
               <Col className='ant-col-sm-24 ant-col-md-12'>
                 <Typography>
-                  <Title>{head}</Title>
-                  <Text strong>{para}</Text>
-                  <div className='get-btn'>
+                  <div className='animate__animated animate__fadeInUp animate__delay-0.4s'>
+                    <Title>{head}</Title>
+                  </div>
+                  <div className='animate__animated animate__fadeInUp animate__delay-0.4s'>
+                    <Text strong>{para}</Text>
+                  </div>
+                  <div className='get-btn animate__animated  animate__fadeIn animate__delay-1s'>
                     <Button size='large' type='primary'>
                       {btn}
                     </Button>

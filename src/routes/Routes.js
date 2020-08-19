@@ -9,12 +9,14 @@ import ItrTwoPage from '../pages/ItrTwoPage';
 import ItrThreePage from '../pages/ItrThreePage';
 import TrademarkPage from '../pages/TrademarkPage';
 import TdrenewalPage from '../pages/TdrenewalPage';
+import ScrollToTop from '../components/ScrollToTop';
 
 export class Routes extends Component {
   render() {
     return (
       <React.Fragment>
         <Router>
+          <ScrollToTop />
           <Switch>
             <Route exact path='/' component={HomePage} />
             <Route exact path='/gst' component={GstPage} />

@@ -1,24 +1,28 @@
 import React, { Component } from 'react';
 import HeaderComponent from '../components/HeaderComponent';
-import BannerComponent from '../components/BannerComponent';
 import FooterComponent from '../components/FooterComponent';
-import itrOne from '../assets/itrOne.svg';
+import model from '../assets/model_3.jpg';
 import BreadcrumbComponent from '../components/BreadcrumbComponent';
 import ItrOneComponent from '../components/ItrOneComponent';
+import ServiceBannerComponent from '../components/ServiceBanner';
 
 class ItrOnePage extends Component {
-  componentDidMount() {
-    window.scrollTo(0, 0);
-  }
   render() {
+    const services = [
+      'Income tax return filing for an individual with salary income of less than Rs.5 lakhs.',
+      'Required Timing - 2 days',
+      'Completely Online – No need to visit office',
+    ];
     return (
       <React.Fragment>
         <HeaderComponent />
-        <BannerComponent
+        <ServiceBannerComponent
           head='Income Tax Return - 1'
           para='Register for your Company. A GST registration is a key business identification number which mandatory for export from India or Import to India.'
           btn='Register now'
-          img={itrOne}
+          img={model}
+          tagline='Get your ITR-1 filing @₹ 700 excluding GST'
+          services={services}
         />
         <div className='container'>
           <BreadcrumbComponent title='Income Tax Return - 1' />

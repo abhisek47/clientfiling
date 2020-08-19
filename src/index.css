@@ -19,7 +19,7 @@ a {
   display: flex;
   justify-content: space-between;
   /* background: #fff; */
-  border-bottom: 1px solid #f0f0f0;
+  /* border-bottom: 1px solid #f0f0f0; */
 }
 
 .navbar .ant-menu {
@@ -75,6 +75,15 @@ a {
   justify-content: space-between;
 }
 
+.service-container {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  padding: 24px 0;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
 h1.ant-typography {
   font-family: 'Alegreya Sans';
 }
@@ -109,7 +118,7 @@ img {
 .statistic {
   width: 100%;
   padding: 24px 0;
-  background-color: #f0f5ff;
+  /* background-color: #f0f5ff; */
 }
 
 .statistic .ant-card {
@@ -325,6 +334,24 @@ img {
   width: 14px;
 }
 
+.rating .ant-rate-star:not(:last-child) {
+  margin: 5px;
+}
+
+.rating h2.ant-typography,
+.ant-typography h2 {
+  margin: 0;
+}
+
+.rating .ant-rate-star {
+  padding: 0;
+  margin: 0;
+}
+
+/* .login-form .ant-card-body {
+  padding: 5px 24px;
+} */
+
 @media screen and (max-width: 1220px) {
   .navbar {
     display: none;
@@ -351,7 +378,7 @@ img {
   .banner-img {
     width: 300px;
   }
-  .trademark-docs,
+  .trademark-docs img,
   .tmrenewal-docs img {
     display: none;
   }

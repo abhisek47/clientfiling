@@ -7,12 +7,9 @@ import QuotesComponent from '../components/QuotesComponent';
 import SupportComponent from '../components/SupportComponent';
 import FaqComponent from '../components/FaqComponent';
 import FooterComponent from '../components/FooterComponent';
-import banner from '../assets/banner.svg';
+import banner from '../assets/banner2.png';
 
 export class HomePage extends Component {
-  componentDidMount() {
-    window.scrollTo(0, 0);
-  }
   render() {
     return (
       <React.Fragment>

@@ -1,24 +1,30 @@
 import React, { Component } from 'react';
 import HeaderComponent from '../components/HeaderComponent';
-import BannerComponent from '../components/BannerComponent';
 import FooterComponent from '../components/FooterComponent';
-import gst from '../assets/gst.svg';
+import model from '../assets/model_1.jpg';
 import GstComponent from '../components/GstComponent';
 import BreadcrumbComponent from '../components/BreadcrumbComponent';
+import ServiceBannerComponent from '../components/ServiceBanner';
 
 class GstPage extends Component {
-  componentDidMount() {
-    window.scrollTo(0, 0);
-  }
   render() {
+    const services = [
+      'Filing of Application for GST Registration',
+      'Secure GST Identification Number',
+      'Required Timing - 2 days',
+      'Completely Online – No need to visit office',
+      'CA Assisted GST Filing for all your GST needs',
+    ];
     return (
       <React.Fragment>
         <HeaderComponent />
-        <BannerComponent
-          head='GST Registration'
+        <ServiceBannerComponent
+          head='GST Registration Online'
           para='Register for your Company. A GST registration is a key business identification number which mandatory for export from India or Import to India.'
           btn='Register now'
-          img={gst}
+          img={model}
+          tagline='Get your company registered under GST @₹ 3,500 Only'
+          services={services}
         />
         <div className='container'>
           <BreadcrumbComponent title='GST Registration' />

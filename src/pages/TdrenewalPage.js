@@ -1,24 +1,28 @@
 import React, { Component } from 'react';
 import HeaderComponent from '../components/HeaderComponent';
-import BannerComponent from '../components/BannerComponent';
 import FooterComponent from '../components/FooterComponent';
-import trademarkRenewal from '../assets/trademark-renewal.svg';
+import model from '../assets/model_7.jpg';
 import BreadcrumbComponent from '../components/BreadcrumbComponent';
 import TdrenewalComponent from '../components/TdrenewalComponent';
+import ServiceBannerComponent from '../components/ServiceBanner';
 
 class ItrThreePage extends Component {
-  componentDidMount() {
-    window.scrollTo(0, 0);
-  }
   render() {
+    const services = [
+      'Trademark filing under one class for proprietorship and small enterprises. Inclusive of government fee and taxes.',
+      'Required Timing - 10 days',
+      'CA Assisted GST Filing for all your GST needs',
+    ];
     return (
       <React.Fragment>
         <HeaderComponent />
-        <BannerComponent
+        <ServiceBannerComponent
           head='Trademark Renewal'
           para='Register for your Company. A GST registration is a key business identification number which mandatory for export from India or Import to India.'
           btn='Register now'
-          img={trademarkRenewal}
+          img={model}
+          tagline='Get your Trademark Renewed @₹ 2,000 excluding GST'
+          services={services}
         />
         <div className='container'>
           <BreadcrumbComponent title='Trademark Renewal' />

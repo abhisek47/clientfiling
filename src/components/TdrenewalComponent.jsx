@@ -104,9 +104,9 @@ const TdrenewalComponent = () => {
                   dataOne={tmrenewBasic}
                   dataTwo={tmrenewStandard}
                   dataThree={tmrenewPremium}
-                  basic='5000'
-                  standard='7500'
-                  premium='10000'
+                  basic='2360'
+                  standard='2360'
+                  premium='2360'
                 />
               </div>
               {/* #trademark eligibility */}

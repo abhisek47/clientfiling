@@ -1,24 +1,30 @@
 import React, { Component } from 'react';
 import HeaderComponent from '../components/HeaderComponent';
-import BannerComponent from '../components/BannerComponent';
 import FooterComponent from '../components/FooterComponent';
-import gst from '../assets/gst.svg';
+import model from '../assets/model_2.jpg';
 import BreadcrumbComponent from '../components/BreadcrumbComponent';
 import GstreturnComponent from '../components/GstreturnComponent';
+import ServiceBannerComponent from '../components/ServiceBanner';
 
 class GstreturnPage extends Component {
-  componentDidMount() {
-    window.scrollTo(0, 0);
-  }
   render() {
+    const services = [
+      'Filing of Application for GST Return Filing',
+      'Required Timing - 2 days',
+      '3 months GST return filing',
+      'Completely Online – No need to visit office',
+      'Cloud backup for 10 years',
+    ];
     return (
       <React.Fragment>
         <HeaderComponent />
-        <BannerComponent
+        <ServiceBannerComponent
           head='GST Return Filing'
           para='Register for your Company. A GST registration is a key business identification number which mandatory for export from India or Import to India.'
           btn='Register now'
-          img={gst}
+          img={model}
+          tagline='Get your GST return filing @₹ 2,899 Only'
+          services={services}
         />
         <div className='container'>
           <BreadcrumbComponent title='GST Return' />

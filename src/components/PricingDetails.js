@@ -20,7 +20,7 @@ export const gstReturnBasic = [
   'Unlimited Invoices',
   'Unlimited Purchase Invoices',
   'Sales invoices',
-  'ITR reconciliation,filing',
+  'ITR reconciliation',
   'Filing of gst1 and gstr3b',
   'Importing data of any softwares',
   'Cloud backup for 10 years',
