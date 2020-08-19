@@ -1,10 +1,12 @@
 import React from 'react';
 import { Layout, Typography, Button, Row, Col } from 'antd';
+import AOS from 'aos';
 import ProgressiveImage from 'react-progressive-image-loading';
 
 const BannerComponent = ({ head, para, btn, img }) => {
   const { Content } = Layout;
   const { Title, Text } = Typography;
+  AOS.init();
   return (
     <React.Fragment>
       <Layout>
@@ -13,29 +15,33 @@ const BannerComponent = ({ head, para, btn, img }) => {
             <Row gutter={16} align='middle'>
               <Col className='ant-col-sm-24 ant-col-md-12'>
                 <Typography>
-                  <div className='animate__animated animate__fadeInUp animate__delay-0.4s'>
+                  <div data-aos='fade-up' data-aos-duration='1000'>
                     <Title>{head}</Title>
-                  </div>
-                  <div className='animate__animated animate__fadeInUp animate__delay-0.4s'>
                     <Text strong>{para}</Text>
-                  </div>
-                  <div className='get-btn animate__animated  animate__fadeIn animate__delay-1s'>
-                    <Button size='large' type='primary'>
-                      {btn}
-                    </Button>
+                    <div className='get-btn'>
+                      <Button size='large' type='primary'>
+                        {btn}
+                      </Button>
+                    </div>
                   </div>
                 </Typography>
               </Col>
               <Col className='ant-col-sm-24 ant-col-md-12'>
-                <ProgressiveImage
-                  preview={img}
-                  src={img}
-                  transitionTime={500}
-                  transitionFunction='ease'
-                  render={(src, style) => (
-                    <img src={src} alt='banner' style={style} />
-                  )}
-                />
+                <div
+                  data-aos='fade-zoom-in'
+                  data-aos-easing='ease-in-back'
+                  data-aos-delay='300'
+                  data-aos-offset='0'>
+                  <ProgressiveImage
+                    preview={img}
+                    src={img}
+                    transitionTime={500}
+                    transitionFunction='ease'
+                    render={(src, style) => (
+                      <img src={src} alt='banner' style={style} />
+                    )}
+                  />
+                </div>
               </Col>
             </Row>
           </div>
