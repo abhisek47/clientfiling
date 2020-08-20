@@ -14,6 +14,7 @@ import gstrCase from '../assets/gstrCases.svg';
 import { CaretRightOutlined, CheckCircleFilled } from '@ant-design/icons';
 // import OtherServicesComponent from './OtherServicesComponent';
 import TableComponent from './TableComponent';
+import gstrType from '../assets/gstr-type.svg';
 import {
   gstReturnBasic,
   gstReturnStandard,
@@ -205,14 +206,14 @@ const GstreturnComponent = () => {
               </div>
               {/* mandatory cases */}
               <div className='gst-cases service' id='gstr-cases'>
-                <Title>Who should file GSTR-9, the annual return ?</Title>
-                <Paragraph strong>
-                  All taxpayers/taxable persons registered under GST must file
-                  their GSTR 9. However, the following are NOT required to file
-                  GSTR 9:
-                </Paragraph>
                 <Row gutter={14} align='middle'>
                   <Col className='ant-col-lg-12 ant-col-sm-24'>
+                    <Title>Who should file GSTR-9, the annual return ?</Title>
+                    <Paragraph strong>
+                      All taxpayers/taxable persons registered under GST must
+                      file their GSTR 9. However, the following are NOT required
+                      to file GSTR 9:
+                    </Paragraph>
                     <List
                       dataSource={gstreturnCaseOne}
                       renderItem={(item) => (
@@ -240,14 +241,21 @@ const GstreturnComponent = () => {
                   columns={columns}
                   data={data}
                 />
-                <Card>
-                  {gstReturnCasesTwo.map((cases) => (
-                    <Col className='ant-col-lg-24' key={cases.id}>
-                      <Title level={4}>{cases.head}</Title>
-                      <Paragraph strong>{cases.case}</Paragraph>
-                    </Col>
-                  ))}
-                </Card>
+                <Row align='middle' gutter={16}>
+                  <Col className='ant-col-lg-12 ant-col-sm-24'>
+                    {gstReturnCasesTwo.map((cases) => (
+                      <Card key={cases.id}>
+                        <Col className='ant-col-lg-24'>
+                          <Title level={4}>{cases.head}</Title>
+                          <Paragraph strong>{cases.case}</Paragraph>
+                        </Col>
+                      </Card>
+                    ))}
+                  </Col>
+                  <Col className='ant-col-lg-12 ant-col-sm-24'>
+                    <img src={gstrType} alt='' />
+                  </Col>
+                </Row>
               </div>
               {/* faq */}
               <div className='gst-faq service' id='gst-faq'>

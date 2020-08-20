@@ -96,13 +96,13 @@ const ItrThreeComponent = () => {
               <div
                 className='itrThree-eligibility service'
                 id='itrThree-eligibility'>
-                <Title>Eligibility to file ITR-3</Title>
-                <Paragraph strong>
-                  ITR-3 is filed by the taxpayers whose income is up to Rs 50
-                  lakhs from below- mentioned sources:
-                </Paragraph>
                 <Row gutter={14} align='middle'>
                   <Col className='ant-col-lg-12 ant-col-sm-24'>
+                    <Title>Eligibility to file ITR-3</Title>
+                    <Paragraph strong>
+                      ITR-3 is filed by the taxpayers whose income is up to Rs
+                      50 lakhs from below- mentioned sources:
+                    </Paragraph>
                     <List
                       dataSource={eligibility}
                       renderItem={(item) => (
@@ -126,16 +126,20 @@ const ItrThreeComponent = () => {
               <div
                 className='itrThree-ineligibility service'
                 id='itrThree-ineligibility'>
-                <Title>Ineligibility to file ITR-3</Title>
-                <Paragraph strong>
-                  ITR-3 is filed by the taxpayers whose income is up to Rs 50
-                  lakhs from below- mentioned sources:
-                </Paragraph>
                 <Row gutter={14} align='middle'>
                   <Col className='ant-col-lg-12 ant-col-sm-24'>
-                    <img src={itrThreeIneligibility} alt='gstr-cases' />
+                    <img
+                      src={itrThreeIneligibility}
+                      alt='gstr-cases'
+                      className='hide'
+                    />
                   </Col>
                   <Col className='ant-col-lg-12 ant-col-sm-24'>
+                    <Title>Ineligibility to file ITR-3</Title>
+                    <Paragraph strong>
+                      ITR-3 is filed by the taxpayers whose income is up to Rs
+                      50 lakhs from below- mentioned sources:
+                    </Paragraph>
                     <List
                       dataSource={ineligibility}
                       renderItem={(item) => (

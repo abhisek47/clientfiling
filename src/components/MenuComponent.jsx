@@ -109,10 +109,21 @@ class MenuComponent extends React.Component {
           <Menu.Item key='22'>ISO Registration</Menu.Item>
         </SubMenu>
         <SubMenu key='sub5' icon={<CompassOutlined />} title='Payroll'>
-          <Menu.Item key='23'>PF Registration</Menu.Item>
-          <Menu.Item key='24'>PF Return Filing</Menu.Item>
-          <Menu.Item key='25'>ESI Registration</Menu.Item>
-          <Menu.Item key='26'>ESI Return Filing</Menu.Item>
+          <Menu.Item key='23'>
+            <Link to='/provident-fund'>PF Registration</Link>
+          </Menu.Item>
+          <Menu.Item key='24'>
+            <Link to='/provident-fund-return'>PF Return Filing</Link>
+          </Menu.Item>
+          <Menu.Item key='25'>
+            <Link to='/employees-state-insurance'></Link>
+            ESI Registration
+          </Menu.Item>
+          <Menu.Item key='26'>
+            <Link to='/employees-state-insurance-return'>
+              ESI Return Filing
+            </Link>
+          </Menu.Item>
         </SubMenu>
         <SubMenu key='sub6' icon={<AppstoreAddOutlined />} title='Others'>
           <Menu.Item key='27'>Society Registration</Menu.Item>

@@ -97,12 +97,12 @@ const GstComponent = () => {
               </div>
               {/* mandatory cases */}
               <div className='gst-cases service' id='gst-cases'>
-                <Title>When GST Registration is mandatory ?</Title>
-                <Paragraph strong>
-                  In below all cases registration is mandatory .
-                </Paragraph>
                 <Row gutter={14} align='middle'>
                   <Col className='ant-col-lg-12 ant-col-sm-24'>
+                    <Title>When GST Registration is mandatory ?</Title>
+                    <Paragraph strong>
+                      In below all cases registration is mandatory .
+                    </Paragraph>
                     <List
                       dataSource={gstCases}
                       renderItem={(item) => (

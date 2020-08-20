@@ -113,15 +113,15 @@ const TdrenewalComponent = () => {
               <div
                 className='tmrenewal-eligibility service'
                 id='tmrenewal-eligibility'>
-                <Title>
-                  Trademark lasts for 10 years and after the expiry of 10 years
-                  period it may lapse,if not renewed.
-                </Title>
-                <Paragraph strong>
-                  For renewal, you need to fill a form (TM-12).
-                </Paragraph>
                 <Row gutter={14} align='middle'>
                   <Col className='ant-col-lg-12 ant-col-sm-24'>
+                    <Title>
+                      Trademark lasts for 10 years and after the expiry of 10
+                      years period it may lapse,if not renewed.
+                    </Title>
+                    <Paragraph strong>
+                      For renewal, you need to fill a form (TM-12).
+                    </Paragraph>
                     <List
                       dataSource={eligibility}
                       renderItem={(item) => (
@@ -145,7 +145,11 @@ const TdrenewalComponent = () => {
               <div className='tmrenewal-docs service' id='tmrenewal-docs'>
                 <Row gutter={14} align='middle'>
                   <Col className='ant-col-lg-12 ant-col-sm-24'>
-                    <img src={tdrenewalDocs} alt='gstr-cases' />
+                    <img
+                      src={tdrenewalDocs}
+                      alt='gstr-cases'
+                      className='hide'
+                    />
                   </Col>
                   <Col className='ant-col-lg-12 ant-col-sm-24'>
                     <DocumentComponent

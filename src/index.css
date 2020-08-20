@@ -144,6 +144,7 @@ img {
 
 .quotes {
   background: #f0f5ff;
+  padding: 16px 0;
 }
 
 .quotes .ant-typography {
@@ -348,9 +349,42 @@ img {
   margin: 0;
 }
 
-/* .login-form .ant-card-body {
-  padding: 5px 24px;
-} */
+.owl-nav {
+  text-align: right;
+  margin: 0 12px;
+}
+
+.owl-prev span {
+  font-size: 32px;
+  padding: 0 10px;
+}
+
+.owl-next span {
+  font-size: 32px;
+  padding: 0 10px;
+}
+
+button:focus,
+button:active {
+  outline: none;
+  border: none;
+}
+
+.pf-type {
+  margin-top: 48px;
+}
+
+.pf-employee .slick-dots {
+  bottom: -10;
+}
+
+.pf-employee .ant-card {
+  height: auto;
+}
+
+.ant-timeline {
+  margin: 32px 0;
+}
 
 @media screen and (max-width: 1220px) {
   .navbar {
@@ -361,6 +395,18 @@ img {
   }
   .collapse-menu {
     display: block;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .service-container {
+    width: 80%;
+  }
+  .banner-container {
+    width: 80%;
+  }
+  .container {
+    width: 80%;
   }
 }
 
@@ -382,10 +428,16 @@ img {
   .tmrenewal-docs img {
     display: none;
   }
+  .hide {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 767px) {
   .gst-tab-link {
     display: none;
+  }
+  .owl-nav {
+    text-align: center;
   }
 }

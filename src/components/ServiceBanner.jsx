@@ -36,7 +36,7 @@ const ServiceBannerComponent = ({
               </Col>
               <Col className='ant-col-sm-24 ant-col-md-8'>
                 <Typography style={{ margin: '5px 12px' }}>
-                  <Title level={2}>{head}</Title>
+                  <Title level={3}>{head}</Title>
                   <RatingComponent />
                   <List
                     dataSource={services}

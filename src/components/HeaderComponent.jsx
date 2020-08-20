@@ -93,10 +93,20 @@ class HeaderComponent extends Component {
                   <Menu.Item key='setting:22'>ISO Registration</Menu.Item>
                 </SubMenu>
                 <SubMenu title='Payroll'>
-                  <Menu.Item key='setting:23'>PF Registration</Menu.Item>
+                  <Menu.Item key='setting:23'>
+                    <Link to='/provident-fund'>PF Registration</Link>
+                  </Menu.Item>
                   <Menu.Item key='setting:24'>PF Return Filing</Menu.Item>
-                  <Menu.Item key='setting:25'>ESI Registration</Menu.Item>
-                  <Menu.Item key='setting:26'>ESI Return Filing</Menu.Item>
+                  <Menu.Item key='setting:25'>
+                    <Link to='/employees-state-insurance'>
+                      ESI Registration
+                    </Link>
+                  </Menu.Item>
+                  <Menu.Item key='setting:26'>
+                    <Link to='/employees-state-insurance-return'>
+                      ESI Return Filing
+                    </Link>
+                  </Menu.Item>
                 </SubMenu>
                 <SubMenu title='Others'>
                   <Menu.Item key='setting:27'>Society Registration</Menu.Item>
