@@ -120,10 +120,10 @@ const esiReturnComponent = () => {
             <Col className='ant-col-md-8 ant-col-lg-6'>
               <Anchor className='gst-tab-link'>
                 <Link href='#esiReturn-reg' title='ESI Return' />
-                <Link href='#esiReturn-pricing' title='Pricing' />
                 <Link href='#esiReturn-process' title='Process' />
                 <Link href='#esiReturn-docs' title='Documents required' />
                 <Link href='#esiReturn-steps' title='Steps' />
+                <Link href='#esiReturn-pricing' title='Pricing' />
                 <Link href='#esiReturn-faq' title='FAQ' />
               </Anchor>
             </Col>
@@ -147,17 +147,6 @@ const esiReturnComponent = () => {
                     1.75%, thus making a total of 6.5%.
                   </Paragraph>
                 </Typography>
-              </div>
-              {/* Pricing info */}
-              <div className='pricing service' id='esiReturn-pricing'>
-                <PricingComponent
-                  dataOne={esiReturnBasic}
-                  dataTwo={esiReturnStandard}
-                  dataThree={esiReturnPremium}
-                  basic='799'
-                  standard='1499'
-                  premium='8499'
-                />
               </div>
               {/* ESI Return Process */}
               <div className='esiReturn-process service' id='esiReturn-process'>
@@ -226,6 +215,17 @@ const esiReturnComponent = () => {
                     </Col>
                   ))}
                 </Row>
+              </div>
+              {/* Pricing info */}
+              <div className='pricing service' id='esiReturn-pricing'>
+                <PricingComponent
+                  dataOne={esiReturnBasic}
+                  dataTwo={esiReturnStandard}
+                  dataThree={esiReturnPremium}
+                  basic='799'
+                  standard='1499'
+                  premium='8499'
+                />
               </div>
               {/* faq */}
               <div className='esiReturn-faq service' id='esiReturn-faq'>

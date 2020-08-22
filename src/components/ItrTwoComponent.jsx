@@ -57,9 +57,9 @@ const ItrTwoComponent = () => {
             <Col className='ant-col-md-8 ant-col-lg-6'>
               <Anchor className='gst-tab-link'>
                 <Link href='#itrTwo-filing' title='Income Tax Return - 2' />
-                <Link href='#itrTwo-pricing' title='Pricing' />
                 <Link href='#itrTwo-eligibility' title='Eligibility' />
                 <Link href='#itrTwo-ineligibility' title='Ineligibility' />
+                <Link href='#itrTwo-pricing' title='Pricing' />
                 <Link href='#itrTwo-faq' title='FAQ' />
               </Anchor>
             </Col>
@@ -80,17 +80,6 @@ const ItrTwoComponent = () => {
                     exceeding ₹ 50 Lakhs are also eligible to file itr2.
                   </Paragraph>
                 </Typography>
-              </div>
-              {/* Pricing info */}
-              <div className='pricing service' id='itrTwo-pricing'>
-                <PricingComponent
-                  dataOne={itrTwoBasic}
-                  dataTwo={itrTwoStandard}
-                  dataThree={itrTwoPremium}
-                  basic='2899'
-                  standard='4899'
-                  premium='6899'
-                />
               </div>
               {/* itrTwo eligibility */}
               <div
@@ -164,6 +153,17 @@ const ItrTwoComponent = () => {
                     </Paragraph>
                   </div>
                 </Row>
+              </div>
+              {/* Pricing info */}
+              <div className='pricing service' id='itrTwo-pricing'>
+                <PricingComponent
+                  dataOne={itrTwoBasic}
+                  dataTwo={itrTwoStandard}
+                  dataThree={itrTwoPremium}
+                  basic='2899'
+                  standard='4899'
+                  premium='6899'
+                />
               </div>
               {/* faq */}
               <div className='itrTwo-faq service' id='itrTwo-faq'>

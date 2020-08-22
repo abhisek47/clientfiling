@@ -70,9 +70,9 @@ const ItrFourComponent = () => {
             <Col className='ant-col-md-8 ant-col-lg-6'>
               <Anchor className='gst-tab-link'>
                 <Link href='#itrFour-filing' title='Income Tax Return - 4' />
-                <Link href='#itrFour-pricing' title='Pricing' />
                 <Link href='#itrFour-eligibility' title='Eligibility' />
                 <Link href='#itrFour-ineligibility' title='Ineligibility' />
+                <Link href='#itrFour-pricing' title='Pricing' />
                 <Link href='#itrFour-faq' title='FAQ' />
               </Anchor>
             </Col>
@@ -92,17 +92,6 @@ const ItrFourComponent = () => {
                     a company or has invested in Unlisted Equity Share
                   </Paragraph>
                 </Typography>
-              </div>
-              {/* Pricing info */}
-              <div className='pricing service' id='itrFour-pricing'>
-                <PricingComponent
-                  dataOne={itrFourBasic}
-                  dataTwo={itrFourStandard}
-                  dataThree={itrFourPremium}
-                  basic='3000'
-                  standard='3000'
-                  premium='3000'
-                />
               </div>
               {/* #itrFour eligibility */}
               <div
@@ -167,6 +156,17 @@ const ItrFourComponent = () => {
                     />
                   </Col>
                 </Row>
+              </div>
+              {/* Pricing info */}
+              <div className='pricing service' id='itrFour-pricing'>
+                <PricingComponent
+                  dataOne={itrFourBasic}
+                  dataTwo={itrFourStandard}
+                  dataThree={itrFourPremium}
+                  basic='3000'
+                  standard='3000'
+                  premium='3000'
+                />
               </div>
               {/* faq */}
               <div className='itrFour-faq service' id='itrFour-faq'>

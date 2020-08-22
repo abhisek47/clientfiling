@@ -49,9 +49,9 @@ const itrSixComponent = () => {
             <Col className='ant-col-md-8 ant-col-lg-6'>
               <Anchor className='gst-tab-link'>
                 <Link href='#itrSix-filing' title='Income Tax Return - 6' />
-                <Link href='#itrSix-pricing' title='Pricing' />
                 <Link href='#itrSix-eligibility' title='Eligibility' />
                 <Link href='#itrSix-ineligibility' title='Ineligibility' />
+                <Link href='#itrSix-pricing' title='Pricing' />
                 <Link href='#itrSix-faq' title='FAQ' />
               </Anchor>
             </Col>
@@ -69,17 +69,6 @@ const itrSixComponent = () => {
                     property that is held for charitable or religious purposes.
                   </Paragraph>
                 </Typography>
-              </div>
-              {/* Pricing info */}
-              <div className='pricing service' id='itrSix-pricing'>
-                <PricingComponent
-                  dataOne={itrSixBasic}
-                  dataTwo={itrSixStandard}
-                  dataThree={itrSixPremium}
-                  basic='5000'
-                  standard='5000'
-                  premium='5000'
-                />
               </div>
               {/* #itrSix eligibility */}
               <div
@@ -144,6 +133,17 @@ const itrSixComponent = () => {
                     />
                   </Col>
                 </Row>
+              </div>
+              {/* Pricing info */}
+              <div className='pricing service' id='itrSix-pricing'>
+                <PricingComponent
+                  dataOne={itrSixBasic}
+                  dataTwo={itrSixStandard}
+                  dataThree={itrSixPremium}
+                  basic='5000'
+                  standard='5000'
+                  premium='5000'
+                />
               </div>
               {/* faq */}
               <div className='itrSix-faq service' id='itrSix-faq'>

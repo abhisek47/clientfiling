@@ -65,9 +65,9 @@ const ItrFiveComponent = () => {
             <Col className='ant-col-md-8 ant-col-lg-6'>
               <Anchor className='gst-tab-link'>
                 <Link href='#itrFive-filing' title='Income Tax Return - 5' />
-                <Link href='#itrFive-pricing' title='Pricing' />
                 <Link href='#itrFive-eligibility' title='Eligibility' />
                 <Link href='#itrFive-ineligibility' title='Ineligibility' />
+                <Link href='#itrFive-pricing' title='Pricing' />
                 <Link href='#itrFive-faq' title='FAQ' />
               </Anchor>
             </Col>
@@ -86,17 +86,6 @@ const ItrFiveComponent = () => {
                     bonus, commission, etc.
                   </Paragraph>
                 </Typography>
-              </div>
-              {/* Pricing info */}
-              <div className='pricing service' id='itrFive-pricing'>
-                <PricingComponent
-                  dataOne={itrFiveBasic}
-                  dataTwo={itrFiveStandard}
-                  dataThree={itrFivePremium}
-                  basic='3000'
-                  standard='3000'
-                  premium='3000'
-                />
               </div>
               {/* #itrFive eligibility */}
               <div
@@ -161,6 +150,17 @@ const ItrFiveComponent = () => {
                     />
                   </Col>
                 </Row>
+              </div>
+              {/* Pricing info */}
+              <div className='pricing service' id='itrFive-pricing'>
+                <PricingComponent
+                  dataOne={itrFiveBasic}
+                  dataTwo={itrFiveStandard}
+                  dataThree={itrFivePremium}
+                  basic='3000'
+                  standard='3000'
+                  premium='3000'
+                />
               </div>
               {/* faq */}
               <div className='itrFive-faq service' id='itrFive-faq'>

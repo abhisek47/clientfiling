@@ -83,10 +83,10 @@ const TdrenewalComponent = () => {
             <Col className='ant-col-md-8 ant-col-lg-6'>
               <Anchor className='gst-tab-link'>
                 <Link href='#tmrenewal-filing' title='Trademark Renewal' />
-                <Link href='#tmrenewal-pricing' title='Pricing' />
                 <Link href='#tmrenewal-eligibility' title='Eligibility' />
                 <Link href='#tmrenewal-docs' title='Document Required' />
                 <Link href='#tmrenewal-proceduer' title='Procudure' />
+                <Link href='#tmrenewal-pricing' title='Pricing' />
                 <Link href='#tmrenewal-faq' title='FAQ' />
               </Anchor>
             </Col>
@@ -107,19 +107,6 @@ const TdrenewalComponent = () => {
                     proof is on others to try and disprove your ownership.
                   </Paragraph>
                 </Typography>
-              </div>
-              {/* Pricing info */}
-              <div
-                className='tmrenewal-pricing pricing service'
-                id='tmrenewal-pricing'>
-                <PricingComponent
-                  dataOne={tmrenewBasic}
-                  dataTwo={tmrenewStandard}
-                  dataThree={tmrenewPremium}
-                  basic='2360'
-                  standard='2360'
-                  premium='2360'
-                />
               </div>
               {/* #trademark eligibility */}
               <div
@@ -189,6 +176,19 @@ const TdrenewalComponent = () => {
                   </Text>
                   Renew your trademark without any change
                 </Paragraph>
+              </div>
+              {/* Pricing info */}
+              <div
+                className='tmrenewal-pricing pricing service'
+                id='tmrenewal-pricing'>
+                <PricingComponent
+                  dataOne={tmrenewBasic}
+                  dataTwo={tmrenewStandard}
+                  dataThree={tmrenewPremium}
+                  basic='2360'
+                  standard='2360'
+                  premium='2360'
+                />
               </div>
               {/* faq */}
               <div className='tmrenewal-faq service' id='tmrenewal-faq'>

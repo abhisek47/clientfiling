@@ -90,10 +90,10 @@ const TrademarkComponent = () => {
             <Col className='ant-col-md-8 ant-col-lg-6'>
               <Anchor className='gst-tab-link'>
                 <Link href='#trademark-filing' title='Trademark Registration' />
-                <Link href='#trademark-pricing' title='Pricing' />
                 <Link href='#trademark-eligibility' title='Eligibility' />
                 <Link href='#trademark-docs' title='Document Required' />
                 <Link href='#trademark-benefit' title='Benefits' />
+                <Link href='#trademark-pricing' title='Pricing' />
                 <Link href='#trademark-faq' title='FAQ' />
               </Anchor>
             </Col>
@@ -116,17 +116,6 @@ const TrademarkComponent = () => {
                     of intellectual property.
                   </Paragraph>
                 </Typography>
-              </div>
-              {/* Pricing info */}
-              <div className='pricing service' id='trademark-pricing'>
-                <PricingComponent
-                  dataOne={trademarkBasic}
-                  dataTwo={trademarkStandard}
-                  dataThree={trademarkPremium}
-                  basic='6490'
-                  standard='6490'
-                  premium='11988'
-                />
               </div>
               {/* #trademark eligibility */}
               <div
@@ -243,6 +232,17 @@ const TrademarkComponent = () => {
                     </Card>
                   </Col>
                 </Row>
+              </div>
+              {/* Pricing info */}
+              <div className='pricing service' id='trademark-pricing'>
+                <PricingComponent
+                  dataOne={trademarkBasic}
+                  dataTwo={trademarkStandard}
+                  dataThree={trademarkPremium}
+                  basic='6490'
+                  standard='6490'
+                  premium='11988'
+                />
               </div>
               {/* faq */}
               <div className='trademark-faq service' id='trademark-faq'>

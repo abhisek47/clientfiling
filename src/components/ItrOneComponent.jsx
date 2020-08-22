@@ -59,9 +59,9 @@ const ItrOneComponent = () => {
             <Col className='ant-col-md-8 ant-col-lg-6'>
               <Anchor className='gst-tab-link'>
                 <Link href='#itrOne-filing' title='Income Tax Return - 1' />
-                <Link href='#itrOne-pricing' title='Pricing' />
                 <Link href='#itrOne-eligibility' title='Eligibility' />
                 <Link href='#itrOne-ineligibility' title='Ineligibility' />
+                <Link href='#itrOne-pricing' title='Pricing' />
                 <Link href='#itrOne-faq' title='FAQ' />
               </Anchor>
             </Col>
@@ -80,17 +80,6 @@ const ItrOneComponent = () => {
                     company or has invested in Unlisted Equity Shares).
                   </Paragraph>
                 </Typography>
-              </div>
-              {/* Pricing info */}
-              <div className='pricing service' id='itrOne-pricing'>
-                <PricingComponent
-                  dataOne={itrOneBasic}
-                  dataTwo={itrOneStandard}
-                  dataThree={itrOnePremium}
-                  basic='2899'
-                  standard='4899'
-                  premium='6899'
-                />
               </div>
               {/* itrOne eligibility */}
               <div
@@ -164,6 +153,17 @@ const ItrOneComponent = () => {
                     </Paragraph>
                   </div>
                 </Row>
+              </div>
+              {/* Pricing info */}
+              <div className='pricing service' id='itrOne-pricing'>
+                <PricingComponent
+                  dataOne={itrOneBasic}
+                  dataTwo={itrOneStandard}
+                  dataThree={itrOnePremium}
+                  basic='2899'
+                  standard='4899'
+                  premium='6899'
+                />
               </div>
               {/* faq */}
               <div className='itrOne-faq service' id='itrOne-faq'>

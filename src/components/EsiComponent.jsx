@@ -99,10 +99,10 @@ const EsiComponent = () => {
             <Col className='ant-col-md-8 ant-col-lg-6'>
               <Anchor className='gst-tab-link'>
                 <Link href='#esi-reg' title='ESI Registration' />
-                <Link href='#esi-pricing' title='Pricing' />
                 <Link href='#esi-benefits' title='Benefits' />
                 <Link href='#esi-docs' title='Documents required' />
                 <Link href='#esi-entities' title='Entities' />
+                <Link href='#esi-pricing' title='Pricing' />
                 <Link href='#esi-faq' title='FAQ' />
               </Anchor>
             </Col>
@@ -132,17 +132,6 @@ const EsiComponent = () => {
                     whose salary is less than Rs. 100/- per day.
                   </Paragraph>
                 </Typography>
-              </div>
-              {/* Pricing info */}
-              <div className='pricing service' id='esi-pricing'>
-                <PricingComponent
-                  dataOne={esiBasic}
-                  dataTwo={esiStandard}
-                  dataThree={esiPremium}
-                  basic='8000'
-                  standard='15000'
-                  premium='26000'
-                />
               </div>
               {/* mandatory cases */}
               <div className='esi-benefits service' id='esi-benefits'>
@@ -206,6 +195,17 @@ const EsiComponent = () => {
                     />
                   </Col>
                 </Row>
+              </div>
+              {/* Pricing info */}
+              <div className='pricing service' id='esi-pricing'>
+                <PricingComponent
+                  dataOne={esiBasic}
+                  dataTwo={esiStandard}
+                  dataThree={esiPremium}
+                  basic='8000'
+                  standard='15000'
+                  premium='26000'
+                />
               </div>
               {/* faq */}
               <div className='esi-faq service' id='esi-faq'>

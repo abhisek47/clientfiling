@@ -176,10 +176,10 @@ class PfComponent extends React.Component {
               <Col className='ant-col-md-8 ant-col-lg-6'>
                 <Anchor className='gst-tab-link'>
                   <Link href='#pf-filing' title='Provident Fund' />
-                  <Link href='#pf-pricing' title='Pricing' />
                   <Link href='#pf-docs' title='Document Required' />
                   <Link href='#pf-employee' title='Employee' />
                   <Link href='#pf-type' title='Registration Type' />
+                  <Link href='#pf-pricing' title='Pricing' />
                   <Link href='#pf-faq' title='FAQ' />
                 </Anchor>
               </Col>
@@ -196,17 +196,6 @@ class PfComponent extends React.Component {
                       team will help you to your company with EPFO
                     </Paragraph>
                   </Typography>
-                </div>
-                {/* Pricing info */}
-                <div className='pricing service' id='pf-pricing'>
-                  <PricingComponent
-                    dataOne={pfBasic}
-                    dataTwo={pfStandard}
-                    dataThree={pfPremium}
-                    basic='8000'
-                    standard='15000'
-                    premium='26000'
-                  />
                 </div>
                 {/* documents */}
                 <div className='pf-docs service' id='pf-docs'>
@@ -249,6 +238,17 @@ class PfComponent extends React.Component {
                       </Col>
                     ))}
                   </Row>
+                </div>
+                {/* Pricing info */}
+                <div className='pricing service' id='pf-pricing'>
+                  <PricingComponent
+                    dataOne={pfBasic}
+                    dataTwo={pfStandard}
+                    dataThree={pfPremium}
+                    basic='8000'
+                    standard='15000'
+                    premium='26000'
+                  />
                 </div>
                 {/* faq */}
                 <div className='pf-faq service' id='pf-faq'>

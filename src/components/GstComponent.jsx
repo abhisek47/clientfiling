@@ -80,9 +80,9 @@ const GstComponent = () => {
             <Col className='ant-col-md-8 ant-col-lg-6'>
               <Anchor className='gst-tab-link'>
                 <Link href='#gst-reg' title='GST Registration' />
-                <Link href='#gst-pricing' title='Pricing' />
                 <Link href='#gst-cases' title='Eligibility' />
                 <Link href='#gst-docs' title='Documents required' />
+                <Link href='#gst-pricing' title='Pricing' />
                 <Link href='#gst-faq' title='FAQ' />
               </Anchor>
             </Col>
@@ -105,17 +105,6 @@ const GstComponent = () => {
                     for GST registration.
                   </Paragraph>
                 </Typography>
-              </div>
-              {/* Pricing info */}
-              <div className='pricing service' id='gst-pricing'>
-                <PricingComponent
-                  dataOne={gstBasic}
-                  dataTwo={gstStandard}
-                  dataThree={gstPremium}
-                  basic='3500'
-                  standard='3500'
-                  premium='3500'
-                />
               </div>
               {/* mandatory cases */}
               <div className='gst-cases service' id='gst-cases'>
@@ -149,6 +138,17 @@ const GstComponent = () => {
                 <DocumentComponent
                   documents={GstDocument}
                   title='Documents required for GST registration'
+                />
+              </div>
+              {/* Pricing info */}
+              <div className='pricing service' id='gst-pricing'>
+                <PricingComponent
+                  dataOne={gstBasic}
+                  dataTwo={gstStandard}
+                  dataThree={gstPremium}
+                  basic='3500'
+                  standard='3500'
+                  premium='3500'
                 />
               </div>
               {/* faq */}

@@ -94,13 +94,13 @@ const IsoComponent = () => {
             <Col className='ant-col-md-8 ant-col-lg-6'>
               <Anchor className='gst-tab-link'>
                 <Link href='#iso-reg' title='ISO Registration' />
-                <Link href='#iso-pricing' title='Pricing' />
                 <Link href='#iso-Orgbenefits' title='Organisation Benefits' />
                 <Link href='#iso-Cusbenefits' title='Customer Benefits' />
                 <Link href='#iso-docs' title='Documents required' />
                 <Link href='#iso-eligibility' title='Eligibility' />
                 <Link href='#iso-ineligibility' title='Ineligibility' />
                 <Link href='#iso-advantages' title='Advantages' />
+                <Link href='#iso-pricing' title='Pricing' />
                 <Link href='#iso-faq' title='FAQ' />
               </Anchor>
             </Col>
@@ -122,17 +122,6 @@ const IsoComponent = () => {
                     improvement.
                   </Paragraph>
                 </Typography>
-              </div>
-              {/* Pricing info */}
-              <div className='pricing service' id='iso-pricing'>
-                <PricingComponent
-                  dataOne={isoBasic}
-                  dataTwo={isoStandard}
-                  dataThree={isoPremium}
-                  basic='6000'
-                  standard='6000'
-                  premium='6000'
-                />
               </div>
               {/* iso org  benefits */}
               <div className='iso-Orgbenefits service' id='iso-Orgbenefits'>
@@ -284,6 +273,17 @@ const IsoComponent = () => {
                     </Col>
                   ))}
                 </Row>
+              </div>
+              {/* Pricing info */}
+              <div className='pricing service' id='iso-pricing'>
+                <PricingComponent
+                  dataOne={isoBasic}
+                  dataTwo={isoStandard}
+                  dataThree={isoPremium}
+                  basic='6000'
+                  standard='6000'
+                  premium='6000'
+                />
               </div>
               {/* faq */}
               <div className='iso-faq service' id='iso-faq'>

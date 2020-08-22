@@ -99,8 +99,8 @@ const LlpComponent = () => {
             <Col className='ant-col-md-8 ant-col-lg-6'>
               <Anchor className='gst-tab-link'>
                 <Link href='#llp-reg' title='Limited Liability Partnership' />
-                <Link href='#llp-pricing' title='Pricing' />
                 <Link href='#llp-docs' title='Documents required' />
+                <Link href='#llp-pricing' title='Pricing' />
                 <Link href='#llp-faq' title='FAQ' />
               </Anchor>
             </Col>
@@ -122,6 +122,13 @@ const LlpComponent = () => {
                   </Paragraph>
                 </Typography>
               </div>
+              {/* documents */}
+              <div className='llp-docs service' id='llp-docs'>
+                <DocumentComponent
+                  documents={LlpDocument}
+                  title='Documents required for LLP registration'
+                />
+              </div>
               {/* Pricing info */}
               <div className='pricing service' id='llp-pricing'>
                 <PricingComponent
@@ -131,13 +138,6 @@ const LlpComponent = () => {
                   basic='11000'
                   standard='11000'
                   premium='11000'
-                />
-              </div>
-              {/* documents */}
-              <div className='llp-docs service' id='llp-docs'>
-                <DocumentComponent
-                  documents={LlpDocument}
-                  title='Documents required for LLP registration'
                 />
               </div>
               {/* faq */}

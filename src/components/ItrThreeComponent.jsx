@@ -59,9 +59,9 @@ const ItrThreeComponent = () => {
             <Col className='ant-col-md-8 ant-col-lg-6'>
               <Anchor className='gst-tab-link'>
                 <Link href='#itrThree-filing' title='Income Tax Return - 3' />
-                <Link href='#itrThree-pricing' title='Pricing' />
                 <Link href='#itrThree-eligibility' title='Eligibility' />
                 <Link href='#itrThree-ineligibility' title='Ineligibility' />
+                <Link href='#itrThree-pricing' title='Pricing' />
                 <Link href='#itrThree-faq' title='FAQ' />
               </Anchor>
             </Col>
@@ -80,17 +80,6 @@ const ItrThreeComponent = () => {
                     bonus, commission, etc.
                   </Paragraph>
                 </Typography>
-              </div>
-              {/* Pricing info */}
-              <div className='pricing service' id='itrThree-pricing'>
-                <PricingComponent
-                  dataOne={itrThreeBasic}
-                  dataTwo={itrThreeStandard}
-                  dataThree={itrThreePremium}
-                  basic='2899'
-                  standard='4899'
-                  premium='6899'
-                />
               </div>
               {/* #itrThree eligibility */}
               <div
@@ -164,6 +153,17 @@ const ItrThreeComponent = () => {
                     </Paragraph>
                   </div>
                 </Row>
+              </div>
+              {/* Pricing info */}
+              <div className='pricing service' id='itrThree-pricing'>
+                <PricingComponent
+                  dataOne={itrThreeBasic}
+                  dataTwo={itrThreeStandard}
+                  dataThree={itrThreePremium}
+                  basic='2899'
+                  standard='4899'
+                  premium='6899'
+                />
               </div>
               {/* faq */}
               <div className='itrThree-faq service' id='itrThree-faq'>

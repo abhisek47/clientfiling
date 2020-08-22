@@ -68,9 +68,9 @@ const ImportExportComponent = () => {
             <Col className='ant-col-md-8 ant-col-lg-6'>
               <Anchor className='gst-tab-link'>
                 <Link href='#iec-reg' title='Import Export Code' />
-                <Link href='#iec-pricing' title='Pricing' />
                 <Link href='#iec-cases' title='Eligibility' />
                 <Link href='#iec-docs' title='Documents required' />
+                <Link href='#iec-pricing' title='Pricing' />
                 <Link href='#iec-faq' title='FAQ' />
               </Anchor>
             </Col>
@@ -91,17 +91,6 @@ const ImportExportComponent = () => {
                     lifetime and no renewal is needed.
                   </Paragraph>
                 </Typography>
-              </div>
-              {/* Pricing info */}
-              <div className='pricing service' id='iec-pricing'>
-                <PricingComponent
-                  dataOne={iecBasic}
-                  dataTwo={iecStandard}
-                  dataThree={iecPremium}
-                  basic='3500'
-                  standard='3500'
-                  premium='3500'
-                />
               </div>
               {/* mandatory cases */}
               <div className='iec-cases service' id='iec-cases'>
@@ -135,6 +124,17 @@ const ImportExportComponent = () => {
                 <DocumentComponent
                   documents={iecDocument}
                   title='Documents required for Import Export registration'
+                />
+              </div>
+              {/* Pricing info */}
+              <div className='pricing service' id='iec-pricing'>
+                <PricingComponent
+                  dataOne={iecBasic}
+                  dataTwo={iecStandard}
+                  dataThree={iecPremium}
+                  basic='3500'
+                  standard='3500'
+                  premium='3500'
                 />
               </div>
               {/* faq */}

@@ -190,9 +190,9 @@ const GstreturnComponent = () => {
             <Col className='ant-col-md-8 ant-col-lg-6'>
               <Anchor className='gst-tab-link'>
                 <Link href='#gstr-filing' title='GST Return' />
-                <Link href='#gstr-pricing' title='Pricing' />
                 <Link href='#gstr-cases' title='Eligibility' />
                 <Link href='#gstr-type' title='GST Return Type' />
+                <Link href='#gstr-pricing' title='Pricing' />
                 <Link href='#gst-faq' title='FAQ' />
               </Anchor>
             </Col>
@@ -215,17 +215,6 @@ const GstreturnComponent = () => {
                     generate GST compliant invoices for free on ClientFiling.
                   </Paragraph>
                 </Typography>
-              </div>
-              {/* Pricing info */}
-              <div className='pricing service' id='gstr-pricing'>
-                <PricingComponent
-                  dataOne={gstReturnBasic}
-                  dataTwo={gstReturnStandard}
-                  dataThree={gstReturnPremium}
-                  basic='2899'
-                  standard='4899'
-                  premium='6899'
-                />
               </div>
               {/* mandatory cases */}
               <div className='gst-cases service' id='gstr-cases'>
@@ -279,6 +268,17 @@ const GstreturnComponent = () => {
                     <img src={gstrType} alt='' />
                   </Col>
                 </Row>
+              </div>
+              {/* Pricing info */}
+              <div className='pricing service' id='gstr-pricing'>
+                <PricingComponent
+                  dataOne={gstReturnBasic}
+                  dataTwo={gstReturnStandard}
+                  dataThree={gstReturnPremium}
+                  basic='2899'
+                  standard='4899'
+                  premium='6899'
+                />
               </div>
               {/* faq */}
               <div className='gst-faq service' id='gst-faq'>

@@ -47,8 +47,8 @@ const itrSevenComponent = () => {
             <Col className='ant-col-md-8 ant-col-lg-6'>
               <Anchor className='gst-tab-link'>
                 <Link href='#itrSeven-filing' title='Income Tax Return - 7' />
-                <Link href='#itrSeven-pricing' title='Pricing' />
                 <Link href='#itrSeven-eligibility' title='Eligibility' />
+                <Link href='#itrSeven-pricing' title='Pricing' />
                 <Link href='#itrSeven-faq' title='FAQ' />
               </Anchor>
             </Col>
@@ -67,17 +67,6 @@ const itrSevenComponent = () => {
                     bonus, commission, etc.
                   </Paragraph>
                 </Typography>
-              </div>
-              {/* Pricing info */}
-              <div className='pricing service' id='itrSeven-pricing'>
-                <PricingComponent
-                  dataOne={itrSevenBasic}
-                  dataTwo={itrSevenStandard}
-                  dataThree={itrSevenPremium}
-                  basic='5000'
-                  standard='5000'
-                  premium='5000'
-                />
               </div>
               {/* #itrSeven eligibility */}
               <div
@@ -139,6 +128,17 @@ const itrSevenComponent = () => {
                   </Col>
                 </Row>
               </div> */}
+              {/* Pricing info */}
+              <div className='pricing service' id='itrSeven-pricing'>
+                <PricingComponent
+                  dataOne={itrSevenBasic}
+                  dataTwo={itrSevenStandard}
+                  dataThree={itrSevenPremium}
+                  basic='5000'
+                  standard='5000'
+                  premium='5000'
+                />
+              </div>
               {/* faq */}
               <div className='itrSeven-faq service' id='itrSeven-faq'>
                 <Title className='faq-head'>Frequently Asked Questions</Title>

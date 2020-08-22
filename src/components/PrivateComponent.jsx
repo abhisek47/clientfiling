@@ -91,8 +91,8 @@ const PrivateComponent = () => {
             <Col className='ant-col-md-8 ant-col-lg-6'>
               <Anchor className='gst-tab-link'>
                 <Link href='#private-reg' title='Private Limited Company' />
-                <Link href='#private-pricing' title='Pricing' />
                 <Link href='#private-docs' title='Documents required' />
+                <Link href='#private-pricing' title='Pricing' />
                 <Link href='#private-faq' title='FAQ' />
               </Anchor>
             </Col>
@@ -114,6 +114,13 @@ const PrivateComponent = () => {
                   </Paragraph>
                 </Typography>
               </div>
+              {/* documents */}
+              <div className='private-docs service' id='private-docs'>
+                <DocumentComponent
+                  documents={GstDocument}
+                  title='Documents required for gst registration'
+                />
+              </div>
               {/* Pricing info */}
               <div className='pricing service' id='private-pricing'>
                 <PricingComponent
@@ -123,13 +130,6 @@ const PrivateComponent = () => {
                   basic='20000'
                   standard='20000'
                   premium='20000'
-                />
-              </div>
-              {/* documents */}
-              <div className='private-docs service' id='private-docs'>
-                <DocumentComponent
-                  documents={GstDocument}
-                  title='Documents required for gst registration'
                 />
               </div>
               {/* faq */}
