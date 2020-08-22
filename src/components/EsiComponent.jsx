@@ -11,21 +11,33 @@ const EsiComponent = () => {
   const tab1 = [
     {
       id: 1,
-      title: 'How to get a company registered ?',
+      title: 'Can I continue ESI after leaving job ?',
       details:
-        'Picking the right company structure for your business is as important as any other business-related activity. The right business structure will allow your enterprise to operate efficiently and meet your required business targets. In India, every business must register themselves as part of the mandatory legal compliance. Before we learn how to register a company, let’s try and understand the types of business structures in India.',
+        'Can the Insured Employees Continue the health cover even after resignation/retirement? Notice Period – It is a period from the time you officially submit your resignation till the time you are officially relieved from the services. Mandated by most of the companies, this tenure can go up from one month to three months.',
     },
     {
       id: 2,
-      title: 'What is trademark registration ?',
+      title: 'Is ESI mandatory for employees ?',
       details:
-        'A trademark is a type of intellectual property consisting of a recognizable sign, design, or expression which identifies products or services of a particular source from those of others, although trademarks used to identify services are usually called service marks.',
+        'ESI Registration is mandatory for employers having 10 or more employees. For all employees earning Rs. 15,000 or less per month as wages, the employer must contribute 4.75% and the employee must contribute 1.75% towards ESI. ... Those entities having ESI Registration must then file ESI returns.',
     },
     {
       id: 3,
-      title: 'What is import export code registration ?',
+      title: 'What is the criteria for ESI ?',
       details:
-        'In this age of cut- throat competition, everyone wants to grow their business beyond the limits of the domestic market.However, doing business globally isn’t just a cup of tea for everyone.Before going global, you need to follow several procedures and laws in place and get different registration and license.IEC(Import Export Code) license is one of such prerequisite when you’re thinking of importing or exporting from India.',
+        'Employees whose monthly wages are Rs 21,000 or below are covered under the ESI Act. The wage limit for coverage under the Act had been increased from Rs 15,000 per month to Rs 21,000 in December 2016.Jun 1',
+    },
+    {
+      id: 4,
+      title: 'How is ESI calculated from salary ?',
+      details:
+        'ESIC includes the medical benefit both for the employee and employer. It is calculated on the basis of gross salary/wages/pay per month and the maximum limit is up to ₹ 21,000/- per month (earlier it was ₹ 15,000 per month). Minimum 20 eligible employees are required to get registered under ESIC.',
+    },
+    {
+      id: 5,
+      title: 'Who is not eligible for ESI ?',
+      details:
+        'All employees of a covered unit, whose monthly incomes (excluding overtime, bonus, leave encashment) does not exceed Rs. 21,000 per month, are eligible to avail benefits under the Scheme. Employees earning daily average wage up to Rs. 176 are exempted from ESIC contribution.',
     },
   ];
   const esiBenefits = [

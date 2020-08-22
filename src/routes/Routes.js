@@ -17,8 +17,15 @@ import ItrSevenPage from '../pages/ItrSevenPage';
 import PfPage from '../pages/PfPage';
 import EsiPage from '../pages/EsiPage';
 import EsiReturnPage from '../pages/EsiReturnPage';
+import UserForm from '../components/UserForm';
+import PrivatePage from '../pages/PrivatePage';
+import LlpPage from '../pages/LlpPage';
+import PrivateCompliancesPage from '../pages/PrivateCompliancesPage';
+import LlpCompliancesPage from '../pages/LlpCompliancesPage';
+import ImportExportPage from '../pages/ImportExportPage';
+import IsoPage from '../pages/IsoPage';
 
-export class Routes extends Component {
+class Routes extends Component {
   render() {
     return (
       <React.Fragment>
@@ -48,6 +55,33 @@ export class Routes extends Component {
               path='/employees-state-insurance-return'
               component={EsiReturnPage}
             />
+            <Route
+              exact
+              path='/private-limited-company'
+              component={PrivatePage}
+            />
+            <Route
+              exact
+              path='/limited-liability-partnership'
+              component={LlpPage}
+            />
+            <Route
+              exact
+              path='/private-company-compliances'
+              component={PrivateCompliancesPage}
+            />
+            <Route
+              exact
+              path='/limited-partnership-compliances'
+              component={LlpCompliancesPage}
+            />
+            <Route
+              exact
+              path='/import-export-code'
+              component={ImportExportPage}
+            />
+            <Route exact path='/iso' component={IsoPage} />
+            <Route exact path='/gst-application-form' component={UserForm} />
             <Route exact path='*' component={NotfoundPage} />
           </Switch>
         </Router>

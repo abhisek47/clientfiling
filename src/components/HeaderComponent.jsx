@@ -32,17 +32,27 @@ class HeaderComponent extends Component {
                 mode='horizontal'>
                 <SubMenu title='Company'>
                   <Menu.Item key='setting:1'>
-                    Proprietorship Firm Registration
+                    <Link to='/private-limited-company'>
+                      Private Limited Company
+                    </Link>
                   </Menu.Item>
-                  <Menu.Item key='setting:2'>Registered Partnership</Menu.Item>
+                  <Menu.Item key='setting:2'>
+                    <Link to='/limited-liability-partnership'>
+                      Limited Liability Partnership
+                    </Link>
+                  </Menu.Item>
                   <Menu.Item key='setting:3'>
-                    Unregistered Partnership
+                    <Link to='/public-limited-company'>
+                      Public Limited Company
+                    </Link>
                   </Menu.Item>
                   <Menu.Item key='setting:4'>
-                    Limited Liability Partnership
+                    Proprietorship Firm Registration
                   </Menu.Item>
-                  <Menu.Item key='setting:5'>Private Limited Company</Menu.Item>
-                  <Menu.Item key='setting:6'>Public Limited Company</Menu.Item>
+                  <Menu.Item key='setting:5'>Registered Partnership</Menu.Item>
+                  <Menu.Item key='setting:6'>
+                    Unregistered Partnership
+                  </Menu.Item>
                 </SubMenu>
                 <SubMenu title='Intellectual Property'>
                   <Menu.Item key='setting:7'>
@@ -86,31 +96,44 @@ class HeaderComponent extends Component {
                 </SubMenu>
                 <SubMenu title='Annual Compliances'>
                   <Menu.Item key='setting:19'>
-                    Private Limited Company
+                    <Link to='/private-company-compliances'>
+                      Private Limited Company
+                    </Link>
                   </Menu.Item>
-                  <Menu.Item key='setting:20'>LLP Annual Partnership</Menu.Item>
-                  <Menu.Item key='setting:21'>Import Export Code</Menu.Item>
-                  <Menu.Item key='setting:22'>ISO Registration</Menu.Item>
+                  <Menu.Item key='setting:20'>
+                    <Link to='/limited-partnership-compliances'>
+                      LLP Annual Partnership
+                    </Link>
+                  </Menu.Item>
+                  <Menu.Item key='setting:21'>
+                    <Link to='/other-compliances'>
+                      Partnership Firm, Society, Trust, NGO
+                    </Link>
+                  </Menu.Item>
+                  <Menu.Item key='setting:22'>
+                    <Link to='/import-export-code'>Import Export Code</Link>
+                  </Menu.Item>
+                  <Menu.Item key='setting:23'>
+                    <Link to='/iso'>ISO Registration</Link>
+                  </Menu.Item>
                 </SubMenu>
                 <SubMenu title='Payroll'>
-                  <Menu.Item key='setting:23'>
+                  <Menu.Item key='setting:24'>
                     <Link to='/provident-fund'>PF Registration</Link>
                   </Menu.Item>
-                  <Menu.Item key='setting:24'>PF Return Filing</Menu.Item>
-                  <Menu.Item key='setting:25'>
+                  <Menu.Item key='setting:25'>PF Return Filing</Menu.Item>
+                  <Menu.Item key='setting:26'>
                     <Link to='/employees-state-insurance'>
                       ESI Registration
                     </Link>
                   </Menu.Item>
-                  <Menu.Item key='setting:26'>
+                  <Menu.Item key='setting:27'>
                     <Link to='/employees-state-insurance-return'>
                       ESI Return Filing
                     </Link>
                   </Menu.Item>
                 </SubMenu>
                 <SubMenu title='Others'>
-                  <Menu.Item key='setting:27'>Society Registration</Menu.Item>
-                  <Menu.Item key='setting:28'>Trust Registration</Menu.Item>
                   <Menu.Item key='setting:29'>PAN Application</Menu.Item>
                   <Menu.Item key='setting:30'>TAN Application</Menu.Item>
                   <Menu.Item key='setting:31'>80G Registration</Menu.Item>

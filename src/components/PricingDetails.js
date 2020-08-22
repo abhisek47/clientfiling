@@ -501,3 +501,110 @@ export const copyrightStandard = [
 export const copyrightPremium = [
   'Copyright registration for logos, books, periodicals, magazines,videos, audio recording, cinematography films with trademark registration.',
 ];
+
+// compliances for private company
+export const privateCompliancesBasic = [
+  'Turnover less than 30 lakhs',
+  'DIR 3 KYC of directors',
+  'AOC-4 financial statement and other documents',
+  'MGT - 7(annual return)',
+  'ADT-1 if applicable',
+  'INC-20A if applicable',
+  'Board resolution prepration',
+  'Directors report',
+  'GST filing including GST9',
+  'Income Tax filing',
+  'Assistance in audit report',
+  'Book keeping in cloud based software',
+];
+export const privateCompliancesStandard = [
+  'Turnover less than 60 lakhs',
+  'DIR 3 KYC of directors',
+  'AOC-4 financial statement and other documents',
+  'MGT - 7(annual return)',
+  'ADT-1 if applicable',
+  'INC-20A if applicable',
+  'Board resolution prepration',
+  'Directors report',
+  'GST filing including GST9',
+  'Income Tax filing',
+  'Assistance in audit report',
+  'Book keeping in cloud based software',
+];
+export const privateCompliancesPremium = [
+  'Turnover less than 100 lakhs',
+  'DIR 3 KYC of directors',
+  'AOC-4 financial statement and other documents',
+  'MGT - 7(annual return)',
+  'ADT-1 if applicable',
+  'INC-20A if applicable',
+  'Board resolution prepration',
+  'Directors report',
+  'GST filing including GST9',
+  'Income Tax filing',
+  'Assistance in audit report',
+  'Book keeping in cloud based software',
+];
+
+// compliances for LLP
+export const llpCompliancesBasic = [
+  'Turnover less than 30 lakhs',
+  'Annual filing of LLP',
+  'Board resolution prepration',
+  'Directors report',
+  'GST filing including GST9',
+  'Income Tax filing',
+  'Assistance in audit report',
+  'Book keeping in cloud based software',
+];
+export const llpCompliancesStandard = [
+  'Turnover less than 60 lakhs',
+  'Annual filing of LLP',
+  'Board resolution prepration',
+  'Directors report',
+  'GST filing including GST9',
+  'Income Tax filing',
+  'Assistance in audit report',
+  'Book keeping in cloud based software',
+];
+export const llpCompliancesPremium = [
+  'Turnover less than 100 lakhs',
+  'Annual filing of LLP',
+  'Board resolution prepration',
+  'Directors report',
+  'GST filing including GST9',
+  'Income Tax filing',
+  'Assistance in audit report',
+  'Book keeping in cloud based software',
+];
+
+// import export code
+export const iecBasic = [
+  'Import Export Code Registration',
+  'Includes Government Fee',
+  'LEDGERS Accounting Software',
+];
+export const iecStandard = [
+  'Import Export Code Registration',
+  'Includes Government Fee',
+  'LEDGERS Accounting Software',
+  'GST Registration',
+];
+export const iecPremium = [
+  'Import Export Code Registration',
+  'Includes Government Fee',
+  'LEDGERS Accounting Software',
+  'GST Registration',
+  'RCMC Registration',
+];
+
+// iso filing
+export const isoBasic = [
+  'ISO certificate also certifies that the management system, manufacturing process, service or the documentation process has all the requirements for standardization and quality assurance.',
+];
+export const isoStandard = [
+  'ISO certificate also certifies that the management system, manufacturing process, service or the documentation process has all the requirements for standardization and quality assurance.',
+];
+export const isoPremium = [
+  'ISO certificate also certifies that the management system, manufacturing process, service or the documentation process has all the requirements for standardization and quality assurance.',
+];

@@ -23,7 +23,7 @@ class GstreturnPage extends Component {
           para='Register for your Company. A GST registration is a key business identification number which mandatory for export from India or Import to India.'
           btn='Register now'
           img={model}
-          tagline='Get your GST return filing @₹ 2,899 Only'
+          tagline='Get your GST return filing @₹ 2,899 excluding GST'
           services={services}
         />
         <div className='container'>

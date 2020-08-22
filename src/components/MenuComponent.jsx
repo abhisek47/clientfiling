@@ -49,12 +49,20 @@ class MenuComponent extends React.Component {
               <span>Company</span>
             </span>
           }>
-          <Menu.Item key='1'>Proprietorship Firm Registration</Menu.Item>
-          <Menu.Item key='2'>Registered Partnership</Menu.Item>
-          <Menu.Item key='3'>Unregistered Partnership</Menu.Item>
-          <Menu.Item key='4'>Limited Liability Partnership</Menu.Item>
-          <Menu.Item key='5'>Private Limited Company</Menu.Item>
-          <Menu.Item key='6'>Public Limited Company</Menu.Item>
+          <Menu.Item key='1'>
+            <Link to='/private-limited-company'>Private Limited Company</Link>
+          </Menu.Item>
+          <Menu.Item key='2'>
+            <Link to='/limited-liability-partnership'>
+              Limited Liability Partnership
+            </Link>
+          </Menu.Item>
+          <Menu.Item key='3'>
+            <Link to='/public-limited-company'>Public Limited Company</Link>
+          </Menu.Item>
+          <Menu.Item key='4'>Proprietorship Firm Registration</Menu.Item>
+          <Menu.Item key='5'>Registered Partnership</Menu.Item>
+          <Menu.Item key='6'>Unregistered Partnership</Menu.Item>
         </SubMenu>
         <SubMenu
           key='sub2'
@@ -103,38 +111,53 @@ class MenuComponent extends React.Component {
           key='sub4'
           icon={<DatabaseOutlined />}
           title='Annual Compliances'>
-          <Menu.Item key='19'>Private Limited Company</Menu.Item>
-          <Menu.Item key='20'>LLP Annual Partnership</Menu.Item>
-          <Menu.Item key='21'>Import Export Code</Menu.Item>
-          <Menu.Item key='22'>ISO Registration</Menu.Item>
+          <Menu.Item key='19'>
+            <Link to='/private-company-compliances'>
+              Private Limited Company
+            </Link>
+          </Menu.Item>
+          <Menu.Item key='20'>
+            <Link to='/limited-partnership-compliances'>
+              LLP Annual Partnership
+            </Link>
+          </Menu.Item>
+          <Menu.Item key='21'>
+            <Link to='/other-compliances'>
+              Partnership Firm, Society, Trust, NGO
+            </Link>
+          </Menu.Item>
+          <Menu.Item key='22'>
+            <Link to='/import-export-code'>Import Export Code</Link>
+          </Menu.Item>
+          <Menu.Item key='23'>
+            <Link to='/iso'>ISO Registration</Link>
+          </Menu.Item>
         </SubMenu>
         <SubMenu key='sub5' icon={<CompassOutlined />} title='Payroll'>
-          <Menu.Item key='23'>
+          <Menu.Item key='24'>
             <Link to='/provident-fund'>PF Registration</Link>
           </Menu.Item>
-          <Menu.Item key='24'>
+          <Menu.Item key='25'>
             <Link to='/provident-fund-return'>PF Return Filing</Link>
           </Menu.Item>
-          <Menu.Item key='25'>
+          <Menu.Item key='26'>
             <Link to='/employees-state-insurance'></Link>
             ESI Registration
           </Menu.Item>
-          <Menu.Item key='26'>
+          <Menu.Item key='27'>
             <Link to='/employees-state-insurance-return'>
               ESI Return Filing
             </Link>
           </Menu.Item>
         </SubMenu>
         <SubMenu key='sub6' icon={<AppstoreAddOutlined />} title='Others'>
-          <Menu.Item key='27'>Society Registration</Menu.Item>
-          <Menu.Item key='28'>Trust Registration</Menu.Item>
-          <Menu.Item key='29'>PAN Application</Menu.Item>
-          <Menu.Item key='30'>TAN Application</Menu.Item>
-          <Menu.Item key='31'>80G Registration</Menu.Item>
-          <Menu.Item key='32'>
+          <Menu.Item key='28'>PAN Application</Menu.Item>
+          <Menu.Item key='29'>TAN Application</Menu.Item>
+          <Menu.Item key='30'>80G Registration</Menu.Item>
+          <Menu.Item key='31'>
             <Link to='/tds-return'>TDS Return Filing</Link>
           </Menu.Item>
-          <Menu.Item key='33'>Excise Return Filing</Menu.Item>
+          <Menu.Item key='32'>Excise Return Filing</Menu.Item>
         </SubMenu>
       </Menu>
     );

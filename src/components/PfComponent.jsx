@@ -12,21 +12,30 @@ class PfComponent extends React.Component {
     const tab1 = [
       {
         id: 1,
-        title: 'How to get a company registered ?',
+        title: 'What happens to PF account after leaving job ?',
         details:
-          'Picking the right company structure for your business is as important as any other business-related activity. The right business structure will allow your enterprise to operate efficiently and meet your required business targets. In India, every business must register themselves as part of the mandatory legal compliance. Before we learn how to register a company, let’s try and understand the types of business structures in India.',
+          'Even when you leave the job, the amount deposited in your PF account continues to earn interest. ... After retirement, you can continue to earn interest on your PF deposit if you do not withdraw.Your account will become inactive three years after retirement.There is no time limit for withdrawal of Provident Fund dues.',
       },
       {
         id: 2,
-        title: 'What is trademark registration ?',
+        title: 'What is the reason of PF claim rejection ?',
         details:
-          'A trademark is a type of intellectual property consisting of a recognizable sign, design, or expression which identifies products or services of a particular source from those of others, although trademarks used to identify services are usually called service marks.',
+          'Another reason for the rejection of your EPF claim withdrawal can be due to incomplete KYC. If your KYC details are not complete and verified, then the EPFO can reject your EPF withdrawal claim.',
       },
       {
         id: 3,
-        title: 'What is import export code registration ?',
-        details:
-          'In this age of cut- throat competition, everyone wants to grow their business beyond the limits of the domestic market.However, doing business globally isn’t just a cup of tea for everyone.Before going global, you need to follow several procedures and laws in place and get different registration and license.IEC(Import Export Code) license is one of such prerequisite when you’re thinking of importing or exporting from India.',
+        title: 'Can I withdraw pension contribution from PF ?',
+        details: `To get EPS amount, in the Composite Claim Form (Aadhaar or Non-Aadhaar), along with choosing 'Final PF balance', also choose the 'pension withdrawal' option. If you plan on re-joining the workforce, you may opt to get the 'scheme certificate' by furnishing Form 10C.`,
+      },
+      {
+        id: 4,
+        title: 'Can I withdraw my PF without resigning ?',
+        details: `Originally Answered: How can I withdraw my PF without resigning? You can withdraw part of your amount for various purposes like Illness, without leaving your job. If your Aadhaar and bank account is linked with your UAN you can apply online other wise apply in composite claim form for PF part withdrawal.`,
+      },
+      {
+        id: 5,
+        title: 'What happens if I do not transfer my PF ?',
+        details: `A PF account becomes inoperative if the employee does not make an application for withdrawal within 36 months of retiring after attaining the age of 55 years. According to the rules, the unclaimed amount of the account which remains inoperative for 7 years is to be transferred to the Senior Citizens' Welfare Fund`,
       },
     ];
     const employee = [

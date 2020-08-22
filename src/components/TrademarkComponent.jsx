@@ -29,21 +29,33 @@ const TrademarkComponent = () => {
   const tab1 = [
     {
       id: 1,
-      title: 'How to get a company registered ?',
+      title: 'How to select a good trademark ?',
       details:
-        'Picking the right company structure for your business is as important as any other business-related activity. The right business structure will allow your enterprise to operate efficiently and meet your required business targets. In India, every business must register themselves as part of the mandatory legal compliance. Before we learn how to register a company, let’s try and understand the types of business structures in India.',
+        'If it is a word it should be easy to speak, spell and remember. The best trademarks are invented words or coined words or unique geometrical designs. Please avoid selection of a geographical name, common personal name or surname.No one can have monopoly right on it. Avoid adopting laudatory word or words that describe the quality of goods(such as best, perfect, super etc). It is advisable to conduct a market survey to ascertain if same / similar mark is used in market.',
     },
     {
       id: 2,
-      title: 'What is trademark registration ?',
+      title: 'What are the benefits of registering a trademark ?',
       details:
-        'A trademark is a type of intellectual property consisting of a recognizable sign, design, or expression which identifies products or services of a particular source from those of others, although trademarks used to identify services are usually called service marks.',
+        'The registration of a trademark confers upon the owner the exclusive right to the use the trademark in relation to the goods or services in respect of which the mark is registered and to indicate so by using the symbol (R), and seek the relief of infringement in appropriate courts in the country. The exclusive right is however subject to any conditions entered on the register such as limitation of area of use etc. Also, where two or more persons have registered identical or nearly similar marks due to special circumstances, such exclusive right does not operate against each other.',
     },
     {
       id: 3,
-      title: 'What is import export code registration ?',
+      title: 'What does the Register of trademark contain ?',
       details:
-        'In this age of cut- throat competition, everyone wants to grow their business beyond the limits of the domestic market.However, doing business globally isn’t just a cup of tea for everyone.Before going global, you need to follow several procedures and laws in place and get different registration and license.IEC(Import Export Code) license is one of such prerequisite when you’re thinking of importing or exporting from India.',
+        'The register of trademark currently maintained in electronic form contains inter alia the trademark the class and goods/ services in respect of which it is registered including particulars affecting the scope of registration of rights conferred; the address of the proprietors; particulars of trade or other description of the proprietor; the convention application date (if applicable); where a trademark has been registered with the consent of proprietor of an earlier mark or earlier rights, that fact.',
+    },
+    {
+      id: 4,
+      title: 'Can any correction be made in the application or register ?',
+      details:
+        'But the basic principle is that the trademark applied for should not be substantially altered affecting its identity. Subject to this changes are permissible according to rules detailed in the subordinate legislation.',
+    },
+    {
+      id: 5,
+      title: 'Can a registered trademark be removed from the register ?',
+      details:
+        'It can be removed on application to the Registrar on prescribed form on the ground that the mark is wrongly remaining on the register. The Registrar also can suo moto issue Notice for removal of a registered trademark?',
     },
   ];
   const eligibility = [

@@ -10,21 +10,43 @@ const GstComponent = () => {
   const tab1 = [
     {
       id: 1,
-      title: 'How to get a company registered ?',
+      title: 'When do I need to register under the GST Act ?',
       details:
-        'Picking the right company structure for your business is as important as any other business-related activity. The right business structure will allow your enterprise to operate efficiently and meet your required business targets. In India, every business must register themselves as part of the mandatory legal compliance. Before we learn how to register a company, let’s try and understand the types of business structures in India.',
+        'Within 30 days from the date when your liability arose. In case of a Casual Taxpayer or Non-residen taxable person, 5 days prior to the commencement of the business',
     },
     {
       id: 2,
-      title: 'What is trademark registration ?',
+      title:
+        'What if the dealer migrated with wrong PAN as the status of firm was changed from proprietorship to partnership ?',
       details:
-        'A trademark is a type of intellectual property consisting of a recognizable sign, design, or expression which identifies products or services of a particular source from those of others, although trademarks used to identify services are usually called service marks.',
+        'New registration would be required as partnership firm would have new PAN.',
     },
     {
       id: 3,
-      title: 'What is import export code registration ?',
+      title:
+        'Does aggregate turnover include value of inward supplies received on which RCM is payable ?',
       details:
-        'In this age of cut- throat competition, everyone wants to grow their business beyond the limits of the domestic market.However, doing business globally isn’t just a cup of tea for everyone.Before going global, you need to follow several procedures and laws in place and get different registration and license.IEC(Import Export Code) license is one of such prerequisite when you’re thinking of importing or exporting from India.',
+        'Refer Section 2(6) of CGST Act. Aggregate turnover does not include value of inward supplies on which tax is payable on reverse charge basis.',
+    },
+    {
+      id: 4,
+      title:
+        'A taxable person’s business is in many states. All supplies are below 10 Lakhs. He makes an Inter State supply from one state. Is he liable for registration ?',
+      details:
+        'He is liable to register if the aggregate turnover (all India) is more than 20 lacs (Rs. 10 lacs in Special Category States) or if he is engaged in inter-State supplies.',
+    },
+    {
+      id: 5,
+      title:
+        'What If I am not liable to register under GST but I was registered under Service tax ?',
+      details:
+        'You can apply for cancellation of Provisional ID on or before 31st July 2017.',
+    },
+    {
+      id: 6,
+      title: 'What is the time limit for taking a Registration under GST ?',
+      details:
+        'A person should take a Registration, within thirty days from the date on which he becomes liable to registration, in such manner and subject to such conditions as is prescribed under the Registration Rules. A Casual Taxable person and a non-resident taxable person should however apply for registration at least 5 days prior to commencement of business.',
     },
   ];
   const gstCases = [
@@ -126,7 +148,7 @@ const GstComponent = () => {
               <div className='gst-docs service' id='gst-docs'>
                 <DocumentComponent
                   documents={GstDocument}
-                  title='Documents required for gst registration'
+                  title='Documents required for GST registration'
                 />
               </div>
               {/* faq */}

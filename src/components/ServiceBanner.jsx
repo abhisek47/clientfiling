@@ -18,7 +18,9 @@ const ServiceBannerComponent = ({
   return (
     <React.Fragment>
       <Layout>
-        <Content className='service-banner'>
+        <Content
+          className='service-banner'
+          style={{ background: 'ghostWhite' }}>
           <div className='service-container'>
             <Row gutter={24}>
               <Col className='ant-col-sm-24 ant-col-md-8'>

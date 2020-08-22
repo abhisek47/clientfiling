@@ -1,17 +1,17 @@
 import React, { Component } from 'react';
 import HeaderComponent from '../components/HeaderComponent';
 import FooterComponent from '../components/FooterComponent';
-import model from '../assets/model_1.jpg';
-import GstComponent from '../components/GstComponent';
+import model from '../assets/model_20.jpg';
 import BreadcrumbComponent from '../components/BreadcrumbComponent';
 import ServiceBannerComponent from '../components/ServiceBanner';
+import ImportExportComponent from '../components/ImportExportComponent';
 
-class GstPage extends Component {
+class ImportExportPage extends Component {
   render() {
     const services = [
-      'Filing of Application for GST Registration',
+      'Filing of Application for Import Export Code Registration',
       'Secure GST Identification Number',
-      'Required Timing - 2 days',
+      'Required Timing - 9 days',
       'Completely Online – No need to visit office',
       'CA Assisted GST Filing for all your GST needs',
     ];
@@ -19,16 +19,16 @@ class GstPage extends Component {
       <React.Fragment>
         <HeaderComponent />
         <ServiceBannerComponent
-          head='GST Registration Online'
+          head='Import Export Code Registration'
           para='Register for your Company. A GST registration is a key business identification number which mandatory for export from India or Import to India.'
           btn='Register now'
           img={model}
-          tagline='Get your company registered under GST @₹ 3,500 excluding GST'
+          tagline='Get your Import Export Code registered @₹ 3,500 excluding GST'
           services={services}
         />
         <div className='container'>
-          <BreadcrumbComponent title='GST Registration' />
-          <GstComponent />
+          <BreadcrumbComponent title='Import Export Code' />
+          <ImportExportComponent />
         </div>
         <FooterComponent />
       </React.Fragment>
@@ -36,4 +36,4 @@ class GstPage extends Component {
   }
 }
 
-export default GstPage;
+export default ImportExportPage;

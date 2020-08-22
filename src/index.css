@@ -143,7 +143,7 @@ img {
 }
 
 .quotes {
-  background: #f0f5ff;
+  background: ghostwhite;
   padding: 16px 0;
 }
 
@@ -335,6 +335,10 @@ img {
   width: 14px;
 }
 
+.service-container .ant-rate {
+  font-size: 16px;
+}
+
 .rating .ant-rate-star:not(:last-child) {
   margin: 5px;
 }
@@ -384,6 +388,71 @@ button:active {
 
 .ant-timeline {
   margin: 32px 0;
+}
+
+/* gst application form */
+
+.steps-content {
+  margin-top: 16px;
+  border: 1px dashed #e9e9e9;
+  border-radius: 2px;
+  background-color: #fafafa;
+  min-height: 200px;
+  text-align: center;
+  padding-top: 80px;
+}
+
+.steps-action {
+  margin-top: 24px;
+}
+[data-theme='dark'] .steps-content {
+  margin-top: 16px;
+  border: 1px dashed #303030;
+  background-color: rgba(255, 255, 255, 0.04);
+  color: rgba(255, 255, 255, 0.65);
+  padding-top: 80px;
+}
+
+.application-form {
+  padding: 32px 0;
+  text-align: left;
+}
+
+.application-form h1.ant-typography {
+  margin-bottom: 24px;
+}
+
+.gst-application
+  .ant-steps-horizontal:not(.ant-steps-label-vertical)
+  .ant-steps-item {
+  padding: 0;
+}
+
+.form-container {
+  padding: 24px;
+  text-align: left;
+}
+
+.steps-content {
+  padding-top: 0;
+}
+
+.ant-form-vertical .ant-form-item-label,
+.ant-col-24.ant-form-item-label,
+.ant-col-xl-24.ant-form-item-label {
+  padding: 0;
+}
+
+.pricing .ant-card-body {
+  padding: 0 0 16px 0;
+}
+
+.pricing .ant-list-items {
+  padding: 0 16px;
+}
+
+.pricing .ant-btn-primary {
+  margin: 14px;
 }
 
 @media screen and (max-width: 1220px) {

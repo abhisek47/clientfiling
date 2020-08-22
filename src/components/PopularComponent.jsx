@@ -42,9 +42,11 @@ class PopularComponent extends Component {
                       title='Company Registration'
                       description='The Income Tax Department is a government agency undertaking direct tax collection of the Government of India.'
                     />
-                    <Button icon={<TagsFilled />} type='primary'>
-                      Buy now
-                    </Button>
+                    <Link to='/private-limited-company'>
+                      <Button icon={<TagsFilled />} type='primary'>
+                        Buy now
+                      </Button>
+                    </Link>
                   </Card>
                 </Col>
                 <Col className='ant-col-sm-24 ant-col-lg-6 '>

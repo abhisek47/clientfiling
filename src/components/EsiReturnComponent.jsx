@@ -24,21 +24,21 @@ const esiReturnComponent = () => {
   const tab1 = [
     {
       id: 1,
-      title: 'How to get a company registered ?',
+      title: 'How can I return ESI ?',
       details:
-        'Picking the right company structure for your business is as important as any other business-related activity. The right business structure will allow your enterprise to operate efficiently and meet your required business targets. In India, every business must register themselves as part of the mandatory legal compliance. Before we learn how to register a company, let’s try and understand the types of business structures in India.',
+        'A pdf format of the form is available on the website. Fill in the form, with the details asked for, and submit it to ESIC, for registration. Once verified, a registration number, a 17-digit unique identity, will be provided to the organization. The ESI filings can be done, once you receive the 17-digit number.',
     },
     {
       id: 2,
-      title: 'What is trademark registration ?',
+      title: 'How can I file esic monthly return ?',
       details:
-        'A trademark is a type of intellectual property consisting of a recognizable sign, desiReturngn, or expression which identifies products or services of a particular source from those of others, although trademarks used to identify services are usually called service marks.',
+        '1. User can file the monthly contribution via “Online Monthly contribution Screen”. 2. On submission “preview” page will be displayed. 3. To submit the monthly contribution details to ESIC click “Submit” button (refer screen shot)',
     },
     {
       id: 3,
-      title: 'What is import export code registration ?',
+      title: 'Can I withdraw my ESI money ?',
       details:
-        'In this age of cut- throat competition, everyone wants to grow their business beyond the limits of the domestic market.However, doing business globally isn’t just a cup of tea for everyone.Before going global, you need to follow several procedures and laws in place and get different registration and license.IEC(Import Export Code) license is one of such prerequisite when you’re thinking of importing or exporting from India.',
+        'Any sum withdrawn by a subscriber at any one time for one or more of the purposes, specified in rule 17 from the amount standing to his credit in the fund shall not ordinarily exceed one half of such amount or six months pay, whichever is less.',
     },
   ];
   const esiReturnProcess = [
