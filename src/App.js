@@ -1,15 +1,18 @@
-import React, { Component } from 'react';
+import React, { useState } from 'react';
 import './App.css';
 import Routes from './routes/Routes';
 
-class App extends Component {
-  render() {
-    return (
-      <React.Fragment>
+export const LoginContext = React.createContext(false);
+
+const App = () => {
+  const [login, setLogin] = useState(false);
+  return (
+    <React.Fragment>
+      <LoginContext.Provider value={[login, setLogin]}>
         <Routes />
-      </React.Fragment>
-    );
-  }
-}
+      </LoginContext.Provider>
+    </React.Fragment>
+  );
+};
 
 export default App;
