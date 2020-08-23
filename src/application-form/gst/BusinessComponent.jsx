@@ -1,14 +1,5 @@
 import React, { Component } from 'react';
-import {
-  Form,
-  Input,
-  Typography,
-  Button,
-  Row,
-  Col,
-  Select,
-  Divider,
-} from 'antd';
+import { Form, Input, Typography, Button, Row, Col, Select } from 'antd';
 import HeaderComponent from '../../components/HeaderComponent';
 import FooterComponent from '../../components/FooterComponent';
 
@@ -19,23 +10,23 @@ class BusinessComponent extends Component {
     window.scrollTo(0, 0);
   };
 
-  componentDidUpdate(prevProps) {
-    if (this.props.location !== prevProps.location) {
-      window.scrollTo(0, 0);
-    }
-  }
-
   render() {
-    const { values, handleChange, onTypeChange, onStateChange } = this.props;
+    const {
+      values,
+      handleChange,
+      onTypeChange,
+      onStateChange,
+      title,
+      para,
+    } = this.props;
     const { Option } = Select;
+    const { Title, Paragraph } = Typography;
     return (
       <React.Fragment>
         <HeaderComponent />
         <div className='container application-form'>
-          <Typography.Title className='application-title'>
-            GST Application Form
-          </Typography.Title>
-          <Divider orientation='left'>Business Information</Divider>
+          <Title className='application-title'>{title}</Title>
+          <Paragraph strong>{para}</Paragraph>
           <div className='steps-content'>
             <Form
               layout='vertical'
@@ -43,6 +34,7 @@ class BusinessComponent extends Component {
               name='normal_login'
               initialValues={{ remember: true }}
               onFinish={this.onFinish}>
+              <Title level={4}>Business Information</Title>
               <Row gutter={24} align='top'>
                 <Col className='ant-col-lg-12 ant-col-sm-24'>
                   {/* business name */}

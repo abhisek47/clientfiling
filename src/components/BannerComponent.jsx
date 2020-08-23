@@ -2,8 +2,9 @@ import React from 'react';
 import { Layout, Typography, Button, Row, Col } from 'antd';
 import AOS from 'aos';
 import ProgressiveImage from 'react-progressive-image-loading';
+import { Link } from 'react-router-dom';
 
-const BannerComponent = ({ head, para, btn, img }) => {
+const BannerComponent = ({ head, para, btn, img, goTo }) => {
   const { Content } = Layout;
   const { Title, Text } = Typography;
   AOS.init();
@@ -18,11 +19,13 @@ const BannerComponent = ({ head, para, btn, img }) => {
                   <div data-aos='fade-up' data-aos-duration='1000'>
                     <Title>{head}</Title>
                     <Text strong>{para}</Text>
-                    <div className='get-btn'>
-                      <Button size='large' type='primary'>
-                        {btn}
-                      </Button>
-                    </div>
+                    {/* <div className='get-btn'>
+                      <Link to='/login'>
+                        <Button size='large' type='primary'>
+                          {btn}
+                        </Button>
+                      </Link>
+                    </div> */}
                   </div>
                 </Typography>
               </Col>

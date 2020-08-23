@@ -455,6 +455,10 @@ button:active {
   margin: 14px;
 }
 
+.user-login {
+  text-align: left;
+}
+
 @media screen and (max-width: 1220px) {
   .navbar {
     display: none;

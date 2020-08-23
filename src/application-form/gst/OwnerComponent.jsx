@@ -1,15 +1,5 @@
 import React, { Component } from 'react';
-import {
-  Form,
-  Input,
-  Typography,
-  Button,
-  Row,
-  Col,
-  Divider,
-  Space,
-  Upload,
-} from 'antd';
+import { Form, Input, Typography, Button, Row, Col, Space, Upload } from 'antd';
 import HeaderComponent from '../../components/HeaderComponent';
 import FooterComponent from '../../components/FooterComponent';
 import { InboxOutlined } from '@ant-design/icons';
@@ -28,16 +18,13 @@ class OwnerComponent extends Component {
   };
 
   render() {
-    const { values, handleChange, onUploadChange } = this.props;
-
+    const { values, handleChange, onUploadChange, title } = this.props;
+    const { Title } = Typography;
     return (
       <React.Fragment>
         <HeaderComponent />
         <div className='container application-form'>
-          <Typography.Title className='application-title'>
-            GST Application Form
-          </Typography.Title>
-          <Divider orientation='left'>Owner Information</Divider>
+          <Title className='application-title'>{title}</Title>
           <div className='steps-content'>
             <Form
               layout='vertical'
@@ -45,6 +32,7 @@ class OwnerComponent extends Component {
               name='normal_login'
               initialValues={{ remember: true }}
               onFinish={this.onFinish}>
+              <Title level={4}>Owner Information</Title>
               <Row gutter={24} align='top'>
                 <Col className='ant-col-lg-12 ant-col-sm-24'>
                   {/* owner name */}
@@ -168,16 +156,16 @@ class OwnerComponent extends Component {
                     type='primary'
                     htmlType='submit'
                     className='login-form-button'
-                    size='large'>
-                    Next
+                    size='large'
+                    onClick={this.back}>
+                    Previous
                   </Button>
                   <Button
                     type='primary'
                     htmlType='submit'
                     className='login-form-button'
-                    size='large'
-                    onClick={this.back}>
-                    Previous
+                    size='large'>
+                    Next
                   </Button>
                 </Space>
               </Form.Item>

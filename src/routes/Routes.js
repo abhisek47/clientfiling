@@ -1,5 +1,10 @@
 import React, { useContext } from 'react';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Redirect,
+} from 'react-router-dom';
 import HomePage from '../pages/HomePage';
 import NotfoundPage from '../pages/NotfoundPage';
 import GstPage from '../pages/GstPage';
@@ -17,7 +22,6 @@ import ItrSevenPage from '../pages/ItrSevenPage';
 import PfPage from '../pages/PfPage';
 import EsiPage from '../pages/EsiPage';
 import EsiReturnPage from '../pages/EsiReturnPage';
-import UserForm from '../components/UserForm';
 import PrivatePage from '../pages/PrivatePage';
 import LlpPage from '../pages/LlpPage';
 import PrivateCompliancesPage from '../pages/PrivateCompliancesPage';
@@ -25,6 +29,8 @@ import LlpCompliancesPage from '../pages/LlpCompliancesPage';
 import ImportExportPage from '../pages/ImportExportPage';
 import IsoPage from '../pages/IsoPage';
 import { LoginContext } from '../App';
+import GstUserForm from '../components/GstUserForm';
+import GstReturnUserForm from '../components/GstReturnUserForm';
 
 const Routes = () => {
   const [login, setLogin] = useContext(LoginContext);
@@ -78,11 +84,12 @@ const Routes = () => {
             component={ImportExportPage}
           />
           <Route exact path='/iso' component={IsoPage} />
-          <Route
-            exact
-            path='/gst-application-form'
-            component={login ? UserForm : HomePage}
-          />
+          <Route exact path='/gst-application-form'>
+            {login ? <GstUserForm /> : <Redirect to='/' />}
+          </Route>
+          <Route exact path='/gst-return-application-form'>
+            {login ? <GstReturnUserForm /> : <Redirect to='/' />}
+          </Route>
           <Route exact path='*' component={NotfoundPage} />
         </Switch>
       </Router>

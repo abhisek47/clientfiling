@@ -76,15 +76,15 @@ class PaymentComponent extends Component {
               {/* submit button */}
               <Form.Item>
                 <Space direction='horizontal'>
+                  <Button htmlType='submit' size='large' onClick={this.back}>
+                    Previous
+                  </Button>
                   <Button
                     type='primary'
                     htmlType='submit'
                     size='large'
                     onClick={this.continue}>
                     Confirm
-                  </Button>
-                  <Button htmlType='submit' size='large' onClick={this.back}>
-                    Previous
                   </Button>
                 </Space>
               </Form.Item>

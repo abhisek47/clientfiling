@@ -22,6 +22,7 @@ const GstreturnPage = () => {
         para='Register for your Company. A GST registration is a key business identification number which mandatory for export from India or Import to India.'
         btn='Register now'
         img={model}
+        id='gst-return'
         tagline='Get your GST return filing @₹ 2,899 excluding GST'
         services={services}
       />

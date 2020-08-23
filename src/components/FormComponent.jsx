@@ -4,13 +4,13 @@ import { MailOutlined, PhoneOutlined } from '@ant-design/icons';
 import { withRouter, useHistory } from 'react-router-dom';
 import { LoginContext } from '../App';
 
-const FormComponent = ({ tagline }) => {
+const FormComponent = ({ tagline, id }) => {
   const [login, setLogin] = useContext(LoginContext);
   const history = useHistory();
   const onFinish = (values) => {
     console.log('Received values of form: ', values);
     setLogin(true);
-    history.push('/gst-application-form');
+    history.push(`/${id}-application-form`);
   };
   const { Title } = Typography;
   return (
@@ -41,6 +41,10 @@ const FormComponent = ({ tagline }) => {
                 {
                   required: true,
                   message: 'Please input your Phone number!',
+                },
+                {
+                  pattern: /^[2-9]{2}\d{8}$/,
+                  message: 'Please input 10 digit number!',
                 },
               ]}>
               <Input

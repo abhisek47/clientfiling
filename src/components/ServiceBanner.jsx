@@ -12,6 +12,7 @@ const ServiceBannerComponent = ({
   img,
   tagline,
   services,
+  id,
 }) => {
   const { Content } = Layout;
   const { Title, Text } = Typography;
@@ -56,7 +57,7 @@ const ServiceBannerComponent = ({
                 </Typography>
               </Col>
               <Col className='ant-col-sm-24 ant-col-md-8'>
-                <FormComponent tagline={tagline} />
+                <FormComponent id={id} tagline={tagline} />
               </Col>
             </Row>
           </div>

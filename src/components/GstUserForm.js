@@ -4,7 +4,7 @@ import OwnerComponent from '../application-form/gst/OwnerComponent';
 import PaymentComponent from '../application-form/gst/PaymentComponent';
 import ConfirmComponent from '../application-form/gst/ConfirmComponent';
 
-class UserForm extends Component {
+class GstUserForm extends Component {
   state = {
     step: 1,
     businessName: '',
@@ -12,7 +12,7 @@ class UserForm extends Component {
     businessType: '',
     businessEmail: '',
     city: '',
-    state: 'west bengal',
+    state: '',
     ownerName: '',
     ownerNumber: '',
     ownerAdhaar: '',
@@ -109,6 +109,9 @@ class UserForm extends Component {
             onTypeChange={this.onTypeChange}
             onStateChange={this.onStateChange}
             values={values}
+            title='GST Application Form'
+            para='Fill in the below form to apply for GST registration online. It will
+            take less than 5 mins. Your details are secured by SSL.'
           />
         );
       case 2:
@@ -119,6 +122,7 @@ class UserForm extends Component {
             handleChange={this.handleChange}
             onUploadChange={this.normFile}
             values={values}
+            title='GST Application Form'
           />
         );
       case 3:
@@ -150,4 +154,4 @@ class UserForm extends Component {
   }
 }
 
-export default UserForm;
+export default GstUserForm;

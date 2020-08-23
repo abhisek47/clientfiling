@@ -19,7 +19,7 @@ const HomePage = () => {
                       experience with top firms. Our network includes
                       experienced Chartered Accountants, Company Secretaries,
                       Lawyers, Cost Accountants and many more.'
-        btn='Get started'
+        btn='Get Started'
         img={banner}
       />
       <StatsComponent />
