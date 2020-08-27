@@ -20,6 +20,7 @@ const PrivatePage = () => {
         para='Register for your Company. A GST registration is a key business identification number which mandatory for export from India or Import to India.'
         btn='Register now'
         img={model}
+        id='private-company'
         tagline='Get your company registered  @₹ 20,000 excluding GST'
         services={services}
       />

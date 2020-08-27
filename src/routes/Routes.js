@@ -31,6 +31,7 @@ import IsoPage from '../pages/IsoPage';
 import { LoginContext } from '../App';
 import GstUserForm from '../components/GstUserForm';
 import GstReturnUserForm from '../components/GstReturnUserForm';
+import PrivateUserForm from '../components/PrivateUserForm';
 
 const Routes = () => {
   const [login, setLogin] = useContext(LoginContext);
@@ -89,6 +90,9 @@ const Routes = () => {
           </Route>
           <Route exact path='/gst-return-application-form'>
             {login ? <GstReturnUserForm /> : <Redirect to='/' />}
+          </Route>
+          <Route exact path='/private-company-application-form'>
+            {login ? <PrivateUserForm /> : <Redirect to='/' />}
           </Route>
           <Route exact path='*' component={NotfoundPage} />
         </Switch>

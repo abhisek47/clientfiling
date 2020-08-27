@@ -1,15 +1,24 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import { Form, Input, Button, Card, Typography, Space } from 'antd';
 import { MailOutlined, PhoneOutlined } from '@ant-design/icons';
 import { withRouter, useHistory } from 'react-router-dom';
 import { LoginContext } from '../App';
+import db from '../firebase';
+import firebase from 'firebase';
 
 const FormComponent = ({ tagline, id }) => {
   const [login, setLogin] = useContext(LoginContext);
+  const [email, setEmail] = useState([]);
+  const [phone, setPhone] = useState([]);
   const history = useHistory();
   const onFinish = (values) => {
     console.log('Received values of form: ', values);
     setLogin(true);
+    // db.collection('login-data').add({
+    //   email: email,
+    //   phone: phone,
+    //   timestamp: firebase.firestore.FieldValue.serverTimestamp(),
+    // });
     history.push(`/${id}-application-form`);
   };
   const { Title } = Typography;
@@ -31,6 +40,8 @@ const FormComponent = ({ tagline, id }) => {
               <Input
                 style={{ padding: '10px' }}
                 type='email'
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
                 prefix={<MailOutlined className='site-form-item-icon' />}
                 placeholder='Email address'
               />
@@ -53,6 +64,8 @@ const FormComponent = ({ tagline, id }) => {
                   <PhoneOutlined rotate='90' className='site-form-item-icon' />
                 }
                 type='number'
+                value={phone}
+                onChange={(e) => setPhone(e.target.value)}
                 placeholder='Phone number'
               />
             </Form.Item>
