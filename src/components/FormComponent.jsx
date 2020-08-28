@@ -27,7 +27,7 @@ const FormComponent = ({ tagline, id }) => {
       <div className='login-form'>
         <Card style={{ fontFamily: 'Source Sans Pro' }}>
           <Typography>
-            <Title level={3}>{tagline}</Title>
+            <Title level={4}>{tagline}</Title>
           </Typography>
           <Form
             name='normal_login'
@@ -70,16 +70,14 @@ const FormComponent = ({ tagline, id }) => {
               />
             </Form.Item>
 
-            <Form.Item>
-              <Space direction='horizontal'>
-                <Button
-                  type='primary'
-                  htmlType='submit'
-                  size='large'
-                  className='login-form-button'>
-                  Buy now
-                </Button>
-              </Space>
+            <Form.Item style={{ margin: 0 }}>
+              <Button
+                type='primary'
+                htmlType='submit'
+                size='large'
+                className='login-form-button'>
+                Buy now
+              </Button>
             </Form.Item>
           </Form>
         </Card>

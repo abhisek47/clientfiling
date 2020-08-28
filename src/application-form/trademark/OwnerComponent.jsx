@@ -3,7 +3,7 @@ import { Form, Input, Typography, Button, Row, Col, Space } from 'antd';
 import HeaderComponent from '../../components/HeaderComponent';
 import FooterComponent from '../../components/FooterComponent';
 
-class DirectorComponent extends Component {
+class OwnerComponent extends Component {
   onFinish = (values) => {
     console.log('Received values of form: ', values);
     this.props.nextStep();
@@ -32,13 +32,13 @@ class DirectorComponent extends Component {
               name='normal_login'
               initialValues={{ remember: true }}
               onFinish={this.onFinish}>
-              <Title level={4}>Director Information</Title>
+              <Title level={4}>Owner Information</Title>
               <Row gutter={24} align='top'>
                 <Col className='ant-col-lg-12 ant-col-sm-24'>
-                  {/* director name */}
+                  {/* owner name */}
                   <Form.Item
-                    name='directorName'
-                    label='Director Name'
+                    name='ownerName'
+                    label='Name'
                     rules={[
                       {
                         required: true,
@@ -48,71 +48,71 @@ class DirectorComponent extends Component {
                     <Input
                       style={{ padding: '8px' }}
                       type='text'
-                      placeholder='Enter yout  name'
-                      onChange={handleChange('directorName')}
-                      value={values.directorName}
+                      placeholder='Enter yout business name'
+                      onChange={handleChange('ownerName')}
+                      value={values.ownerName}
                     />
                   </Form.Item>
                 </Col>
                 <Col className='ant-col-lg-12 ant-col-sm-24'>
-                  {/* director address */}
+                  {/* owner number */}
                   <Form.Item
-                    name='directorAddress'
-                    label='Director Address'
+                    name='ownerNumber'
+                    label='Mobile Number'
                     rules={[
                       {
                         required: true,
-                        message: 'Please enter your address!',
+                        message: 'Please enter your mobile number!',
                       },
                     ]}>
                     <Input
                       style={{ padding: '8px' }}
-                      type='text'
-                      placeholder='Enter your address'
-                      onChange={handleChange('directorAddress')}
-                      value={values.directorAddress}
+                      type='number'
+                      placeholder='Enter your phone number'
+                      onChange={handleChange('ownerNumber')}
+                      value={values.ownerNumber}
                     />
                   </Form.Item>
                 </Col>
               </Row>
               <Row gutter={24} align='top'>
                 <Col className='ant-col-lg-12 ant-col-sm-24'>
-                  {/* director number */}
+                  {/* owner adhaar */}
                   <Form.Item
-                    name='directorNumber'
-                    label='Director Number'
+                    name='ownerAdhaar'
+                    label='Adhaar Number'
                     rules={[
                       {
                         required: true,
-                        message: 'Please input your  number!',
+                        message: 'Please input your adhaar card number!',
                       },
                     ]}>
                     <Input
                       style={{ padding: '8px' }}
-                      type='number'
-                      placeholder='Enter your number'
-                      onChange={handleChange('directorNumber')}
-                      value={values.directorNumber}
+                      type='text'
+                      placeholder='Enter your adhaar card number'
+                      onChange={handleChange('ownerAdhaar')}
+                      value={values.ownerAdhaar}
                     />
                   </Form.Item>
                 </Col>
                 <Col className='ant-col-lg-12 ant-col-sm-24'>
-                  {/* director email */}
+                  {/* owner pan */}
                   <Form.Item
-                    name='directorEmail'
-                    label='Director Email'
+                    name='ownerPan'
+                    label='PAN Number'
                     rules={[
                       {
                         required: true,
-                        message: 'Please input your email!',
+                        message: 'Please input your PAN number!',
                       },
                     ]}>
                     <Input
                       style={{ padding: '8px' }}
-                      type='email'
-                      placeholder='Enter your email'
-                      onChange={handleChange('directorEmail')}
-                      value={values.directorEmail}
+                      type='text'
+                      placeholder='Enter yout business PAN card number'
+                      onChange={handleChange('ownerPan')}
+                      value={values.ownerPan}
                     />
                   </Form.Item>
                 </Col>
@@ -146,4 +146,4 @@ class DirectorComponent extends Component {
   }
 }
 
-export default DirectorComponent;
+export default OwnerComponent;

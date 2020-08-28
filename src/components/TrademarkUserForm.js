@@ -1,23 +1,22 @@
 import React, { Component } from 'react';
-import CompanyComponent from '../application-form/privateCompany/CompanyComponent';
-import DirectorComponent from '../application-form/privateCompany/DirectorComponent';
-import BusinessComponent from '../application-form/privateCompany/BusinessComponent';
-import PaymentComponent from '../application-form/privateCompany/PaymentComponent';
+import BusinessComponent from '../application-form/trademark/BusinessComponent';
+import OwnerComponent from '../application-form/trademark/OwnerComponent';
+import AboutComponent from '../application-form/trademark/AboutComponent';
+import PaymentComponent from '../application-form/trademark/PaymentComponent';
 
-class PrivateUserForm extends Component {
+class TrademarkUserForm extends Component {
   state = {
     step: 1,
-    companyName: '',
-    companyAddress: '',
+    businessName: '',
+    businessAddress: '',
+    businessType: '',
+    businessEmail: '',
     city: '',
     state: '',
-    directorName: '',
-    directorAddress: '',
-    directorNumber: '',
-    directorEmail: '',
-    businessActivities: '',
-    authCaptial: '',
-    subsCapital: '',
+    ownerName: '',
+    ownerNumber: '',
+    ownerAdhaar: '',
+    ownerPan: '',
   };
 
   //   procced to the next step
@@ -57,6 +56,20 @@ class PrivateUserForm extends Component {
     });
   };
 
+  onActivityChange = (e) => {
+    console.log('radio checked', e.target.value);
+    this.setState({
+      businessActivities: e.target.value,
+    });
+  };
+
+  onRadioChange = (e) => {
+    console.log('radio checked', e.target.value);
+    this.setState({
+      value: e.target.value,
+    });
+  };
+
   normFile = (e) => {
     console.log('Upload event:', e);
 
@@ -74,66 +87,65 @@ class PrivateUserForm extends Component {
   render() {
     const {
       step,
-      companyName,
-      companyAddress,
+      businessName,
+      businessAddress,
+      businessEmail,
+      businessType,
       city,
       state,
-      directorName,
-      directorAddress,
-      directorNumber,
-      directorEmail,
-      businessActivities,
-      authCaptial,
-      subsCapital,
+      ownerName,
+      ownerNumber,
+      ownerAdhaar,
+      ownerPan,
     } = this.state;
     const values = {
-      companyName,
-      companyAddress,
+      businessName,
+      businessAddress,
+      businessEmail,
+      businessType,
       city,
       state,
-      directorName,
-      directorAddress,
-      directorNumber,
-      directorEmail,
-      businessActivities,
-      authCaptial,
-      subsCapital,
+      ownerName,
+      ownerNumber,
+      ownerAdhaar,
+      ownerPan,
     };
 
     switch (step) {
       case 1:
         return (
-          <CompanyComponent
+          <BusinessComponent
             nextStep={this.nextStep}
             handleChange={this.handleChange}
             onTypeChange={this.onTypeChange}
             onStateChange={this.onStateChange}
             values={values}
-            title='Private Limited Company Application Form'
-            para='Fill in the below form to apply for Company registration online. It will take less than 5 mins. Your details are secured by SSL.'
+            title='Trademark Application Form'
+            para='Fill in the below form to apply for Trademark registration online. It will take less than 5 mins. Your details are secured by SSL.'
           />
         );
       case 2:
         return (
-          <DirectorComponent
+          <OwnerComponent
             nextStep={this.nextStep}
             prevStep={this.prevStep}
             handleChange={this.handleChange}
             onUploadChange={this.normFile}
             values={values}
-            title='Private Limited Company Application Form'
-            para='Fill in the below form to apply for Company registration online. It will take less than 5 mins. Your details are secured by SSL.'
+            title='Trademark Application Form'
+            para='Fill in the below form to apply for Trademark registration online. It will take less than 5 mins. Your details are secured by SSL.'
           />
         );
       case 3:
         return (
-          <BusinessComponent
+          <AboutComponent
             nextStep={this.nextStep}
             prevStep={this.prevStep}
-            handleChange={this.handleChange}
+            onActivityChange={this.onActivityChange}
+            onRadioChange={this.onRadioChange}
             values={values}
-            title='Private Limited Company Application Form'
-            para='Fill in the below form to apply for Company registration online. It will take less than 5 mins. Your details are secured by SSL.'
+            title='Trademark Application Form'
+            para='Fill in the below form to apply for Trademark registration online. It will take less than 5 mins. Your details are secured by SSL.'
           />
         );
       case 4:
@@ -157,4 +169,4 @@ class PrivateUserForm extends Component {
   }
 }
 
-export default PrivateUserForm;
+export default TrademarkUserForm;

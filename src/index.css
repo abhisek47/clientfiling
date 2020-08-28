@@ -8,6 +8,10 @@ a {
   color: #fff;
 }
 
+.ant-layout-content {
+  min-height: 100%;
+}
+
 .logo {
   display: block;
   color: #111;
@@ -457,6 +461,14 @@ button:active {
 
 .user-login {
   text-align: left;
+}
+
+/* .ant-form-item {
+  margin: 0;
+} */
+.remove {
+  float: right;
+  margin: 14px;
 }
 
 @media screen and (max-width: 1220px) {

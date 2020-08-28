@@ -17,13 +17,14 @@ class BusinessComponent extends Component {
   };
 
   render() {
-    const { values, handleChange, title } = this.props;
-    const { Title } = Typography;
+    const { values, handleChange, title, para } = this.props;
+    const { Title, Paragraph } = Typography;
     return (
       <React.Fragment>
         <HeaderComponent />
         <div className='container application-form'>
           <Title className='application-title'>{title}</Title>
+          <Paragraph strong>{para}</Paragraph>
           <div className='steps-content'>
             <Form
               layout='vertical'

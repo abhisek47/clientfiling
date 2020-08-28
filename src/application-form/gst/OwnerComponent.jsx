@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
-import { Form, Input, Typography, Button, Row, Col, Space, Upload } from 'antd';
+import { Form, Input, Typography, Button, Row, Col, Space } from 'antd';
 import HeaderComponent from '../../components/HeaderComponent';
 import FooterComponent from '../../components/FooterComponent';
-import { InboxOutlined } from '@ant-design/icons';
 
 class OwnerComponent extends Component {
   onFinish = (values) => {
@@ -18,7 +17,7 @@ class OwnerComponent extends Component {
   };
 
   render() {
-    const { values, handleChange, onUploadChange, title } = this.props;
+    const { values, handleChange, title } = this.props;
     const { Title } = Typography;
     return (
       <React.Fragment>
@@ -116,38 +115,6 @@ class OwnerComponent extends Component {
                     />
                   </Form.Item>
                 </Col>
-              </Row>
-              <Row gutter={24} align='top'>
-                <Col className='ant-col-lg-12 ant-col-sm-24'>
-                  {/* owner address */}
-                  <Form.Item label='Attached Documents Prof'>
-                    <Form.Item
-                      name='dragger'
-                      valuePropName='fileList'
-                      getValueFromEvent={onUploadChange}
-                      noStyle
-                      rules={[
-                        {
-                          required: true,
-                          message: 'Please input your address prof documents!',
-                        },
-                      ]}>
-                      <Upload.Dragger name='files' action='/#' method='GET'>
-                        <p className='ant-upload-drag-icon'>
-                          <InboxOutlined />
-                        </p>
-                        <p className='ant-upload-text'>
-                          Click or drag file to this area to upload
-                        </p>
-                        <p className='ant-upload-hint'>
-                          Adress proof like electric bill, telephone bil, rent
-                          Agreement, property document etc.
-                        </p>
-                      </Upload.Dragger>
-                    </Form.Item>
-                  </Form.Item>
-                </Col>
-                <Col className='ant-col-lg-12 ant-col-sm-24'></Col>
               </Row>
               {/* submit button */}
               <Form.Item>
