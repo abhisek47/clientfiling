@@ -64,6 +64,10 @@ class OwnerComponent extends Component {
                         required: true,
                         message: 'Please enter your mobile number!',
                       },
+                      {
+                        pattern: /^[2-9]{2}\d{8}$/,
+                        message: 'Please input 10 digit number!',
+                      },
                     ]}>
                     <Input
                       style={{ padding: '8px' }}
@@ -86,6 +90,10 @@ class OwnerComponent extends Component {
                         required: true,
                         message: 'Please input your adhaar card number!',
                       },
+                      {
+                        pattern: /^[2-9]{1}[0-9]{3}[0-9]{4}[0-9]{4}$/,
+                        message: 'Please input a valid Adhaar number!',
+                      },
                     ]}>
                     <Input
                       style={{ padding: '8px' }}
@@ -105,6 +113,10 @@ class OwnerComponent extends Component {
                       {
                         required: true,
                         message: 'Please input your PAN number!',
+                      },
+                      {
+                        pattern: /^[A-Z]{5}[0-9]{4}[A-Z]{1}$/,
+                        message: 'Please input a valid PAN number!',
                       },
                     ]}>
                     <Input

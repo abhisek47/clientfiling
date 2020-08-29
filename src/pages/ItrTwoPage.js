@@ -11,6 +11,7 @@ const ItrTwoPage = () => {
     'Income tax return filing for persons having DIN or owing private limited company shares.',
     'Required Timing - 2 days',
     'Completely Online – No need to visit office',
+    'CA Assisted ITR Filing for all your income tax needs',
   ];
   return (
     <React.Fragment>

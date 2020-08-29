@@ -86,6 +86,10 @@ class DirectorComponent extends Component {
                         required: true,
                         message: 'Please input your  number!',
                       },
+                      {
+                        pattern: /^[2-9]{2}\d{8}$/,
+                        message: 'Please input 10 digit number!',
+                      },
                     ]}>
                     <Input
                       style={{ padding: '8px' }}

@@ -10,7 +10,7 @@ const LlpPage = () => {
   const services = [
     'Required Timing - 20 days',
     'Completely Online – No need to visit office',
-    'CA Assisted GST Filing for all your GST needs',
+    'CA Assisted LLP Filing for all your LLP needs',
   ];
   return (
     <React.Fragment>

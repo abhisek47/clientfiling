@@ -34,6 +34,7 @@ import GstReturnUserForm from '../components/GstReturnUserForm';
 import PrivateUserForm from '../components/PrivateUserForm';
 import LlpUserForm from '../components/LlpUserForm';
 import TrademarkUserForm from '../components/TrademarkUserForm';
+import TmRenewUserForm from '../components/TmRenewUserForm';
 
 const Routes = () => {
   const [login, setLogin] = useContext(LoginContext);
@@ -101,6 +102,9 @@ const Routes = () => {
           </Route>
           <Route exact path='/trademark-application-form'>
             {login ? <TrademarkUserForm /> : <Redirect to='/' />}
+          </Route>
+          <Route exact path='/trademark-renewal-application-form'>
+            {login ? <TmRenewUserForm /> : <Redirect to='/' />}
           </Route>
           <Route exact path='*' component={NotfoundPage} />
         </Switch>

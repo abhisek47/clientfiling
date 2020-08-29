@@ -17,6 +17,9 @@ class TrademarkUserForm extends Component {
     ownerNumber: '',
     ownerAdhaar: '',
     ownerPan: '',
+    businessActivities: '',
+    category: '',
+    tradeLicence: '',
   };
 
   //   procced to the next step
@@ -66,11 +69,11 @@ class TrademarkUserForm extends Component {
   onRadioChange = (e) => {
     console.log('radio checked', e.target.value);
     this.setState({
-      value: e.target.value,
+      category: e.target.value,
     });
   };
 
-  normFile = (e) => {
+  uploadTrdLicence = (e) => {
     console.log('Upload event:', e);
 
     if (Array.isArray(e)) {
@@ -78,7 +81,7 @@ class TrademarkUserForm extends Component {
     }
 
     this.setState({
-      addressProf: 'hello there ' + e,
+      tradeLicence: 'hello there ' + e,
     });
 
     return e && e.fileList;
@@ -97,6 +100,9 @@ class TrademarkUserForm extends Component {
       ownerNumber,
       ownerAdhaar,
       ownerPan,
+      businessActivities,
+      category,
+      tradeLicence,
     } = this.state;
     const values = {
       businessName,
@@ -109,6 +115,9 @@ class TrademarkUserForm extends Component {
       ownerNumber,
       ownerAdhaar,
       ownerPan,
+      businessActivities,
+      category,
+      tradeLicence,
     };
 
     switch (step) {
@@ -130,7 +139,6 @@ class TrademarkUserForm extends Component {
             nextStep={this.nextStep}
             prevStep={this.prevStep}
             handleChange={this.handleChange}
-            onUploadChange={this.normFile}
             values={values}
             title='Trademark Application Form'
             para='Fill in the below form to apply for Trademark registration online. It will take less than 5 mins. Your details are secured by SSL.'
@@ -143,6 +151,7 @@ class TrademarkUserForm extends Component {
             prevStep={this.prevStep}
             onActivityChange={this.onActivityChange}
             onRadioChange={this.onRadioChange}
+            uploadTradeLicence={this.uploadTrdLicence}
             values={values}
             title='Trademark Application Form'
             para='Fill in the below form to apply for Trademark registration online. It will take less than 5 mins. Your details are secured by SSL.'

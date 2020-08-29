@@ -38,7 +38,7 @@ class BusinessComponent extends Component {
                   {/* auth captial */}
                   <Form.Item
                     name='authCaptial'
-                    label='Authorised Capital'
+                    label='Authorised Capital (Rs.)'
                     rules={[
                       {
                         required: true,
@@ -58,7 +58,7 @@ class BusinessComponent extends Component {
                   {/* subs capital */}
                   <Form.Item
                     name='subsCapital'
-                    label='Subscribed Capital'
+                    label='Subscribed Capital (Rs.)'
                     rules={[
                       {
                         required: true,

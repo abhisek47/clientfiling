@@ -10,7 +10,7 @@ const ItrThreePage = () => {
   const services = [
     'Trademark filing under one class for proprietorship and small enterprises. Inclusive of government fee and taxes.',
     'Required Timing - 10 days',
-    'CA Assisted GST Filing for all your GST needs',
+    'CA Assisted Trademark Renewal Filing for all your renewal needs',
   ];
   return (
     <React.Fragment>
@@ -20,6 +20,7 @@ const ItrThreePage = () => {
         para='Register for your Company. A GST registration is a key business identification number which mandatory for export from India or Import to India.'
         btn='Register now'
         img={model}
+        id='trademark-renewal'
         tagline='Get your Trademark Renewed @₹ 2,000 excluding GST'
         services={services}
       />

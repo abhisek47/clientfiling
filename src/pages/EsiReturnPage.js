@@ -8,10 +8,10 @@ import ServiceBannerComponent from '../components/ServiceBanner';
 
 const EsiReturnPage = () => {
   const services = [
-    'Filing of Application for GST Return Filing',
+    'Filing of Application for ESI Return Filing',
     'Required Timing - 2 days',
-    '3 months GST return filing',
     'Completely Online – No need to visit office',
+    'CA Assisted ESI Return filing for all your ESI needs',
   ];
   return (
     <React.Fragment>

@@ -10,7 +10,7 @@ const ItrThreePage = () => {
   const services = [
     'Trademark filing under one class for proprietorship and small enterprises. Inclusive of government fee and taxes.',
     'Required Timing - 10 days',
-    'CA Assisted GST Filing for all your GST needs',
+    'CA Assisted Trademark Filing for all your Trademark needs',
   ];
   return (
     <React.Fragment>

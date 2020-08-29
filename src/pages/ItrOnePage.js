@@ -11,6 +11,7 @@ const ItrOnePage = () => {
     'Income tax return filing for an individual with salary income of less than Rs.5 lakhs.',
     'Required Timing - 2 days',
     'Completely Online – No need to visit office',
+    'CA Assisted ITR Filing for all your income tax needs',
   ];
   return (
     <React.Fragment>

@@ -9,10 +9,9 @@ import ImportExportComponent from '../components/ImportExportComponent';
 const ImportExportPage = () => {
   const services = [
     'Filing of Application for Import Export Code Registration',
-    'Secure GST Identification Number',
     'Required Timing - 9 days',
     'Completely Online – No need to visit office',
-    'CA Assisted GST Filing for all your GST needs',
+    'CA Assisted Import Export Filing for all your import export needs',
   ];
   return (
     <React.Fragment>

@@ -10,7 +10,7 @@ const PrivatePage = () => {
   const services = [
     'Required Timing - 20 days',
     'Completely Online – No need to visit office',
-    'CA Assisted GST Filing for all your GST needs',
+    'CA Assisted Company Filing for all your Company needs',
   ];
   return (
     <React.Fragment>

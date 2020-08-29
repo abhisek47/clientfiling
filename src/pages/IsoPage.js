@@ -11,7 +11,7 @@ const IsoPage = () => {
     'Filing of Application for ISO Registration',
     'Required Timing - 9 days',
     'Completely Online – No need to visit office',
-    'CA Assisted GST Filing for all your GST needs',
+    'CA Assisted ISO Filing for all your ISO needs',
   ];
   return (
     <React.Fragment>

@@ -8,11 +8,10 @@ import ServiceBannerComponent from '../components/ServiceBanner';
 
 const GstreturnPage = () => {
   const services = [
-    'Filing of Application for GST Return Filing',
     'Required Timing - 2 days',
     '3 months GST return filing',
     'Completely Online – No need to visit office',
-    'Cloud backup for 10 years',
+    'CA Assisted GST Return Filing for all your GST return needs',
   ];
   return (
     <React.Fragment>
