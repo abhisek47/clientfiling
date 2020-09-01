@@ -493,13 +493,13 @@ button:active {
 
 @media screen and (min-width: 1366px) {
   .service-container {
-    width: 80%;
+    width: 75%;
   }
   .banner-container {
-    width: 80%;
+    width: 75%;
   }
   .container {
-    width: 80%;
+    width: 75%;
   }
 }
 
