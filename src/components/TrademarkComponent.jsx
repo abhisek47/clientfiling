@@ -180,7 +180,7 @@ const TrademarkComponent = () => {
                   goods and services For which registration is needed.
                 </Paragraph>
                 <Row gutter={16}>
-                  <Col className='ant-col-lg-12 ant-col-sm-24'>
+                  <Col className='ant-col-sm-24'>
                     <Card hoverable>
                       <Paragraph>
                         USE : Date of first use of the trademark in India, if at
@@ -199,7 +199,7 @@ const TrademarkComponent = () => {
                       </Paragraph>
                     </Card>
                   </Col>
-                  <Col className='ant-col-lg-12 ant-col-sm-24'>
+                  <Col className='ant-col-sm-24'>
                     <Card hoverable>
                       <Paragraph>
                         I A certified priority document or its duly notarized
@@ -212,7 +212,7 @@ const TrademarkComponent = () => {
                   </Col>
                 </Row>
                 <Row gutter={16}>
-                  <Col className='ant-col-lg-12 ant-col-sm-24'>
+                  <Col className='ant-col-sm-24'>
                     <Card hoverable>
                       <Paragraph>
                         Power of Attorney : A prescribed document simply signed
@@ -222,7 +222,7 @@ const TrademarkComponent = () => {
                       </Paragraph>
                     </Card>
                   </Col>
-                  <Col className='ant-col-lg-12 ant-col-sm-24'>
+                  <Col className='ant-col-sm-24'>
                     <Card hoverable>
                       <Paragraph>
                         A partnership firm, body corporates can give a

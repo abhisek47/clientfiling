@@ -35,6 +35,7 @@ import PrivateUserForm from '../components/PrivateUserForm';
 import LlpUserForm from '../components/LlpUserForm';
 import TrademarkUserForm from '../components/TrademarkUserForm';
 import TmRenewUserForm from '../components/TmRenewUserForm';
+import EsiUserForm from '../components/EsiUserForm';
 
 const Routes = () => {
   const [login, setLogin] = useContext(LoginContext);
@@ -105,6 +106,9 @@ const Routes = () => {
           </Route>
           <Route exact path='/trademark-renewal-application-form'>
             {login ? <TmRenewUserForm /> : <Redirect to='/' />}
+          </Route>
+          <Route exact path='/esi-application-form'>
+            {login ? <EsiUserForm /> : <Redirect to='/' />}
           </Route>
           <Route exact path='*' component={NotfoundPage} />
         </Switch>

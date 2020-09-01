@@ -24,7 +24,7 @@ import {
 const GstreturnComponent = () => {
   const columns = [
     {
-      title: 'Type of GST Offencee',
+      title: 'Type of GST Return',
       dataIndex: 'name',
       render: (text) => (
         <Paragraph strong style={{ color: '#1890ff' }}>
@@ -33,7 +33,7 @@ const GstreturnComponent = () => {
       ),
     },
     {
-      title: 'Applicable GST Penalty Amount',
+      title: 'Description',
       dataIndex: 'description',
     },
     {

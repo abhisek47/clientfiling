@@ -21,6 +21,7 @@ const EsiPage = () => {
         para='Register for your Company. A GST registration is a key business identification number which mandatory for export from India or Import to India.'
         btn='Register now'
         img={model}
+        id='esi'
         tagline='Get your ESI filing @₹ 6,779 excluding GST'
         services={services}
       />

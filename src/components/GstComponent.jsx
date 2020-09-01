@@ -1,5 +1,14 @@
 import React from 'react';
-import { Layout, Row, Col, Typography, List, Collapse, Anchor } from 'antd';
+import {
+  Layout,
+  Row,
+  Col,
+  Typography,
+  List,
+  Collapse,
+  Anchor,
+  Timeline,
+} from 'antd';
 import gstCase from '../assets/gstCases.svg';
 import { CaretRightOutlined, CheckCircleFilled } from '@ant-design/icons';
 import DocumentComponent from './DocumentComponent';
@@ -53,11 +62,10 @@ const GstComponent = () => {
     'Export sales or services',
     'Selling on E-commerce sites',
     'Reverse Charge',
-    'Inter State Supply(sale outside state)',
     'Casual Taxable Person',
     'Non resident taxable person',
     'Input Service Distributor',
-    'Crossing the Threshold(40lacs or 20 lacs',
+    'Crossing the Threshold(40lacs or 20 lacs)',
   ];
   const GstDocument = [
     { id: 1, case: 'PAN card and document scan copy' },
@@ -135,10 +143,178 @@ const GstComponent = () => {
               </div>
               {/* documents */}
               <div className='gst-docs service' id='gst-docs'>
-                <DocumentComponent
-                  documents={GstDocument}
-                  title='Documents required for GST registration'
-                />
+                <Title>Document Required for GST Registration</Title>
+                <Row gutter={32} align='top'>
+                  {/* Private Limited Company (Pvt Ltd)/Public Company
+(limited company)/One person company (OPC): */}
+                  <Col className='ant-col-lg-12 ant-col-sm-24'>
+                    <Paragraph strong>
+                      For Private Limited Company (Pvt Ltd)/Public Company
+                      (limited company)/One person company (OPC):
+                    </Paragraph>
+                    <Timeline>
+                      <Timeline.Item color='blue'>
+                        <Paragraph strong>Company documents </Paragraph>
+                        <Paragraph>PAN card of the company</Paragraph>
+                        <Paragraph>
+                          Registration Certificate of the company
+                        </Paragraph>
+                        <Paragraph>
+                          Memorandum of Association (MOA) /Articles of
+                          Association (AOA)
+                        </Paragraph>
+                        <Paragraph>
+                          Copy of Bank Statement and Cancel cheque of the
+                          company(name printed on cheque)
+                        </Paragraph>
+                        <Paragraph>
+                          Declaration to comply with the provisions
+                        </Paragraph>
+                        <Paragraph>Copy of Board resolution</Paragraph>
+                      </Timeline.Item>
+                      <Timeline.Item color='blue'>
+                        <Paragraph strong>Director related documents</Paragraph>
+                        <Paragraph>PAN and ID proof of directors</Paragraph>
+                      </Timeline.Item>
+                      <Timeline.Item color='blue'>
+                        <Paragraph strong>
+                          Registered Office documents
+                        </Paragraph>
+                        <Paragraph>
+                          Copy of electricity bill/landline bill,  water Bill
+                        </Paragraph>
+                        <Paragraph>
+                          No objection certificate of the owner
+                        </Paragraph>
+                        <Paragraph>
+                          Rent agreement (in case premises are rented)
+                        </Paragraph>
+                      </Timeline.Item>
+                    </Timeline>
+                  </Col>
+                  {/* Limited Liability Partnerships (LLP): */}
+                  <Col className='ant-col-lg-12 ant-col-sm-24'>
+                    <Paragraph strong>
+                      For Limited Liability Partnerships (LLP):
+                    </Paragraph>
+                    <Timeline>
+                      <Timeline.Item color='blue'>
+                        <Paragraph strong>LLP documents</Paragraph>
+                        <Paragraph>PAN card of the LLP</Paragraph>
+                        <Paragraph>
+                          Registration Certificate of the LLP
+                        </Paragraph>
+                        <Paragraph>LLP Partnership agreement</Paragraph>
+                        <Paragraph>
+                          Copy of Bank Statement of the LLP and Cancel cheque of
+                          the company(name printed on cheque)
+                        </Paragraph>
+                        <Paragraph>
+                          Declaration to comply with the provisions
+                        </Paragraph>
+                        <Paragraph>Copy of Board resolution</Paragraph>
+                      </Timeline.Item>
+                      <Timeline.Item color='blue'>
+                        <Paragraph strong>
+                          Designated Partner related documents
+                        </Paragraph>
+                        <Paragraph>
+                          PAN and ID proof of designated partners
+                        </Paragraph>
+                      </Timeline.Item>
+                      <Timeline.Item color='blue'>
+                        <Paragraph strong>
+                          Registered Office documents
+                        </Paragraph>
+                        <Paragraph>
+                          Copy of electricity bill/landline bill,  water Bill
+                        </Paragraph>
+                        <Paragraph>
+                          No objection certificate of the owner
+                        </Paragraph>
+                        <Paragraph>
+                          Rent agreement (in case premises are rented)
+                        </Paragraph>
+                      </Timeline.Item>
+                    </Timeline>
+                  </Col>
+                </Row>
+                <Row gutter={32} align='top'>
+                  {/* Normal Partnerships */}
+                  <Col className='ant-col-lg-12 ant-col-sm-24'>
+                    <Paragraph strong>For Normal Partnerships :</Paragraph>
+                    <Timeline>
+                      <Timeline.Item color='blue'>
+                        <Paragraph strong>Partnership documents</Paragraph>
+                        <Paragraph>PAN card of the Partnership</Paragraph>
+                        <Paragraph>Partnership Deed</Paragraph>
+                        <Paragraph>
+                          Copy of Bank Statement and Cancel cheque of the
+                          company(name printed on cheque)
+                        </Paragraph>
+                        <Paragraph>
+                          Copy of Bank Statement and Cancel cheque of the
+                          company(name printed on cheque)Declaration to comply
+                          with the provisions
+                        </Paragraph>
+                      </Timeline.Item>
+                      <Timeline.Item color='blue'>
+                        <Paragraph strong>Partner related documents</Paragraph>
+                        <Paragraph>
+                          PAN and ID proof of designated partners
+                        </Paragraph>
+                      </Timeline.Item>
+                      <Timeline.Item color='blue'>
+                        <Paragraph strong>
+                          Registered Office documents
+                        </Paragraph>
+                        <Paragraph>
+                          Copy of electricity bill/landline bill,  water Bill
+                        </Paragraph>
+                        <Paragraph>
+                          No objection certificate of the owner
+                        </Paragraph>
+                        <Paragraph>
+                          Rent agreement (in case premises are rented)
+                        </Paragraph>
+                      </Timeline.Item>
+                    </Timeline>
+                  </Col>
+                  {/* Sole proprietorship/Individual */}
+                  <Col className='ant-col-lg-12 ant-col-sm-24'>
+                    <Paragraph strong>
+                      For Sole proprietorship/Individual :
+                    </Paragraph>
+                    <Timeline>
+                      <Timeline.Item color='blue'>
+                        <Paragraph strong>Individual documents</Paragraph>
+                        <Paragraph>
+                          PAN card and ID proof of the individual.
+                        </Paragraph>
+                        <Paragraph>
+                          Copy of Cancelled cheque or bank statement.
+                        </Paragraph>
+                        <Paragraph>
+                          Declaration to comply with the provisions.
+                        </Paragraph>
+                      </Timeline.Item>
+                      <Timeline.Item color='blue'>
+                        <Paragraph strong>
+                          Registered Office documents
+                        </Paragraph>
+                        <Paragraph>
+                          Copy of electricity bill/landline bill,  water Bill
+                        </Paragraph>
+                        <Paragraph>
+                          No objection certificate of the owner
+                        </Paragraph>
+                        <Paragraph>
+                          Rent agreement (in case premises are rented)
+                        </Paragraph>
+                      </Timeline.Item>
+                    </Timeline>
+                  </Col>
+                </Row>
               </div>
               {/* Pricing info */}
               <div className='pricing service' id='gst-pricing'>
@@ -146,9 +322,9 @@ const GstComponent = () => {
                   dataOne={gstBasic}
                   dataTwo={gstStandard}
                   dataThree={gstPremium}
-                  basic='3500'
-                  standard='3500'
-                  premium='3500'
+                  basic='1180'
+                  standard='1180'
+                  premium='1180'
                 />
               </div>
               {/* faq */}

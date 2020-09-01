@@ -122,7 +122,7 @@ img {
 .statistic {
   width: 100%;
   padding: 24px 0;
-  /* background-color: #f0f5ff; */
+  /* background-color: ghostwhite; */
 }
 
 .statistic .ant-card {
@@ -469,6 +469,14 @@ button:active {
 .remove {
   float: right;
   margin: 14px;
+}
+
+.inclusive {
+  color: #fff;
+}
+
+.gst-docs .ant-col {
+  margin: 0 auto;
 }
 
 @media screen and (max-width: 1220px) {

@@ -26,6 +26,7 @@ const PricingComponent = ({
                   <img src={rupeeIndian} className='rupees' alt='basic' />
                 }
               />
+              <span className='inclusive'>All inclusive</span>
             </div>
             <div className='card-body'>
               <List
@@ -48,6 +49,7 @@ const PricingComponent = ({
                   <img src={rupeeIndian} className='rupees' alt='standard' />
                 }
               />
+              <span className='inclusive'>All inclusive</span>
             </div>
             <div className='card-body'>
               <List
@@ -70,6 +72,7 @@ const PricingComponent = ({
                   <img src={rupeeIndian} className='rupees' alt='premium' />
                 }
               />
+              <span className='inclusive'>All inclusive</span>
             </div>
             <div className='card-body'>
               <List
