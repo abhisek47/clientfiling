@@ -135,7 +135,7 @@ const HeaderComponent = () => {
                 <Menu.Item key='setting:30'>TAN Application</Menu.Item>
                 <Menu.Item key='setting:31'>80G Registration</Menu.Item>
                 <Menu.Item key='setting:32'>
-                  <Link to='/tds-return'>TDS Return Filing</Link>
+                  <Link to='/tax-deduction-at-source'>TDS Filing</Link>
                 </Menu.Item>
                 <Menu.Item key='setting:33'>Excise Return Filing</Menu.Item>
               </SubMenu>

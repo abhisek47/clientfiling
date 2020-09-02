@@ -21,7 +21,7 @@ const PfPage = () => {
         para='Register for your Company. A GST registration is a key business identification number which mandatory for export from India or Import to India.'
         btn='Register now'
         img={model}
-        tagline='Get your Provident Fund filing @₹ 6,779 excluding GST'
+        tagline='Get your Provident Fund filing @₹ 8,000/-'
         services={services}
       />
       <div className='container'>

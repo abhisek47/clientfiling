@@ -33,7 +33,10 @@ const PricingComponent = ({
                 dataSource={dataOne}
                 renderItem={(item) => <List.Item>{item}</List.Item>}
               />
-              <Button icon={<TagsFilled />} type='primary'>
+              <Button
+                icon={<TagsFilled />}
+                type='primary'
+                onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
                 Buy now
               </Button>
             </div>
@@ -56,7 +59,10 @@ const PricingComponent = ({
                 dataSource={dataTwo}
                 renderItem={(item) => <List.Item>{item}</List.Item>}
               />
-              <Button icon={<TagsFilled />} type='primary'>
+              <Button
+                icon={<TagsFilled />}
+                type='primary'
+                onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
                 Buy now
               </Button>
             </div>
@@ -79,7 +85,10 @@ const PricingComponent = ({
                 dataSource={dataThree}
                 renderItem={(item) => <List.Item>{item}</List.Item>}
               />
-              <Button icon={<TagsFilled />} type='primary'>
+              <Button
+                icon={<TagsFilled />}
+                type='primary'
+                onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
                 Buy now
               </Button>
             </div>

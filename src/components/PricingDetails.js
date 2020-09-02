@@ -103,10 +103,7 @@ export const esiPremium = [
 export const esiReturnBasic = ['Up to 20 employee'];
 export const esiReturnStandard = ['Up to 50 employee'];
 export const esiReturnPremium = ['Up to 80 employee'];
-// tds
-export const tdsBasic = ['One quarter'];
-export const tdsStandard = ['Two quarter'];
-export const tdsPremium = ['Four quarter'];
+
 // itr one
 export const itrOneBasic = [
   'Income tax return filing for an individual with salary income of less than Rs.5 lakhs.',
@@ -608,3 +605,8 @@ export const isoStandard = [
 export const isoPremium = [
   'ISO certificate also certifies that the management system, manufacturing process, service or the documentation process has all the requirements for standardization and quality assurance.',
 ];
+
+// tds filing
+export const tdsBasic = ['TDS return filing for one quarter.'];
+export const tdsStandard = ['TDS return filing for two quarters.'];
+export const tdsPremium = ['TDS return filing for four quarters.'];

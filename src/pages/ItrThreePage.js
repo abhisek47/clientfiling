@@ -21,7 +21,8 @@ const ItrThreePage = () => {
         para='Register for your Company. A GST registration is a key business identification number which mandatory for export from India or Import to India.'
         btn='Register now'
         img={model}
-        tagline='Get your ITR-3 filing @₹ 3,300 excluding GST'
+        id='itr'
+        tagline='Get your ITR-3 filing @₹ 3,300/-'
         services={services}
       />
       <div className='container'>

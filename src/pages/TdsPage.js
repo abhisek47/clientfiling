@@ -1,36 +1,36 @@
 import React from 'react';
 import HeaderComponent from '../components/HeaderComponent';
 import FooterComponent from '../components/FooterComponent';
-import model from '../assets/model_14.jpg';
+import model from '../assets/model_25.jpg';
 import BreadcrumbComponent from '../components/BreadcrumbComponent';
-import EsiReturnComponent from '../components/EsiReturnComponent';
+import TdsComponent from '../components/TdsComponent';
 import ServiceBannerComponent from '../components/ServiceBanner';
 
-const EsiReturnPage = () => {
+const TdsPage = () => {
   const services = [
-    'Filing of Application for ESI Return Filing',
-    'Required Timing - 2 days',
-    'Completely Online – No need to visit office',
-    'CA Assisted ESI Return filing for all your ESI needs',
+    'TDS Return Filing Online',
+    'Required Timing - 10 days',
+    'CA Assisted Trademark Filing for all your Tax needs',
   ];
   return (
     <React.Fragment>
       <HeaderComponent />
       <ServiceBannerComponent
-        head='ESI Return Filing'
+        head='Tax Deduction at Source'
         para='Register for your Company. A GST registration is a key business identification number which mandatory for export from India or Import to India.'
         btn='Register now'
         img={model}
-        tagline='Get your ESI Return filing @₹ 6,779/-'
+        id='trademark'
+        tagline='Get your TDS Filing @₹ 1,499/-'
         services={services}
       />
       <div className='container'>
-        <BreadcrumbComponent title='Employees State Insurance Return' />
-        <EsiReturnComponent />
+        <BreadcrumbComponent title='Tax Deduction at Source' />
+        <TdsComponent />
       </div>
       <FooterComponent />
     </React.Fragment>
   );
 };
 
-export default EsiReturnPage;
+export default TdsPage;

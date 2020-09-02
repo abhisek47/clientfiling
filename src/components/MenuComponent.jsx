@@ -146,7 +146,7 @@ const MenuComponent = () => {
         <Menu.Item key='29'>TAN Application</Menu.Item>
         <Menu.Item key='30'>80G Registration</Menu.Item>
         <Menu.Item key='31'>
-          <Link to='/tds-return'>TDS Return Filing</Link>
+          <Link to='/tax-deduction-at-source'>TDS Filing</Link>
         </Menu.Item>
         <Menu.Item key='32'>Excise Return Filing</Menu.Item>
       </SubMenu>

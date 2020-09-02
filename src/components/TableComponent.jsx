@@ -12,7 +12,7 @@ const TableComponent = ({ title, para, data, columns }) => {
         dataSource={data}
         bordered
         footer={() =>
-          '*The list is indicative and penalties are subject to periodic change.'
+          '*The list is indicative and It is subject to periodic change.'
         }
       />
     </React.Fragment>

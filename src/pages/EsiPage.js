@@ -22,7 +22,7 @@ const EsiPage = () => {
         btn='Register now'
         img={model}
         id='esi'
-        tagline='Get your ESI filing @₹ 6,779 excluding GST'
+        tagline='Get your ESI filing @₹ 6,779/-'
         services={services}
       />
       <div className='container'>

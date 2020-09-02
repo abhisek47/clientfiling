@@ -225,7 +225,7 @@ const PfComponent = () => {
               {/* Registration type */}
               <div className='pf-type service' id='pf-type'>
                 <Title>Type of Registration</Title>
-                <Row gutter={16} align='middle'>
+                <Row gutter={16} align='top'>
                   {pfregType.map((items) => (
                     <Col className='ant-col-lg-8 ant-col-sm-24' key={items.id}>
                       <Card hoverable>

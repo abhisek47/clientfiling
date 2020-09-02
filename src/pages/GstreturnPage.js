@@ -22,7 +22,7 @@ const GstreturnPage = () => {
         btn='Register now'
         img={model}
         id='gst-return'
-        tagline='Get your GST return filing @₹ 2,899 excluding GST'
+        tagline='Get your GST return filing @₹ 2,899/-'
         services={services}
       />
       <div className='container'>

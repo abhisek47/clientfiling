@@ -197,7 +197,7 @@ const esiReturnComponent = () => {
               {/* registration steps */}
               <div className='esiReturn-steps service' id='esiReturn-steps'>
                 <Title>Process of Registration</Title>
-                <Row gutter={14} align='middle'>
+                <Row gutter={14} align='top'>
                   {stepRowOne.map((row) => (
                     <Col className='ant-col-lg-8 ant-col-sm-24' key={row.id}>
                       <Card hoverable title={row.case}>
@@ -206,7 +206,7 @@ const esiReturnComponent = () => {
                     </Col>
                   ))}
                 </Row>
-                <Row gutter={14} align='middle'>
+                <Row gutter={14} align='top'>
                   {stepRowTwo.map((row) => (
                     <Col className='ant-col-lg-8 ant-col-sm-24' key={row.id}>
                       <Card hoverable title={row.case}>

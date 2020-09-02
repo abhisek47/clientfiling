@@ -11,7 +11,6 @@ import {
 } from 'antd';
 import gstCase from '../assets/gstCases.svg';
 import { CaretRightOutlined, CheckCircleFilled } from '@ant-design/icons';
-import DocumentComponent from './DocumentComponent';
 import PricingComponent from './PricingComponent';
 import { gstBasic, gstStandard, gstPremium } from './PricingDetails';
 
@@ -67,16 +66,16 @@ const GstComponent = () => {
     'Input Service Distributor',
     'Crossing the Threshold(40lacs or 20 lacs)',
   ];
-  const GstDocument = [
-    { id: 1, case: 'PAN card and document scan copy' },
-    { id: 2, case: 'Tradelicence, incorporation deed, partnership deed' },
-    {
-      id: 3,
-      case:
-        'Adress proof like electric bill, telephone bil, rent Agreement, property document etc',
-    },
-    { id: 4, case: 'Others like-noc, authorisation letter, bank statement' },
-  ];
+  // const GstDocument = [
+  //   { id: 1, case: 'PAN card and document scan copy' },
+  //   { id: 2, case: 'Tradelicence, incorporation deed, partnership deed' },
+  //   {
+  //     id: 3,
+  //     case:
+  //       'Adress proof like electric bill, telephone bil, rent Agreement, property document etc',
+  //   },
+  //   { id: 4, case: 'Others like-noc, authorisation letter, bank statement' },
+  // ];
   const { Title, Paragraph, Text } = Typography;
   const { Panel } = Collapse;
   const { Link } = Anchor;

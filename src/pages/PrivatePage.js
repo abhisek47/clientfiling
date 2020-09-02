@@ -21,7 +21,7 @@ const PrivatePage = () => {
         btn='Register now'
         img={model}
         id='private-company'
-        tagline='Get your company registered  @₹ 20,000 excluding GST'
+        tagline='Get your company registered  @₹ 10,000/-'
         services={services}
       />
       <div className='container'>
