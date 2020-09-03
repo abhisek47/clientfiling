@@ -256,7 +256,7 @@ const GstreturnComponent = () => {
                 <Row align='middle' gutter={16}>
                   <Col className='ant-col-lg-12 ant-col-sm-24'>
                     {gstReturnCasesTwo.map((cases) => (
-                      <Card key={cases.id}>
+                      <Card key={cases.id} className='box'>
                         <Col className='ant-col-lg-24'>
                           <Title level={4}>{cases.head}</Title>
                           <Paragraph strong>{cases.case}</Paragraph>

@@ -17,7 +17,7 @@ const PricingComponent = ({
       <Title className='gst-caption'>Choose your plan</Title>
       <Row gutter={16}>
         <Col className='ant-col-sm-24 ant-col-lg-8'>
-          <Card hoverable>
+          <Card className='price'>
             <div className='card-head'>
               <Statistic
                 title='Basic'
@@ -43,7 +43,7 @@ const PricingComponent = ({
           </Card>
         </Col>
         <Col className='ant-col-sm-24 ant-col-lg-8'>
-          <Card hoverable>
+          <Card className='price'>
             <div className='card-head'>
               <Statistic
                 title='Standard'
@@ -69,7 +69,7 @@ const PricingComponent = ({
           </Card>
         </Col>
         <Col className='ant-col-sm-24 ant-col-lg-8'>
-          <Card hoverable>
+          <Card className='price'>
             <div className='card-head'>
               <Statistic
                 title='Premium'

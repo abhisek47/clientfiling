@@ -147,7 +147,7 @@ img {
 }
 
 .quotes {
-  background: ghostwhite;
+  /* background: ghostwhite; */
   padding: 16px 0;
 }
 
@@ -477,6 +477,24 @@ button:active {
 
 .gst-docs .ant-col {
   margin: 0 auto;
+}
+
+.pf-employee .ant-card-body {
+  min-height: 220px;
+}
+
+.price,
+.box,
+.service-card {
+  transition: all 0.3s ease-out;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.1);
+}
+
+.price:hover,
+.service-card:hover {
+  transform: translateY(-10px);
 }
 
 @media screen and (max-width: 1220px) {

@@ -215,7 +215,7 @@ const PfComponent = () => {
                 <Title>Meaning of Employee</Title>
                 <Slider {...settings}>
                   {employee.map((items) => (
-                    <Card key={items.id}>
+                    <Card key={items.id} className='box'>
                       <Title level={4}>{items.case}</Title>
                       <Paragraph>{items.des}</Paragraph>
                     </Card>
@@ -228,7 +228,7 @@ const PfComponent = () => {
                 <Row gutter={16} align='top'>
                   {pfregType.map((items) => (
                     <Col className='ant-col-lg-8 ant-col-sm-24' key={items.id}>
-                      <Card hoverable>
+                      <Card className='box'>
                         <Title level={4}>{items.case}</Title>
                         <Paragraph>{items.des}</Paragraph>
                       </Card>

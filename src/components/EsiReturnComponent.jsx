@@ -200,7 +200,7 @@ const esiReturnComponent = () => {
                 <Row gutter={14} align='top'>
                   {stepRowOne.map((row) => (
                     <Col className='ant-col-lg-8 ant-col-sm-24' key={row.id}>
-                      <Card hoverable title={row.case}>
+                      <Card className='service-card' title={row.case}>
                         {row.details}
                       </Card>
                     </Col>
@@ -209,7 +209,7 @@ const esiReturnComponent = () => {
                 <Row gutter={14} align='top'>
                   {stepRowTwo.map((row) => (
                     <Col className='ant-col-lg-8 ant-col-sm-24' key={row.id}>
-                      <Card hoverable title={row.case}>
+                      <Card className='service-card' title={row.case}>
                         {row.details}
                       </Card>
                     </Col>

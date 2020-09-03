@@ -181,7 +181,7 @@ const TrademarkComponent = () => {
                 </Paragraph>
                 <Row gutter={16}>
                   <Col className='ant-col-sm-24'>
-                    <Card hoverable>
+                    <Card className='box'>
                       <Paragraph>
                         USE : Date of first use of the trademark in India, if at
                         all used or else the application can be filed on a
@@ -200,7 +200,7 @@ const TrademarkComponent = () => {
                     </Card>
                   </Col>
                   <Col className='ant-col-sm-24'>
-                    <Card hoverable>
+                    <Card className='box'>
                       <Paragraph>
                         I A certified priority document or its duly notarized
                         copy is to be submitted with the Trade Marks Office in
@@ -213,7 +213,7 @@ const TrademarkComponent = () => {
                 </Row>
                 <Row gutter={16}>
                   <Col className='ant-col-sm-24'>
-                    <Card hoverable>
+                    <Card className='box'>
                       <Paragraph>
                         Power of Attorney : A prescribed document simply signed
                         by the authorized signatory of the Applicant with the
@@ -223,7 +223,7 @@ const TrademarkComponent = () => {
                     </Card>
                   </Col>
                   <Col className='ant-col-sm-24'>
-                    <Card hoverable>
+                    <Card className='box'>
                       <Paragraph>
                         A partnership firm, body corporates can give a
                         certificate of registration under MSME or Start-up India
