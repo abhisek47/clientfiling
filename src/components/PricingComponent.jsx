@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Row, Col, Typography, Button, Card, Statistic, List } from 'antd';
 import { TagsFilled } from '@ant-design/icons';
 import rupeeIndian from '../assets/rupee-indian.svg';
+import { Link } from 'react-router-dom';
 
 const PricingComponent = ({
   dataOne,
@@ -41,12 +42,11 @@ const PricingComponent = ({
                 dataSource={dataOne}
                 renderItem={(item) => <List.Item>{item}</List.Item>}
               />
-              <Button
-                icon={<TagsFilled />}
-                type='primary'
-                onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
-                Buy now
-              </Button>
+              <a href='https://rzp.io/l/naKfD8e'>
+                <Button icon={<TagsFilled />} type='primary'>
+                  Buy now
+                </Button>
+              </a>
             </div>
           </Card>
         </Col>
