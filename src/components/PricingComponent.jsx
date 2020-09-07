@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Row, Col, Typography, Button, Card, Statistic, List } from 'antd';
 import { TagsFilled } from '@ant-design/icons';
 import rupeeIndian from '../assets/rupee-indian.svg';
@@ -12,6 +12,14 @@ const PricingComponent = ({
   premium,
 }) => {
   const { Title } = Typography;
+  const [product, setProduct] = useState({
+    name: 'Company Registraion',
+    price: 11800,
+    productBy: 'clientfilingindia',
+  });
+
+  const makePayment = (token) => {};
+
   return (
     <React.Fragment>
       <Title className='gst-caption'>Choose your plan</Title>

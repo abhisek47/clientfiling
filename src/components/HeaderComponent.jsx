@@ -3,6 +3,7 @@ import { Layout, Menu, Button } from 'antd';
 import { PhoneOutlined } from '@ant-design/icons';
 import DrawerComponent from './DrawerComponent';
 import { Link } from 'react-router-dom';
+import logo from '../assets/logo2.png';
 
 const { SubMenu } = Menu;
 
@@ -24,7 +25,9 @@ const HeaderComponent = () => {
       <Layout className='layout'>
         <Header>
           <div className='logo'>
-            <Link to='/'>Client Filing India</Link>
+            <Link to='/'>
+              <img src={logo} alt='logo' />
+            </Link>
           </div>
           <div className='navbar'>
             <Menu
