@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Row, Col, Typography, Button, Card, Statistic, List } from 'antd';
 import { TagsFilled } from '@ant-design/icons';
 import rupeeIndian from '../assets/rupee-indian.svg';
-import { Link } from 'react-router-dom';
+import Axios from 'axios';
 
 const PricingComponent = ({
   dataOne,
@@ -13,13 +13,35 @@ const PricingComponent = ({
   premium,
 }) => {
   const { Title } = Typography;
-  const [product, setProduct] = useState({
-    name: 'Company Registraion',
-    price: 11800,
-    productBy: 'clientfilingindia',
-  });
 
-  const makePayment = (token) => {};
+  const paymentHandler = async (e) => {
+    const API_URL = 'http://localhost:8000/';
+    e.preventDefault();
+    const orderUrl = `${API_URL}order`;
+    const response = await Axios.get(orderUrl);
+    const { data } = response;
+    const options = {
+      key: 'rzp_test_QULtv0YgFcFWCV',
+      name: 'Client Filing India',
+      description: 'Some Description',
+      order_id: data.id,
+      handler: async (response) => {
+        try {
+          const paymentId = response.razorpay_payment_id;
+          const url = `${API_URL}capture/${paymentId}`;
+          const captureResponse = await Axios.post(url, {});
+          console.log(captureResponse.data);
+        } catch (err) {
+          console.log(err);
+        }
+      },
+      theme: {
+        color: '#686CFD',
+      },
+    };
+    const rzp1 = new window.Razorpay(options);
+    rzp1.open();
+  };
 
   return (
     <React.Fragment>
@@ -42,11 +64,9 @@ const PricingComponent = ({
                 dataSource={dataOne}
                 renderItem={(item) => <List.Item>{item}</List.Item>}
               />
-              <a href='https://rzp.io/l/naKfD8e'>
-                <Button icon={<TagsFilled />} type='primary'>
-                  Buy now
-                </Button>
-              </a>
+              <Button icon={<TagsFilled />} type='primary'>
+                Buy now
+              </Button>
             </div>
           </Card>
         </Col>

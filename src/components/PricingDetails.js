@@ -183,7 +183,7 @@ export const trademarkBasic = [
 ];
 export const trademarkStandard = [
   'Trademark filing under one class for proprietorship and small enterprises. Logo designing by Graphic Designers. Inclusive of government fee and taxes.',
-  '(including govt fees of 9000)',
+  '(including govt fees of 4500)',
 ];
 export const trademarkPremium = [
   'Trademark filing under one class for large enterprises not eligible of MSME registration. Inclusive of government fee and taxes.',

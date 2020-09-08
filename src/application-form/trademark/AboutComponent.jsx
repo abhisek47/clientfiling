@@ -7,7 +7,7 @@ import { InboxOutlined } from '@ant-design/icons';
 class AboutComponent extends Component {
   onFinish = (values) => {
     console.log('Received values of form: ', values);
-    this.props.nextStep();
+    window.location.href = 'https://rzp.io/l/tY7bLM4';
     window.scrollTo(0, 0);
   };
 

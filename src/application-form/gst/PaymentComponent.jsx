@@ -6,7 +6,7 @@ import FooterComponent from '../../components/FooterComponent';
 class PaymentComponent extends Component {
   continue = (e) => {
     e.preventDefault();
-    this.props.nextStep();
+    window.location.href = 'https://rzp.io/l/0FhNKTM';
     window.scrollTo(0, 0);
   };
 
@@ -68,9 +68,6 @@ class PaymentComponent extends Component {
                 </Descriptions.Item>
                 <Descriptions.Item label='User PAN Number'>
                   {ownerPan}
-                </Descriptions.Item>
-                <Descriptions.Item label='Document Proff'>
-                  {addressProf}
                 </Descriptions.Item>
               </Descriptions>
               {/* submit button */}
