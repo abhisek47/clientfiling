@@ -6,7 +6,7 @@ import FooterComponent from '../../components/FooterComponent';
 class BusinessComponent extends Component {
   onFinish = (values) => {
     console.log('Received values of form: ', values);
-    this.props.nextStep();
+    window.location.href = 'https://rzp.io/l/gJoaAKF';
     window.scrollTo(0, 0);
   };
 

@@ -20,7 +20,7 @@ const TdsPage = () => {
         para='Register for your Company. A GST registration is a key business identification number which mandatory for export from India or Import to India.'
         btn='Register now'
         img={model}
-        id='trademark'
+        id='tds'
         tagline='Get your TDS Filing @₹ 1,499/-'
         services={services}
       />

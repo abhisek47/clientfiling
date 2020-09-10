@@ -240,7 +240,7 @@ const IsoComponent = () => {
                 <Row gutter={14}>
                   {isoRowOne.map((row) => (
                     <Col className='ant-col-lg-24 ant-col-sm-24' key={row.id}>
-                      <Card hoverable title={row.title}>
+                      <Card className='box' title={row.title}>
                         {row.para}
                       </Card>
                     </Col>
@@ -249,7 +249,7 @@ const IsoComponent = () => {
                 <Row gutter={14}>
                   {isoRowTwo.map((row) => (
                     <Col className='ant-col-lg-24 ant-col-sm-24' key={row.id}>
-                      <Card hoverable title={row.title}>
+                      <Card title={row.title} className='box'>
                         {row.para}
                       </Card>
                     </Col>
@@ -258,7 +258,7 @@ const IsoComponent = () => {
                 <Row gutter={14}>
                   {isoRowThree.map((row) => (
                     <Col className='ant-col-lg-24 ant-col-sm-24' key={row.id}>
-                      <Card hoverable title={row.title}>
+                      <Card className='box' title={row.title}>
                         {row.para}
                       </Card>
                     </Col>
@@ -267,7 +267,7 @@ const IsoComponent = () => {
                 <Row gutter={14}>
                   {isoRowFour.map((row) => (
                     <Col className='ant-col-lg-24 ant-col-sm-24' key={row.id}>
-                      <Card hoverable title={row.title}>
+                      <Card className='box' title={row.title}>
                         {row.para}
                       </Card>
                     </Col>
