@@ -25,9 +25,7 @@ const HeaderComponent = () => {
       <Layout className='layout'>
         <Header>
           <div className='logo'>
-            <Link to='/'>
-              <img src={logo} alt='logo' style={{ cursor: 'pointer' }} />
-            </Link>
+            <Link to='/'>ClientFilingIndia</Link>
           </div>
           <div className='navbar'>
             <Menu
