@@ -5,6 +5,7 @@ import model from '../assets/model_1.jpg';
 import GstComponent from '../components/GstComponent';
 import BreadcrumbComponent from '../components/BreadcrumbComponent';
 import ServiceBannerComponent from '../components/ServiceBanner';
+import { Helmet } from 'react-helmet';
 
 const GstPage = () => {
   const services = [
@@ -16,6 +17,13 @@ const GstPage = () => {
   ];
   return (
     <React.Fragment>
+      <Helmet>
+        <title>GST Registration - ClientFilingIndia</title>
+        <meta
+          name='description'
+          content='GST Number (GSTIN) is a unique 15 digit number which is allotted to the assessed at the time of filing an application for registration for Goods and Service Tax. As per the GST law, every person (including company, LLP etc) has to register under GST if the total turnover crosses Rs.40 lakh (Rs.20 lakh in case of north eastern states).'
+        />
+      </Helmet>
       <HeaderComponent />
       <ServiceBannerComponent
         head='GST Registration Online'

@@ -5,6 +5,7 @@ import model from '../assets/model_14.jpg';
 import BreadcrumbComponent from '../components/BreadcrumbComponent';
 import EsiReturnComponent from '../components/EsiReturnComponent';
 import ServiceBannerComponent from '../components/ServiceBanner';
+import { Helmet } from 'react-helmet';
 
 const EsiReturnPage = () => {
   const services = [
@@ -15,6 +16,13 @@ const EsiReturnPage = () => {
   ];
   return (
     <React.Fragment>
+      <Helmet>
+        <title>ESI Return Filing - ClientFilingIndia</title>
+        <meta
+          name='description'
+          content='Established under the ESI Act, 1948, ESIC (Employees’ State Insurance Corporation) provides benefits to employees in the event of their sickness, death, disablement, injury, etc. The finance of this scheme comes from contributions from both employees and employers.'
+        />
+      </Helmet>
       <HeaderComponent />
       <ServiceBannerComponent
         head='ESI Return Filing'

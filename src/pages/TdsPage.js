@@ -5,6 +5,7 @@ import model from '../assets/model_25.jpg';
 import BreadcrumbComponent from '../components/BreadcrumbComponent';
 import TdsComponent from '../components/TdsComponent';
 import ServiceBannerComponent from '../components/ServiceBanner';
+import { Helmet } from 'react-helmet';
 
 const TdsPage = () => {
   const services = [
@@ -14,6 +15,13 @@ const TdsPage = () => {
   ];
   return (
     <React.Fragment>
+      <Helmet>
+        <title>Tax Deduction at Source(TDS) Filing - ClientFilingIndia</title>
+        <meta
+          name='description'
+          content='a person (deductor) who is liable to make payment of specified nature to any other person (deductee) shall deduct tax at source and remit the same into the account of the Central Government.'
+        />
+      </Helmet>
       <HeaderComponent />
       <ServiceBannerComponent
         head='Tax Deduction at Source'

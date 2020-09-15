@@ -5,6 +5,7 @@ import model from '../assets/model_13.jpg';
 import BreadcrumbComponent from '../components/BreadcrumbComponent';
 import EsiComponent from '../components/EsiComponent';
 import ServiceBannerComponent from '../components/ServiceBanner';
+import { Helmet } from 'react-helmet';
 
 const EsiPage = () => {
   const services = [
@@ -15,6 +16,13 @@ const EsiPage = () => {
   ];
   return (
     <React.Fragment>
+      <Helmet>
+        <title>ESI Registration - ClientFilingIndia</title>
+        <meta
+          name='description'
+          content='ESI stands for Employee State Insurance managed by the Employee State Insurance Corporation which is an autonomous body created by the law under the Ministry of Labour and Employment, Government of India. This scheme is started for Indian workers.'
+        />
+      </Helmet>
       <HeaderComponent />
       <ServiceBannerComponent
         head='ESI Registration'

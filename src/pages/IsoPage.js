@@ -5,6 +5,7 @@ import model from '../assets/model_21.jpg';
 import BreadcrumbComponent from '../components/BreadcrumbComponent';
 import ServiceBannerComponent from '../components/ServiceBanner';
 import IsoComponent from '../components/IsoComponent';
+import { Helmet } from 'react-helmet';
 
 const IsoPage = () => {
   const services = [
@@ -15,6 +16,13 @@ const IsoPage = () => {
   ];
   return (
     <React.Fragment>
+      <Helmet>
+        <title>ISO Registration - ClientFilingIndia</title>
+        <meta
+          name='description'
+          content='ISO 9001 is the international standard for a quality management system (“QMS”). In order to be certified to the ISO 9001 standard, a company must follow the requirements set forth in the ISO 9001 Standard.'
+        />
+      </Helmet>
       <HeaderComponent />
       <ServiceBannerComponent
         head='ISO Registration'

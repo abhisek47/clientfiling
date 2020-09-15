@@ -5,6 +5,7 @@ import model from '../assets/model_16.jpg';
 import BreadcrumbComponent from '../components/BreadcrumbComponent';
 import ServiceBannerComponent from '../components/ServiceBanner';
 import PrivateComponent from '../components/PrivateComponent';
+import { Helmet } from 'react-helmet';
 
 const PrivatePage = () => {
   const services = [
@@ -14,6 +15,13 @@ const PrivatePage = () => {
   ];
   return (
     <React.Fragment>
+      <Helmet>
+        <title>Private Limited Company Registration - ClientFilingIndia</title>
+        <meta
+          name='description'
+          content='Company is a popular option to start a business in India by startups and businesses with higher growth aspirations. Pvt Ltd company is incorporated under the Companies Act of 2013, and governed by the Ministry of Corporate Affairs (MCA).'
+        />
+      </Helmet>
       <HeaderComponent />
       <ServiceBannerComponent
         head='Private Limited Company'

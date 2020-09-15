@@ -5,6 +5,7 @@ import model from '../assets/model_6.jpg';
 import BreadcrumbComponent from '../components/BreadcrumbComponent';
 import TrademarkComponent from '../components/TrademarkComponent';
 import ServiceBannerComponent from '../components/ServiceBanner';
+import { Helmet } from 'react-helmet';
 
 const ItrThreePage = () => {
   const services = [
@@ -14,6 +15,13 @@ const ItrThreePage = () => {
   ];
   return (
     <React.Fragment>
+      <Helmet>
+        <title>Trademark Registration - ClientFilingIndia</title>
+        <meta
+          name='description'
+          content='A trademark  is a type of intellectual property consisting of a recognizable sign, design,or expression which identifies products or services of a particular source from those of others, although trademarks used to identify services are usually called service marks.'
+        />
+      </Helmet>
       <HeaderComponent />
       <ServiceBannerComponent
         head='Trademark Registration'

@@ -5,6 +5,7 @@ import model from '../assets/model_9.jpg';
 import BreadcrumbComponent from '../components/BreadcrumbComponent';
 import ServiceBannerComponent from '../components/ServiceBanner';
 import ItrFiveComponent from '../components/ItrFiveComponent';
+import { Helmet } from 'react-helmet';
 
 const ItrFivePage = () => {
   const services = [
@@ -15,6 +16,13 @@ const ItrFivePage = () => {
   ];
   return (
     <React.Fragment>
+      <Helmet>
+        <title>Income Tax Return Filing (ITR-5) - ClientFilingIndia</title>
+        <meta
+          name='description'
+          content='For individuals and HUF with income from profits of a business or profession. ITR-5 is the form used by the individuals and Hindu Undivided Families who are registered as ‘Partners’ in a firm. . This is applicable for the professionals but in a partnership profession. The partner must be earning income in the form of interest, salary, bonus, commission, etc.'
+        />
+      </Helmet>
       <HeaderComponent />
       <ServiceBannerComponent
         head='Income Tax Return - 5'

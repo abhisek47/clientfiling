@@ -5,6 +5,7 @@ import model from '../assets/model_12.jpg';
 import BreadcrumbComponent from '../components/BreadcrumbComponent';
 import PfComponent from '../components/PfComponent';
 import ServiceBannerComponent from '../components/ServiceBanner';
+import { Helmet } from 'react-helmet';
 
 const PfPage = () => {
   const services = [
@@ -15,6 +16,13 @@ const PfPage = () => {
   ];
   return (
     <React.Fragment>
+      <Helmet>
+        <title>Provident Fund Registration - ClientFilingIndia</title>
+        <meta
+          name='description'
+          content='Establishment Registration with Employers Provident Fund Organisation (EPFO) is mandatory if the number of employees exceeds 20 and may be obtained voluntarily if the employee’s number is less than twenty. Our dedicated team will help you to your company with EPFO'
+        />
+      </Helmet>
       <HeaderComponent />
       <ServiceBannerComponent
         head='Provident Fund Registration'

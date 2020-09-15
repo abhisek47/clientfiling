@@ -5,6 +5,7 @@ import model from '../assets/model_20.jpg';
 import BreadcrumbComponent from '../components/BreadcrumbComponent';
 import ServiceBannerComponent from '../components/ServiceBanner';
 import ImportExportComponent from '../components/ImportExportComponent';
+import { Helmet } from 'react-helmet';
 
 const ImportExportPage = () => {
   const services = [
@@ -15,6 +16,13 @@ const ImportExportPage = () => {
   ];
   return (
     <React.Fragment>
+      <Helmet>
+        <title>Import Export Code Registration - ClientFilingIndia</title>
+        <meta
+          name='description'
+          content='IEC(Import export code ) or import export licence . is a 10 digit code(based on pan number) which is provided by DGFT for import export transactions. IEC can be obtained in personal name or in company name.'
+        />
+      </Helmet>
       <HeaderComponent />
       <ServiceBannerComponent
         head='Import Export Code Registration'

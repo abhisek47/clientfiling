@@ -5,6 +5,7 @@ import model from '../assets/model_7.jpg';
 import BreadcrumbComponent from '../components/BreadcrumbComponent';
 import TdrenewalComponent from '../components/TdrenewalComponent';
 import ServiceBannerComponent from '../components/ServiceBanner';
+import { Helmet } from 'react-helmet';
 
 const ItrThreePage = () => {
   const services = [
@@ -14,6 +15,13 @@ const ItrThreePage = () => {
   ];
   return (
     <React.Fragment>
+      <Helmet>
+        <title>Trademark Renewal - ClientFilingIndia</title>
+        <meta
+          name='description'
+          content='The registration of a trademark is valid only for a period of 10 years. After which, it can be renewed from time to time. Trademark renewal preserves those rights which are only available to a registered mark. In case the proprietor fails to renew the trademark, then he shall lose all the protection that comes along with registration.'
+        />
+      </Helmet>
       <HeaderComponent />
       <ServiceBannerComponent
         head='Trademark Renewal'

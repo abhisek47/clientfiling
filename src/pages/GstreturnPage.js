@@ -5,6 +5,7 @@ import model from '../assets/model_2.jpg';
 import BreadcrumbComponent from '../components/BreadcrumbComponent';
 import GstreturnComponent from '../components/GstreturnComponent';
 import ServiceBannerComponent from '../components/ServiceBanner';
+import { Helmet } from 'react-helmet';
 
 const GstreturnPage = () => {
   const services = [
@@ -15,6 +16,13 @@ const GstreturnPage = () => {
   ];
   return (
     <React.Fragment>
+      <Helmet>
+        <title>GST Return Filing - ClientFilingIndia</title>
+        <meta
+          name='description'
+          content='A return is a document containing details of income which a taxpayer is required to file with the tax administrative authorities. This is used by tax authorities to calculate tax liability.'
+        />
+      </Helmet>
       <HeaderComponent />
       <ServiceBannerComponent
         head='GST Return Filing'

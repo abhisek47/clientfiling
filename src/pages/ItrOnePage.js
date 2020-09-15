@@ -5,6 +5,7 @@ import model from '../assets/model_3.jpg';
 import BreadcrumbComponent from '../components/BreadcrumbComponent';
 import ItrOneComponent from '../components/ItrOneComponent';
 import ServiceBannerComponent from '../components/ServiceBanner';
+import { Helmet } from 'react-helmet';
 
 const ItrOnePage = () => {
   const services = [
@@ -15,6 +16,13 @@ const ItrOnePage = () => {
   ];
   return (
     <React.Fragment>
+      <Helmet>
+        <title>Income Tax Return Filing (ITR-1) - ClientFilingIndia</title>
+        <meta
+          name='description'
+          content='ITR 1 - This Form is filed by the taxpayers and the individuals being a Resident (other thanNot Ordinarily Resident) having Total Income up to INR 50 lakhs, having Income from Salaries, One House Property, Other Sources (Interest etc.), and Agricultural Income up to INR 5 thousand.'
+        />
+      </Helmet>
       <HeaderComponent />
       <ServiceBannerComponent
         head='Income Tax Return - 1'

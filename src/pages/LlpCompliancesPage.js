@@ -5,6 +5,7 @@ import model from '../assets/model_19.jpg';
 import BreadcrumbComponent from '../components/BreadcrumbComponent';
 import ServiceBannerComponent from '../components/ServiceBanner';
 import LlpCompliancesComponent from '../components/LlpCompliancesComponent';
+import { Helmet } from 'react-helmet';
 
 const PrivateCompliancesPage = () => {
   const services = [
@@ -14,6 +15,16 @@ const PrivateCompliancesPage = () => {
   ];
   return (
     <React.Fragment>
+      <Helmet>
+        <title>
+          Annual Compliances For Limited Liability Partnership -
+          ClientFilingIndia
+        </title>
+        <meta
+          name='description'
+          content='A Limited Liability Partnership enjoys a separate status. Thus, an organization needs to maintain its active status by regularly filing with the Ministry of Corporate Affairs (MCA). Annual compliance filing is mandatory for any LLP, whether having a business or not.'
+        />
+      </Helmet>
       <HeaderComponent />
       <ServiceBannerComponent
         head='Compliances For Limited Liability Partnership'

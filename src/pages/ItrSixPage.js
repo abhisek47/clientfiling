@@ -5,6 +5,7 @@ import model from '../assets/model_10.jpg';
 import BreadcrumbComponent from '../components/BreadcrumbComponent';
 import ServiceBannerComponent from '../components/ServiceBanner';
 import ItrSixComponent from '../components/ItrSixComponent';
+import { Helmet } from 'react-helmet';
 
 const ItrSixPage = () => {
   const services = [
@@ -15,6 +16,13 @@ const ItrSixPage = () => {
   ];
   return (
     <React.Fragment>
+      <Helmet>
+        <title>Income Tax Return Filing (ITR-6) - ClientFilingIndia</title>
+        <meta
+          name='description'
+          content='ITR Form 6 or ITR 6 is an income tax return form that is used by companies to e-file income tax return if they do not claim exemption under Section 11 of the Income Tax Act, 1961. Under existing Income Tax rules, companies that can claim exemption u/s 11 are those who have income from property that is held for charitable or religious purposes.'
+        />
+      </Helmet>
       <HeaderComponent />
       <ServiceBannerComponent
         head='Income Tax Return - 6'

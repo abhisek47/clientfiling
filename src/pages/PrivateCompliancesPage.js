@@ -5,6 +5,7 @@ import model from '../assets/model_18.jpg';
 import BreadcrumbComponent from '../components/BreadcrumbComponent';
 import ServiceBannerComponent from '../components/ServiceBanner';
 import PrivateCompliancesComponent from '../components/PrivateCompliancesComponent';
+import { Helmet } from 'react-helmet';
 
 const PrivateCompliancesPage = () => {
   const services = [
@@ -14,6 +15,15 @@ const PrivateCompliancesPage = () => {
   ];
   return (
     <React.Fragment>
+      <Helmet>
+        <title>
+          Annual Compliances For Private Limited Company - ClientFilingIndia
+        </title>
+        <meta
+          name='description'
+          content='A Private Company is an entity enjoying a separate identity which requires maintaining its active status through the regular filing with MCA. For every company, it is compulsory to file an annual return and audited financial statements with MCA for every financial year.'
+        />
+      </Helmet>
       <HeaderComponent />
       <ServiceBannerComponent
         head='Compliances For Private Company'
