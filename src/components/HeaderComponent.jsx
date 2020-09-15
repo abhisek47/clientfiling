@@ -26,7 +26,7 @@ const HeaderComponent = () => {
         <Header>
           <div className='logo'>
             <Link to='/'>
-              <img src={logo} alt='logo' />
+              <img src={logo} alt='logo' style={{ cursor: 'pointer' }} />
             </Link>
           </div>
           <div className='navbar'>

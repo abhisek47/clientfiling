@@ -19,6 +19,7 @@
     "react-countup": "^4.3.3",
     "react-dom": "^16.13.1",
     "react-floaterjs": "^1.0.6",
+    "react-helmet": "^6.1.0",
     "react-lottie": "^1.2.3",
     "react-progressive-image-loading": "^3.0.3",
     "react-router-dom": "^5.2.0",

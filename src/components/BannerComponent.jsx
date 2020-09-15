@@ -15,7 +15,7 @@ const BannerComponent = ({ head, para, btn, img, goTo }) => {
     autoplay: true,
     animationData: animationData,
     rendererSettings: {
-      preserveAspectRatio: 'xMidYMid slice',
+      preserveAspectRatio: 'xMidYMid',
     },
   };
   AOS.init();
@@ -27,7 +27,7 @@ const BannerComponent = ({ head, para, btn, img, goTo }) => {
             <Row gutter={16} align='middle'>
               <Col className='ant-col-sm-24 ant-col-md-12'>
                 <Typography>
-                  <div data-aos='fade-up' data-aos-duration='1000'>
+                  <div data-aos='fade-up' data-aos-duration='500'>
                     <Title>{head}</Title>
                     <Text strong>{para}</Text>
                     {/* <div className='get-btn'>
