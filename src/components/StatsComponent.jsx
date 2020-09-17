@@ -7,11 +7,9 @@ import {
   SmileFilled,
 } from '@ant-design/icons';
 import CountUp from 'react-countup';
-import AOS from 'aos';
 
 const StatsComponent = () => {
   const { Title, Paragraph } = Typography;
-  AOS.init();
   return (
     <React.Fragment>
       <Layout className='statistic'>
@@ -20,7 +18,7 @@ const StatsComponent = () => {
             <Row gutter={16}>
               <Col className='ant-col-sm-24 ant-col-md-6'>
                 <Card>
-                  <div data-aos='zoom-in'>
+                  <div>
                     <Title>
                       <NotificationFilled style={{ color: '#2f54eb' }} />
                     </Title>
@@ -33,7 +31,7 @@ const StatsComponent = () => {
               </Col>
               <Col className='ant-col-sm-24 ant-col-md-6'>
                 <Card>
-                  <div data-aos='zoom-in'>
+                  <div>
                     <Title>
                       <BulbFilled style={{ color: '#faad14' }} />
                     </Title>
@@ -46,7 +44,7 @@ const StatsComponent = () => {
               </Col>
               <Col className='ant-col-sm-24 ant-col-md-6'>
                 <Card>
-                  <div data-aos='zoom-in'>
+                  <div>
                     <Title>
                       <HomeFilled style={{ color: '#52c41a' }} />
                     </Title>
@@ -59,7 +57,7 @@ const StatsComponent = () => {
               </Col>
               <Col className='ant-col-sm-24 ant-col-md-6'>
                 <Card>
-                  <div data-aos='zoom-in'>
+                  <div>
                     <Title>
                       <SmileFilled style={{ color: '#ff7a45' }} />
                     </Title>

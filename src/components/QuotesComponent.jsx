@@ -1,11 +1,9 @@
 import React from 'react';
 import { Layout, Row, Col, Typography } from 'antd';
 import director from '../assets/chief@2x.png';
-import AOS from 'aos';
 
 const QuotesComponent = () => {
   const { Title, Paragraph, Text } = Typography;
-  AOS.init();
   return (
     <React.Fragment>
       <Layout className='quotes'>
@@ -13,10 +11,10 @@ const QuotesComponent = () => {
           <Row gutter={16} align='middle'>
             <Col className='ant-col-sm-24 ant-col-lg-16'>
               <Typography>
-                <div data-aos='fade-up' data-aos-duration='1000'>
+                <div>
                   <Title className='quotes-head'>PAN India Services</Title>
                 </div>
-                <div data-aos='fade-up' data-aos-duration='1000'>
+                <div>
                   <Paragraph className='quotes-para'>
                     we have over 8+ years of corporate and consulting experience
                     with top firms. Our network includes experienced Chartered
@@ -29,7 +27,7 @@ const QuotesComponent = () => {
                     ”
                   </Paragraph>
                 </div>
-                <div data-aos='fade-up' data-aos-duration='1000'>
+                <div>
                   <Paragraph strong className='ceo'>
                     Uday Choudhary
                   </Paragraph>
@@ -38,13 +36,7 @@ const QuotesComponent = () => {
               </Typography>
             </Col>
             <Col className='ant-col-sm-24 ant-col-lg-8'>
-              <div
-                data-aos='fade-zoom-in'
-                data-aos-easing='ease-in-back'
-                data-aos-delay='300'
-                data-aos-offset='0'>
-                <img src={director} className='director-img' alt='director' />
-              </div>
+              <img src={director} className='director-img' alt='director' />
             </Col>
           </Row>
         </div>

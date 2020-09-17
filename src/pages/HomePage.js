@@ -7,7 +7,7 @@ import QuotesComponent from '../components/QuotesComponent';
 import SupportComponent from '../components/SupportComponent';
 import FaqComponent from '../components/FaqComponent';
 import FooterComponent from '../components/FooterComponent';
-import banner from '../assets/banner2.png';
+import banner from '../assets/banner2.svg';
 import { Helmet } from 'react-helmet';
 
 const HomePage = () => {

@@ -5,23 +5,21 @@ import { Layout, Row, Col, Card, Typography } from 'antd';
 //   MessageFilled,
 //   SafetyCertificateFilled,
 // } from '@ant-design/icons';
-import one from '../assets/one.jpg';
-import two from '../assets/two.jpg';
-import three from '../assets/three.jpg';
-import AOS from 'aos';
+import one from '../assets/one.png';
+import two from '../assets/two.png';
+import three from '../assets/three.png';
 
 const SupportComponent = () => {
   const { Title, Paragraph } = Typography;
-  AOS.init();
   return (
     <React.Fragment>
-      <Layout className='support'>
+      <Layout className='support' style={{ background: '#e2f3f5' }}>
         <div className='container'>
           <Row gutter={16}>
             <Col className='ant-col-sm-24 ant-col-lg-8'>
               <Card>
                 <Typography>
-                  <div data-aos='zoom-in'>
+                  <div>
                     <Title className='support-team'>
                       <img src={one} alt='' />
                     </Title>
@@ -37,7 +35,7 @@ const SupportComponent = () => {
             <Col className='ant-col-sm-24 ant-col-lg-8'>
               <Card>
                 <Typography>
-                  <div data-aos='zoom-in'>
+                  <div>
                     <Title className='support-time'>
                       <img src={two} alt='' />
                     </Title>
@@ -53,7 +51,7 @@ const SupportComponent = () => {
             <Col className='ant-col-sm-24 ant-col-lg-8'>
               <Card>
                 <Typography>
-                  <div data-aos='zoom-in'>
+                  <div>
                     <Title className='support-payment'>
                       <img src={three} alt='' />
                     </Title>
