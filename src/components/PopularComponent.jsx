@@ -22,7 +22,7 @@ const PopularComponent = () => {
             </Typography.Title>
             <Row gutter={16}>
               <Col className='ant-col-sm-24 ant-col-lg-6'>
-                <div className='box'>
+                <div className='service-card'>
                   <Card cover={<img alt='example' src={serviceOne} />}>
                     <Meta
                       title='GST Registration'
@@ -37,7 +37,7 @@ const PopularComponent = () => {
                 </div>
               </Col>
               <Col className='ant-col-sm-24 ant-col-lg-6'>
-                <div className='box'>
+                <div className='service-card'>
                   <Card cover={<img alt='example' src={serviceTwo} />}>
                     <Meta
                       title='Company Registration'
@@ -52,7 +52,7 @@ const PopularComponent = () => {
                 </div>
               </Col>
               <Col className='ant-col-sm-24 ant-col-lg-6 '>
-                <div className='box'>
+                <div className='service-card'>
                   <Card cover={<img alt='example' src={serviceThree} />}>
                     <Meta
                       title='Income Tax Return'
@@ -68,7 +68,7 @@ const PopularComponent = () => {
               </Col>
 
               <Col className='ant-col-sm-24 ant-col-lg-6'>
-                <div className='box'>
+                <div className='service-card'>
                   <Card cover={<img alt='example' src={serviceFour} />}>
                     <Meta
                       title='Trademark Registration'
