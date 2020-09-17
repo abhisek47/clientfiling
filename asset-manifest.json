@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.1cdbcad9.chunk.css",
-    "main.js": "/static/js/main.aae8030e.chunk.js",
-    "main.js.map": "/static/js/main.aae8030e.chunk.js.map",
+    "main.css": "/static/css/main.b1ef0a9a.chunk.css",
+    "main.js": "/static/js/main.345bf6a2.chunk.js",
+    "main.js.map": "/static/js/main.345bf6a2.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.8eac0563.js",
     "runtime-main.js.map": "/static/js/runtime-main.8eac0563.js.map",
-    "static/css/2.ad46291a.chunk.css": "/static/css/2.ad46291a.chunk.css",
-    "static/js/2.2da1a81e.chunk.js": "/static/js/2.2da1a81e.chunk.js",
-    "static/js/2.2da1a81e.chunk.js.map": "/static/js/2.2da1a81e.chunk.js.map",
+    "static/css/2.84207ad0.chunk.css": "/static/css/2.84207ad0.chunk.css",
+    "static/js/2.6f03a348.chunk.js": "/static/js/2.6f03a348.chunk.js",
+    "static/js/2.6f03a348.chunk.js.map": "/static/js/2.6f03a348.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.88a3f5b561fb3a045d18bba7516f100d.js": "/precache-manifest.88a3f5b561fb3a045d18bba7516f100d.js",
+    "precache-manifest.1d4890d105f88752602037bc4c445a0d.js": "/precache-manifest.1d4890d105f88752602037bc4c445a0d.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/2.ad46291a.chunk.css.map": "/static/css/2.ad46291a.chunk.css.map",
-    "static/css/main.1cdbcad9.chunk.css.map": "/static/css/main.1cdbcad9.chunk.css.map",
-    "static/js/2.2da1a81e.chunk.js.LICENSE.txt": "/static/js/2.2da1a81e.chunk.js.LICENSE.txt",
+    "static/css/2.84207ad0.chunk.css.map": "/static/css/2.84207ad0.chunk.css.map",
+    "static/css/main.b1ef0a9a.chunk.css.map": "/static/css/main.b1ef0a9a.chunk.css.map",
+    "static/js/2.6f03a348.chunk.js.LICENSE.txt": "/static/js/2.6f03a348.chunk.js.LICENSE.txt",
     "static/media/ITR-1-Form-2019to2020.pdf": "/static/media/ITR-1-Form-2019to2020.5397e425.pdf",
-    "static/media/banner2.png": "/static/media/banner2.5e47fc2c.png",
+    "static/media/banner2.svg": "/static/media/banner2.d079f3db.svg",
     "static/media/chief@2x.png": "/static/media/chief@2x.b38822b6.png",
     "static/media/esi-benefits.svg": "/static/media/esi-benefits.ccafc2fa.svg",
     "static/media/esi-entities.svg": "/static/media/esi-entities.08f4071e.svg",
@@ -65,7 +65,7 @@
     "static/media/model_7.jpg": "/static/media/model_7.1a11c9f2.jpg",
     "static/media/model_8.jpg": "/static/media/model_8.1909549a.jpg",
     "static/media/model_9.jpg": "/static/media/model_9.4331f240.jpg",
-    "static/media/one.jpg": "/static/media/one.69b0e614.jpg",
+    "static/media/one.png": "/static/media/one.c2e03ffc.png",
     "static/media/pf-docs.svg": "/static/media/pf-docs.05016e1f.svg",
     "static/media/rupee-indian.svg": "/static/media/rupee-indian.1e59e6da.svg",
     "static/media/services_1.jpg": "/static/media/services_1.6282dd71.jpg",
@@ -78,14 +78,14 @@
     "static/media/tdrenewal-docs.svg": "/static/media/tdrenewal-docs.261195df.svg",
     "static/media/tdrenewal-required.svg": "/static/media/tdrenewal-required.1ec629dc.svg",
     "static/media/tds.svg": "/static/media/tds.389db774.svg",
-    "static/media/three.jpg": "/static/media/three.5bc9d0a7.jpg",
-    "static/media/two.jpg": "/static/media/two.73ece9a8.jpg"
+    "static/media/three.png": "/static/media/three.4334e42a.png",
+    "static/media/two.png": "/static/media/two.a4eaad1f.png"
   },
   "entrypoints": [
     "static/js/runtime-main.8eac0563.js",
-    "static/css/2.ad46291a.chunk.css",
-    "static/js/2.2da1a81e.chunk.js",
-    "static/css/main.1cdbcad9.chunk.css",
-    "static/js/main.aae8030e.chunk.js"
+    "static/css/2.84207ad0.chunk.css",
+    "static/js/2.6f03a348.chunk.js",
+    "static/css/main.b1ef0a9a.chunk.css",
+    "static/js/main.345bf6a2.chunk.js"
   ]
 }
