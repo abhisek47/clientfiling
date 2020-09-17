@@ -21,7 +21,13 @@ const SupportComponent = () => {
                 <Typography>
                   <div>
                     <Title className='support-team'>
-                      <img src={one} alt='' />
+                      <img
+                        src={one}
+                        alt=''
+                        data-sal='zoom-in'
+                        data-sal-delay='300'
+                        data-sal-easing='ease-out-back'
+                      />
                     </Title>
                     <Title level={4}>Vibrant Team</Title>
                     <Paragraph>
@@ -37,7 +43,13 @@ const SupportComponent = () => {
                 <Typography>
                   <div>
                     <Title className='support-time'>
-                      <img src={two} alt='' />
+                      <img
+                        src={two}
+                        alt=''
+                        data-sal='zoom-in'
+                        data-sal-delay='300'
+                        data-sal-easing='ease-out-back'
+                      />
                     </Title>
                     <Title level={4}>24/7 Support</Title>
                     <Paragraph>
@@ -53,7 +65,13 @@ const SupportComponent = () => {
                 <Typography>
                   <div>
                     <Title className='support-payment'>
-                      <img src={three} alt='' />
+                      <img
+                        src={three}
+                        alt=''
+                        data-sal='zoom-in'
+                        data-sal-delay='300'
+                        data-sal-easing='ease-out-back'
+                      />
                     </Title>
                     <Title level={4}>Secure Payment</Title>
                     <Paragraph>

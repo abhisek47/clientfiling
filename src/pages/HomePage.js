@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import HeaderComponent from '../components/HeaderComponent';
 import BannerComponent from '../components/BannerComponent';
 import StatsComponent from '../components/StatsComponent';
@@ -9,8 +9,12 @@ import FaqComponent from '../components/FaqComponent';
 import FooterComponent from '../components/FooterComponent';
 import banner from '../assets/banner2.svg';
 import { Helmet } from 'react-helmet';
+import sal from 'sal.js';
 
 const HomePage = () => {
+  useEffect(() => {
+    sal();
+  }, []);
   return (
     <React.Fragment>
       <Helmet>

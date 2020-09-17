@@ -14,7 +14,10 @@ const PopularComponent = () => {
       <Layout>
         <div className='container'>
           <div className='popular-entities'>
-            <Typography.Title>
+            <Typography.Title
+              data-sal='slide-up'
+              data-sal-delay='300'
+              data-sal-easing='ease-out-back'>
               We Provide Multi Professional Services
             </Typography.Title>
             <Row gutter={16}>

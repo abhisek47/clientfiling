@@ -12,10 +12,20 @@ const QuotesComponent = () => {
             <Col className='ant-col-sm-24 ant-col-lg-16'>
               <Typography>
                 <div>
-                  <Title className='quotes-head'>PAN India Services</Title>
+                  <Title
+                    className='quotes-head'
+                    data-sal='slide-up'
+                    data-sal-delay='100'
+                    data-sal-easing='ease-out-back'>
+                    PAN India Services
+                  </Title>
                 </div>
                 <div>
-                  <Paragraph className='quotes-para'>
+                  <Paragraph
+                    className='quotes-para'
+                    data-sal='slide-up'
+                    data-sal-delay='100'
+                    data-sal-easing='ease-out-back'>
                     we have over 8+ years of corporate and consulting experience
                     with top firms. Our network includes experienced Chartered
                     Accountants, Company Secretaries, Lawyers, Cost Accountants
@@ -27,7 +37,10 @@ const QuotesComponent = () => {
                     ”
                   </Paragraph>
                 </div>
-                <div>
+                <div
+                  data-sal='slide-up'
+                  data-sal-delay='200'
+                  data-sal-easing='ease-out-back'>
                   <Paragraph strong className='ceo'>
                     Uday Choudhary
                   </Paragraph>

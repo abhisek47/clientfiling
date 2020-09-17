@@ -136,8 +136,8 @@ const LlpComponent = () => {
                   dataTwo={llpStandard}
                   dataThree={llpPremium}
                   basic='11800'
-                  standard='11800'
-                  premium='11800'
+                  standard='17700'
+                  premium='30000'
                 />
               </div>
               {/* faq */}

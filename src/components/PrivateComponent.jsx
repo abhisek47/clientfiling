@@ -3,6 +3,7 @@ import { Layout, Row, Col, Typography, Collapse, Anchor } from 'antd';
 import { CaretRightOutlined } from '@ant-design/icons';
 import DocumentComponent from './DocumentComponent';
 import PricingComponent from './PricingComponent';
+import companyDocs from '../assets/company-docs.svg';
 import {
   privateStandard,
   privateBasic,
@@ -29,7 +30,7 @@ const PrivateComponent = () => {
       title:
         'What are the prerequisites to incorporate a Private Limited Company ?',
       details:
-        'The prerequisites for the incorporation of a private limited company are that: The number of members must be between 2-200,  There must be at least two directors and two shareholders, Each director must have a Directors Identification Number(DIN) , PAN card copy of directors/ shareholders.Passport copy for NRI subscribers.',
+        'The prerequisites for the incorporation of a private limited company are that: The number of members must be between 2-50,  There must be at least two directors and two shareholders, Each director must have a Directors Identification Number(DIN) , PAN card copy of directors/ shareholders.Passport copy for NRI subscribers.',
     },
     {
       id: 4,
@@ -52,32 +53,25 @@ const PrivateComponent = () => {
   const GstDocument = [
     {
       id: 1,
-      case:
-        'An Affidavit on a Stamp Paper is to be given by all the subscribers of the Company to state their willingness to become the shareholders of the Company',
+      case: 'PAN Card (Mandatory)',
     },
-    { id: 2, case: 'Proof of office address – Rental Agreement' },
     {
-      id: 3,
-      case: 'Copies of utility bills that are not older than two months',
+      id: 2,
+      case: 'Voter Card / Passport / Driving Licence',
     },
+    { id: 3, case: 'Photo copy of director' },
     {
       id: 4,
-      case:
-        'Copy of approval in case the proposed name of the company contains any word(s) or expression(s) that require approval from central government',
+      case: 'Mobile bill / Electricity bill / Bank passbook of director',
     },
     {
       id: 5,
-      case:
-        'If the proposed name is based on a registered trademark or is subject matter of an application pending for registration under the Trade Marks Act, then it is mandatory to attach the trademark registration certificate or trademark application copy',
+      case: 'Digital signature certificate of director',
     },
     {
       id: 6,
-      case: 'NOC from the owner of the property',
-    },
-    {
-      id: 7,
       case:
-        'In case of subscribers/ Director does not have a DIN, it is mandatory to attach, proof of identity and address proof of the subscribers',
+        'Rent agreement / Ownership proof with electricity bill / Water bill / Property tax receipt / Office address proof',
     },
   ];
   const { Title, Paragraph } = Typography;
@@ -116,10 +110,17 @@ const PrivateComponent = () => {
               </div>
               {/* documents */}
               <div className='private-docs service' id='private-docs'>
-                <DocumentComponent
-                  documents={GstDocument}
-                  title='Documents required for gst registration'
-                />
+                <Row gutter={14} align='middle'>
+                  <Col className='ant-col-lg-12 ant-col-sm-24'>
+                    <DocumentComponent
+                      documents={GstDocument}
+                      title='Documents required for Private Company Registration'
+                    />
+                  </Col>
+                  <Col className='ant-col-lg-12 ant-col-sm-24'>
+                    <img src={companyDocs} alt='company documents' />
+                  </Col>
+                </Row>
               </div>
               {/* Pricing info */}
               <div className='pricing service' id='private-pricing'>
@@ -128,8 +129,8 @@ const PrivateComponent = () => {
                   dataTwo={privateStandard}
                   dataThree={privatePremium}
                   basic='11800'
-                  standard='11800'
-                  premium='11800'
+                  standard='17700'
+                  premium='3000'
                 />
               </div>
               {/* faq */}

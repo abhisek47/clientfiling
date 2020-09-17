@@ -9,7 +9,7 @@ import { Helmet } from 'react-helmet';
 
 const LlpPage = () => {
   const services = [
-    'Required Timing - 20 days',
+    'Required Timing - 5 days',
     'Completely Online – No need to visit office',
     'CA Assisted LLP Filing for all your LLP needs',
   ];
@@ -31,7 +31,7 @@ const LlpPage = () => {
         btn='Register now'
         img={model}
         id='llp'
-        tagline='Get your LLP registered  @₹ 10,000/-'
+        tagline='Get your LLP registered  @₹ 11,800/-'
         services={services}
       />
       <div className='container'>

@@ -1,10 +1,14 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Layout, Typography, Row, Col } from 'antd';
 import ProgressiveImage from 'react-progressive-image-loading';
+import sal from 'sal.js';
 
 const BannerComponent = ({ head, para, btn, img, goTo }) => {
   const { Content } = Layout;
   const { Title, Text } = Typography;
+  useEffect(() => {
+    sal();
+  }, []);
   return (
     <React.Fragment>
       <Layout>
@@ -14,8 +18,19 @@ const BannerComponent = ({ head, para, btn, img, goTo }) => {
               <Col className='ant-col-sm-24 ant-col-md-12'>
                 <Typography>
                   <div>
-                    <Title>{head}</Title>
-                    <Text strong>{para}</Text>
+                    <Title
+                      data-sal='slide-up'
+                      data-sal-delay='100'
+                      data-sal-easing='ease-out-back'>
+                      {head}
+                    </Title>
+                    <Text
+                      strong
+                      data-sal='slide-up'
+                      data-sal-delay='200'
+                      data-sal-easing='ease-out-back'>
+                      {para}
+                    </Text>
                     {/* <div className='get-btn'>
                       <Link to='/login'>
                         <Button size='large' type='primary'>

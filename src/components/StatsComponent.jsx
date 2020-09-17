@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Layout, Row, Col, Card, Typography } from 'antd';
 import {
   HomeFilled,
@@ -7,9 +7,13 @@ import {
   SmileFilled,
 } from '@ant-design/icons';
 import CountUp from 'react-countup';
+import sal from 'sal.js';
 
 const StatsComponent = () => {
   const { Title, Paragraph } = Typography;
+  useEffect(() => {
+    sal();
+  }, []);
   return (
     <React.Fragment>
       <Layout className='statistic'>
@@ -18,7 +22,10 @@ const StatsComponent = () => {
             <Row gutter={16}>
               <Col className='ant-col-sm-24 ant-col-md-6'>
                 <Card>
-                  <div>
+                  <div
+                    data-sal='zoom-in'
+                    data-sal-delay='300'
+                    data-sal-easing='ease-out-back'>
                     <Title>
                       <NotificationFilled style={{ color: '#2f54eb' }} />
                     </Title>
@@ -31,7 +38,10 @@ const StatsComponent = () => {
               </Col>
               <Col className='ant-col-sm-24 ant-col-md-6'>
                 <Card>
-                  <div>
+                  <div
+                    data-sal='zoom-in'
+                    data-sal-delay='300'
+                    data-sal-easing='ease-out-back'>
                     <Title>
                       <BulbFilled style={{ color: '#faad14' }} />
                     </Title>
@@ -44,7 +54,10 @@ const StatsComponent = () => {
               </Col>
               <Col className='ant-col-sm-24 ant-col-md-6'>
                 <Card>
-                  <div>
+                  <div
+                    data-sal='zoom-in'
+                    data-sal-delay='300'
+                    data-sal-easing='ease-out-back'>
                     <Title>
                       <HomeFilled style={{ color: '#52c41a' }} />
                     </Title>
@@ -57,7 +70,10 @@ const StatsComponent = () => {
               </Col>
               <Col className='ant-col-sm-24 ant-col-md-6'>
                 <Card>
-                  <div>
+                  <div
+                    data-sal='zoom-in'
+                    data-sal-delay='300'
+                    data-sal-easing='ease-out-back'>
                     <Title>
                       <SmileFilled style={{ color: '#ff7a45' }} />
                     </Title>

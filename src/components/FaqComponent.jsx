@@ -50,7 +50,13 @@ const FaqComponent = () => {
       <Layout className='faq'>
         <div className='container'>
           <Typography>
-            <Title className='faq-head'>Frequently Asked Questions</Title>
+            <Title
+              className='faq-head'
+              data-sal='slide-up'
+              data-sal-delay='300'
+              data-sal-easing='ease-out-back'>
+              Frequently Asked Questions
+            </Title>
             <Row gutter={16}>
               <Col className='ant-col-sm-24 ant-col-lg-12'>
                 <Collapse
