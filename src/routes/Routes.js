@@ -26,6 +26,7 @@ import PrivatePage from '../pages/PrivatePage';
 import LlpPage from '../pages/LlpPage';
 import PrivateCompliancesPage from '../pages/PrivateCompliancesPage';
 import LlpCompliancesPage from '../pages/LlpCompliancesPage';
+import OtherCompliancesPage from '../pages/OtherCompliancesPage';
 import ImportExportPage from '../pages/ImportExportPage';
 import IsoPage from '../pages/IsoPage';
 import { LoginContext } from '../App';
@@ -85,6 +86,11 @@ const Routes = () => {
             exact
             path='/limited-partnership-compliances'
             component={LlpCompliancesPage}
+          />
+          <Route
+            exact
+            path='/other-compliances'
+            component={OtherCompliancesPage}
           />
           <Route
             exact

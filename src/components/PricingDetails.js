@@ -559,6 +559,27 @@ export const llpCompliancesPremium = [
   'Book keeping in cloud based software',
 ];
 
+// compliances for partnership firm , society
+export const otherCompliancesBasic = [
+  'GST filing including GST9',
+  '2 Partners',
+  'Income tax filing of firm with filing of  partners',
+  'Assistance in audit report',
+];
+export const otherCompliancesStandard = [
+  'GST filing including GST9',
+  '3 Partners',
+  'Income tax filing of firm with filing of partners',
+  'Assistance in audit report',
+];
+export const otherCompliancesPremium = [
+  'GST filing including GST9',
+  '3 Partners',
+  'Income tax filing of firm with filing of partners',
+  'Assistance in audit report',
+  'Annual Book keeping',
+];
+
 // import export code
 export const iecBasic = [
   'Import Export Code Registration',
