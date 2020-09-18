@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.b1ef0a9a.chunk.css",
-    "main.js": "/static/js/main.edf58866.chunk.js",
-    "main.js.map": "/static/js/main.edf58866.chunk.js.map",
+    "main.css": "/static/css/main.c5b74722.chunk.css",
+    "main.js": "/static/js/main.13c0da2a.chunk.js",
+    "main.js.map": "/static/js/main.13c0da2a.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.8eac0563.js",
     "runtime-main.js.map": "/static/js/runtime-main.8eac0563.js.map",
     "static/css/2.84841081.chunk.css": "/static/css/2.84841081.chunk.css",
-    "static/js/2.1d20683e.chunk.js": "/static/js/2.1d20683e.chunk.js",
-    "static/js/2.1d20683e.chunk.js.map": "/static/js/2.1d20683e.chunk.js.map",
+    "static/js/2.843cf366.chunk.js": "/static/js/2.843cf366.chunk.js",
+    "static/js/2.843cf366.chunk.js.map": "/static/js/2.843cf366.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.c19c186e40658cdf6b7ad129f971b809.js": "/precache-manifest.c19c186e40658cdf6b7ad129f971b809.js",
+    "precache-manifest.02b134868f40f46e7343514f80c82dd4.js": "/precache-manifest.02b134868f40f46e7343514f80c82dd4.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.84841081.chunk.css.map": "/static/css/2.84841081.chunk.css.map",
-    "static/css/main.b1ef0a9a.chunk.css.map": "/static/css/main.b1ef0a9a.chunk.css.map",
-    "static/js/2.1d20683e.chunk.js.LICENSE.txt": "/static/js/2.1d20683e.chunk.js.LICENSE.txt",
+    "static/css/main.c5b74722.chunk.css.map": "/static/css/main.c5b74722.chunk.css.map",
+    "static/js/2.843cf366.chunk.js.LICENSE.txt": "/static/js/2.843cf366.chunk.js.LICENSE.txt",
     "static/media/ITR-1-Form-2019to2020.pdf": "/static/media/ITR-1-Form-2019to2020.5397e425.pdf",
     "static/media/banner2.svg": "/static/media/banner2.d079f3db.svg",
     "static/media/chief@2x.png": "/static/media/chief@2x.b38822b6.png",
@@ -44,7 +44,6 @@
     "static/media/itrThree-ineligibility.svg": "/static/media/itrThree-ineligibility.5e29ab3b.svg",
     "static/media/itrTwo-eligibility.svg": "/static/media/itrTwo-eligibility.8cd19a3d.svg",
     "static/media/itrTwo-ineligibility.svg": "/static/media/itrTwo-ineligibility.70a9ae17.svg",
-    "static/media/logo2.svg": "/static/media/logo2.dee7cbae.svg",
     "static/media/model_1.jpg": "/static/media/model_1.7f907ab2.jpg",
     "static/media/model_10.jpg": "/static/media/model_10.f2b87169.jpg",
     "static/media/model_11.jpg": "/static/media/model_11.d0a827e5.jpg",
@@ -85,8 +84,8 @@
   "entrypoints": [
     "static/js/runtime-main.8eac0563.js",
     "static/css/2.84841081.chunk.css",
-    "static/js/2.1d20683e.chunk.js",
-    "static/css/main.b1ef0a9a.chunk.css",
-    "static/js/main.edf58866.chunk.js"
+    "static/js/2.843cf366.chunk.js",
+    "static/css/main.c5b74722.chunk.css",
+    "static/js/main.13c0da2a.chunk.js"
   ]
 }
