@@ -6,7 +6,7 @@ import FooterComponent from '../../components/FooterComponent';
 class PaymentComponent extends Component {
   continue = (e) => {
     e.preventDefault();
-    window.location.href = 'https://rzp.io/l/0FhNKTM';
+    window.location.href = 'https://rzp.io/l/gst-filing';
     window.scrollTo(0, 0);
   };
 

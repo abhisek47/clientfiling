@@ -1,11 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@400;500;700&family=Source+Sans+Pro:wght@300;400;600;700&display=swap');
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   font-family: 'Source Sans Pro', 'Alegreya Sans', sans-serif;
 }
 a {
   color: #fff;
+}
+
+.logo a:hover {
+  color: ghostwhite;
 }
 
 .ant-layout-content {

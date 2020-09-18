@@ -16,7 +16,7 @@ import { InboxOutlined } from '@ant-design/icons';
 class RenewalComponent extends Component {
   onFinish = (values) => {
     console.log('Received values of form: ', values);
-    window.location.href = 'https://rzp.io/l/WC2MwNN';
+    window.location.href = 'https://rzp.io/l/trademark-renewal';
     window.scrollTo(0, 0);
   };
 

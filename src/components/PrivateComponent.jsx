@@ -130,7 +130,7 @@ const PrivateComponent = () => {
                   dataThree={privatePremium}
                   basic='11800'
                   standard='17700'
-                  premium='3000'
+                  premium='30000'
                 />
               </div>
               {/* faq */}

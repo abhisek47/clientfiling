@@ -17,7 +17,7 @@ const DrawerComponent = () => {
         <MenuOutlined />
       </Button>
       <Drawer
-        width='100%'
+        width='90%'
         placement='right'
         closable={true}
         onClose={onClose}
