@@ -9,7 +9,6 @@ import { Helmet } from 'react-helmet';
 
 const GstPage = () => {
   const services = [
-    'Filing of Application for GST Registration',
     'Secure GST Identification Number',
     'Required Timing - 2 days',
     'Completely Online – No need to visit office',

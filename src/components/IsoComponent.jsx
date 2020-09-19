@@ -14,7 +14,11 @@ import isoCus from '../assets/isoCusBenefits.svg';
 import isoDocs from '../assets/isoDocuments.svg';
 import isoEleg from '../assets/isoElegibility.svg';
 import isoIneleg from '../assets/isoInelegibility.svg';
-import { CaretRightOutlined, CheckCircleFilled } from '@ant-design/icons';
+import {
+  CaretRightOutlined,
+  CheckCircleFilled,
+  ExclamationCircleFilled,
+} from '@ant-design/icons';
 import DocumentComponent from './DocumentComponent';
 import PricingComponent from './PricingComponent';
 import { isoRowOne, isoRowTwo, isoRowThree, isoRowFour } from './IsoDocuments';
@@ -220,8 +224,8 @@ const IsoComponent = () => {
                       renderItem={(item) => (
                         <List.Item>
                           <Text>
-                            <span className='emoji check'>
-                              <CheckCircleFilled />
+                            <span className='emoji uncheck'>
+                              <ExclamationCircleFilled />
                             </span>
                             {item}
                           </Text>
@@ -240,8 +244,9 @@ const IsoComponent = () => {
                 <Row gutter={14}>
                   {isoRowOne.map((row) => (
                     <Col className='ant-col-lg-24 ant-col-sm-24' key={row.id}>
-                      <Card className='box' title={row.title}>
-                        {row.para}
+                      <Card className='box'>
+                        <Title level={4}>{row.title}</Title>
+                        <Paragraph>{row.para}</Paragraph>
                       </Card>
                     </Col>
                   ))}
@@ -249,8 +254,9 @@ const IsoComponent = () => {
                 <Row gutter={14}>
                   {isoRowTwo.map((row) => (
                     <Col className='ant-col-lg-24 ant-col-sm-24' key={row.id}>
-                      <Card title={row.title} className='box'>
-                        {row.para}
+                      <Card className='box'>
+                        <Title level={4}>{row.title}</Title>
+                        <Paragraph>{row.para}</Paragraph>
                       </Card>
                     </Col>
                   ))}
@@ -267,8 +273,9 @@ const IsoComponent = () => {
                 <Row gutter={14}>
                   {isoRowFour.map((row) => (
                     <Col className='ant-col-lg-24 ant-col-sm-24' key={row.id}>
-                      <Card className='box' title={row.title}>
-                        {row.para}
+                      <Card className='box'>
+                        <Title level={4}>{row.title}</Title>
+                        <Paragraph>{row.para}</Paragraph>
                       </Card>
                     </Col>
                   ))}
