@@ -8,8 +8,8 @@ import SupportComponent from '../components/SupportComponent';
 import FaqComponent from '../components/FaqComponent';
 import FooterComponent from '../components/FooterComponent';
 import banner from '../assets/banner2.svg';
-import { Helmet } from 'react-helmet';
 import sal from 'sal.js';
+import { Helmet } from 'react-helmet';
 
 const HomePage = () => {
   useEffect(() => {
@@ -19,12 +19,12 @@ const HomePage = () => {
     <React.Fragment>
       <Helmet>
         <title>
-          ClientFilingIndia - Startup, Company Registration, Income Tax, GST,
-          Compliances, Payroll
+          We Provide - Company Registration, Income Tax, GST, Compliances,
+          Payroll Services
         </title>
         <meta
           name='description'
-          content='ClientFilingIndia | We provide multi professional services and helping startup to grow their business'
+          content='Company is a popular option to start a business in India by startups and businesses with higher growth aspirations. Pvt Ltd company is incorporated under the Companies Act of 2013, and governed by the Ministry of Corporate Affairs (MCA).'
         />
       </Helmet>
       <HeaderComponent />

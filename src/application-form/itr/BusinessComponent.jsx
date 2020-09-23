@@ -232,14 +232,14 @@ class BusinessComponent extends Component {
                   <Form.Item
                     name='downloadForm'
                     label='Do not have ITR Form-16 ?'>
-                    <Link download='form_16.pdf' href={ItrForm}>
+                    <a download='form_16.pdf' href={ItrForm}>
                       <Button
                         type='primary'
                         icon={<DownloadOutlined />}
                         size='large'>
                         Download
                       </Button>
-                    </Link>
+                    </a>
                     <List
                       dataSource={services}
                       renderItem={(item) => (

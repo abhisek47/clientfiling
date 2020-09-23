@@ -30,7 +30,7 @@ const ItrSixPage = () => {
         btn='Register now'
         img={model}
         id='itr'
-        tagline='Get your ITR-6 filing @₹ 4,237/-'
+        tagline='Get your ITR-6 filing @₹ 5,000/-'
         services={services}
       />
       <div className='container'>

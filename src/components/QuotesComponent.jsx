@@ -30,11 +30,10 @@ const QuotesComponent = () => {
                     with top firms. Our network includes experienced Chartered
                     Accountants, Company Secretaries, Lawyers, Cost Accountants
                     and many more. We help in startup compliance and assists in
-                    ROC filing, GST filing, incometax filing, and assist in
-                    geeting various certificates like IPR, fssai, IEC etc . We
-                    help and assist client in legal compliances - “ give a-the
-                    burden of compliance to us for ease of focusing on business
-                    ”
+                    ROC filing, GST filing, Income Tax filing, and assist in
+                    geeting various certificates like IPR, FSSAI, IEC etc . We
+                    help and assist client in legal compliances and give the
+                    burden of compliance to us for ease of focusing on business.
                   </Paragraph>
                 </div>
                 <div

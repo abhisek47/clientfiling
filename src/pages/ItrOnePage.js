@@ -30,7 +30,7 @@ const ItrOnePage = () => {
         btn='Register now'
         img={model}
         id='itr'
-        tagline='Get your ITR-1 filing @₹ 700/-'
+        tagline='Get your ITR-1 filing @₹ 2900/-'
         services={services}
       />
       <div className='container'>
