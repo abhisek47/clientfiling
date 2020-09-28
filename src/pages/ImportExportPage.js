@@ -17,16 +17,15 @@ const ImportExportPage = () => {
   return (
     <React.Fragment>
       <Helmet>
-        <title>Import Export Code Registration - ClientFilingIndia</title>
+        <title>Import Export Code Registration - Clientfilingindia</title>
         <meta
           name='description'
-          content='IEC(Import export code ) or import export licence . is a 10 digit code(based on pan number) which is provided by DGFT for import export transactions. IEC can be obtained in personal name or in company name.'
+          content='Import Export Licence is a 10 digit code which is provided by DGFT for import export transactions. IEC can be obtained in personal name or in company name.'
         />
       </Helmet>
       <HeaderComponent />
       <ServiceBannerComponent
         head='Import Export Code Registration'
-        para='Register for your Company. A GST registration is a key business identification number which mandatory for export from India or Import to India.'
         btn='Register now'
         img={model}
         tagline='Get your Import Export Code registered @₹ 3,500 excluding GST'

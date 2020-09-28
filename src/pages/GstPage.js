@@ -17,16 +17,15 @@ const GstPage = () => {
   return (
     <React.Fragment>
       <Helmet>
-        <title>GST Registration - ClientFilingIndia</title>
+        <title>GST Registration Online - Clientfilingindia</title>
         <meta
           name='description'
-          content='GST Number (GSTIN) is a unique 15 digit number which is allotted to the assessed at the time of filing an application for registration for Goods and Service Tax. As per the GST law, every person (including company, LLP etc) has to register under GST if the total turnover crosses Rs.40 lakh (Rs.20 lakh in case of north eastern states).'
+          content='GST Number is a unique 15 digit number which is allotted to the assessed at the time of filing an application for registration for Goods and Service Tax.'
         />
       </Helmet>
       <HeaderComponent />
       <ServiceBannerComponent
         head='GST Registration Online'
-        para='Register for your Company. A GST registration is a key business identification number which mandatory for export from India or Import to India.'
         btn='Register now'
         img={model}
         id='gst'

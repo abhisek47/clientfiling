@@ -17,16 +17,15 @@ const ItrTwoPage = () => {
   return (
     <React.Fragment>
       <Helmet>
-        <title>Income Tax Return Filing (ITR-2) - ClientFilingIndia</title>
+        <title>Income Tax Return Filing (ITR-2) - Clientfilingindia</title>
         <meta
           name='description'
-          content='Individuals and Hindu Undivided Families who have their Income for the Financial Year through Salary or Pension, more than One House Property, Income from Capital Gains, Income from foreign assets/Income, Income from business or profession as a partner (not proprietor) and other sources including lottery, racehorses, legal gambling are eligible to file their IT Return using ITR-2.'
+          content='Individuals and Hindu undivided families who have their income for the financial year through salary or pension are eligible to file their IT return using ITR-2.'
         />
       </Helmet>
       <HeaderComponent />
       <ServiceBannerComponent
         head='Income Tax Return - 2'
-        para='Register for your Company. A GST registration is a key business identification number which mandatory for export from India or Import to India.'
         btn='Register now'
         img={model}
         id='itr'

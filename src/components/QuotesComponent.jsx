@@ -41,7 +41,7 @@ const QuotesComponent = () => {
                   data-sal-delay='200'
                   data-sal-easing='ease-out-back'>
                   <Paragraph strong className='ceo'>
-                    Uday Choudhary
+                    Uday Prakash Choudhary
                   </Paragraph>
                   <Text>Chief executive officer</Text>
                 </div>

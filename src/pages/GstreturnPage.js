@@ -17,16 +17,15 @@ const GstreturnPage = () => {
   return (
     <React.Fragment>
       <Helmet>
-        <title>GST Return Filing - ClientFilingIndia</title>
+        <title>GST Return Filing - Clientfilingindia</title>
         <meta
           name='description'
-          content='A return is a document containing details of income which a taxpayer is required to file with the tax administrative authorities. This is used by tax authorities to calculate tax liability.'
+          content='A return is a document containing details of income which a taxpayer is required to file with the tax administrative authorities.'
         />
       </Helmet>
       <HeaderComponent />
       <ServiceBannerComponent
         head='GST Return Filing'
-        para='Register for your Company. A GST registration is a key business identification number which mandatory for export from India or Import to India.'
         btn='Register now'
         img={model}
         id='gst-return'

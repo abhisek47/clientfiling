@@ -17,17 +17,16 @@ const PrivateCompliancesPage = () => {
     <React.Fragment>
       <Helmet>
         <title>
-          Annual Compliances For Private Limited Company - ClientFilingIndia
+          Annual Compliances For Private Limited Company - Clientfilingindia
         </title>
         <meta
           name='description'
-          content='A Private Company is an entity enjoying a separate identity which requires maintaining its active status through the regular filing with MCA. For every company, it is compulsory to file an annual return and audited financial statements with MCA for every financial year.'
+          content='A Private Limited Company is an entity enjoying a separate identity which requires maintaining its active status through the regular filing with MCA.'
         />
       </Helmet>
       <HeaderComponent />
       <ServiceBannerComponent
         head='Compliances For Private Company'
-        para='Register for your Company. A GST registration is a key business identification number which mandatory for export from India or Import to India.'
         btn='Register now'
         img={model}
         tagline='Get your Annual Compliances registered under Private Company @₹ 20,000/-'

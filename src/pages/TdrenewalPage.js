@@ -16,16 +16,15 @@ const ItrThreePage = () => {
   return (
     <React.Fragment>
       <Helmet>
-        <title>Trademark Renewal - ClientFilingIndia</title>
+        <title>Trademark Renewal - Clientfilingindia</title>
         <meta
           name='description'
-          content='The registration of a trademark is valid only for a period of 10 years. After which, it can be renewed from time to time. Trademark renewal preserves those rights which are only available to a registered mark. In case the proprietor fails to renew the trademark, then he shall lose all the protection that comes along with registration.'
+          content='The registration of a trademark is valid only for a period of 10 years. After which, it can be renewed from time to time.'
         />
       </Helmet>
       <HeaderComponent />
       <ServiceBannerComponent
         head='Trademark Renewal'
-        para='Register for your Company. A GST registration is a key business identification number which mandatory for export from India or Import to India.'
         btn='Register now'
         img={model}
         id='trademark-renewal'

@@ -17,17 +17,16 @@ const LlpPage = () => {
     <React.Fragment>
       <Helmet>
         <title>
-          Limited Liability Partnership Registration - ClientFilingIndia
+          Limited Liability Partnership (LLP) Registration - Clientfilingindia
         </title>
         <meta
           name='description'
-          content='This is business form which provides benefits of limited liability and flexibility of a partnership business. Compliance requirement is less in LLP as compared to company form of business structure.'
+          content='This is a business form which provides benefits of limited liability and flexibility of a partnership business.'
         />
       </Helmet>
       <HeaderComponent />
       <ServiceBannerComponent
         head='Limited Liability Partnership'
-        para='Register for your Company. A GST registration is a key business identification number which mandatory for export from India or Import to India.'
         btn='Register now'
         img={model}
         id='llp'

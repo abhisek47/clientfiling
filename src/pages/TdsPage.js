@@ -16,16 +16,15 @@ const TdsPage = () => {
   return (
     <React.Fragment>
       <Helmet>
-        <title>Tax Deduction at Source(TDS) Filing - ClientFilingIndia</title>
+        <title>Tax Deduction at Source (TDS) - Clientfilingindia</title>
         <meta
           name='description'
-          content='a person (deductor) who is liable to make payment of specified nature to any other person (deductee) shall deduct tax at source and remit the same into the account of the Central Government.'
+          content='A person who is liable to make payment of specified nature to any other person  shall deduct tax at source.'
         />
       </Helmet>
       <HeaderComponent />
       <ServiceBannerComponent
         head='Tax Deduction at Source'
-        para='Register for your Company. A GST registration is a key business identification number which mandatory for export from India or Import to India.'
         btn='Register now'
         img={model}
         id='tds'

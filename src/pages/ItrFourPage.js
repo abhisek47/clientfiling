@@ -17,16 +17,15 @@ const ItrFourPage = () => {
   return (
     <React.Fragment>
       <Helmet>
-        <title>Income Tax Return Filing (ITR-4) - ClientFilingIndia</title>
+        <title>Income Tax Return Filing (ITR-4) - Clientfilingindia</title>
         <meta
           name='description'
-          content='Form is applicable For Individuals, HUFs and Firms (other than LLP) being a Resident having Total Income upto Rs.50 lakhs and having income from Business and Profession which is computed under sections 44AD, 44ADA or 44AE.'
+          content='This form is applicable for Individuals, HUFs and firms (other than LLP) being a resident having total income upto Rs.50 lakhs.'
         />
       </Helmet>
       <HeaderComponent />
       <ServiceBannerComponent
         head='Income Tax Return - 4'
-        para='Register for your Company. A GST registration is a key business identification number which mandatory for export from India or Import to India.'
         btn='Register now'
         img={model}
         id='itr'

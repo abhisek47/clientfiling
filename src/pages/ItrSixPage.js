@@ -17,16 +17,15 @@ const ItrSixPage = () => {
   return (
     <React.Fragment>
       <Helmet>
-        <title>Income Tax Return Filing (ITR-6) - ClientFilingIndia</title>
+        <title>Income Tax Return Filing (ITR-6) - Clientfilingindia</title>
         <meta
           name='description'
-          content='ITR Form 6 or ITR 6 is an income tax return form that is used by companies to e-file income tax return if they do not claim exemption under Section 11 of the Income Tax Act, 1961. Under existing Income Tax rules, companies that can claim exemption u/s 11 are those who have income from property that is held for charitable or religious purposes.'
+          content='ITR-6 is an income tax return form that is used by companies to e-file income tax return if they do not claim exemption under Section 11 of the Income Tax Act.'
         />
       </Helmet>
       <HeaderComponent />
       <ServiceBannerComponent
         head='Income Tax Return - 6'
-        para='Register for your Company. A GST registration is a key business identification number which mandatory for export from India or Import to India.'
         btn='Register now'
         img={model}
         id='itr'

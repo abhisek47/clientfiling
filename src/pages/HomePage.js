@@ -19,18 +19,17 @@ const HomePage = () => {
     <React.Fragment>
       <Helmet>
         <title>
-          We Provide - Company Registration, Income Tax, GST, Compliances,
-          Payroll Services
+          Company Registration, Income Tax, GST, Compliances, Payroll
         </title>
         <meta
           name='description'
-          content='Company is a popular option to start a business in India by startups and businesses with higher growth aspirations. Pvt Ltd company is incorporated under the Companies Act of 2013, and governed by the Ministry of Corporate Affairs (MCA).'
+          content='We have over 8+ years of corporate and consulting experience with top firms. Our network includes experienced Chartered Accountants, Company Secretaries, Lawyers and many more.'
         />
       </Helmet>
       <HeaderComponent />
       <BannerComponent
         head='We Are Helping Startup To Grow Their Business'
-        para='we have over 8+ years of corporate and consulting experience with top firms. Our network includes experienced Chartered Accountants, Company Secretaries, Lawyers, Cost Accountants and many more.'
+        para='We have over 8+ years of corporate and consulting experience with top firms. Our network includes experienced Chartered Accountants, Company Secretaries, Lawyers, Cost Accountants and many more.'
         btn='Get Started'
         img={banner}
       />

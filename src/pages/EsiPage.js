@@ -17,16 +17,15 @@ const EsiPage = () => {
   return (
     <React.Fragment>
       <Helmet>
-        <title>ESI Registration - ClientFilingIndia</title>
+        <title>ESI Registration - Clientfilingindia</title>
         <meta
           name='description'
-          content='ESI stands for Employee State Insurance managed by the Employee State Insurance Corporation which is an autonomous body created by the law under the Ministry of Labour and Employment, Government of India. This scheme is started for Indian workers.'
+          content='ESI managed by the Employee State Insurance Corporation which is an autonomous body created by the law under the Ministry of Labour and Employment.'
         />
       </Helmet>
       <HeaderComponent />
       <ServiceBannerComponent
         head='ESI Registration'
-        para='Register for your Company. A GST registration is a key business identification number which mandatory for export from India or Import to India.'
         btn='Register now'
         img={model}
         id='esi'

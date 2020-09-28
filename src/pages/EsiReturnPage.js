@@ -17,16 +17,15 @@ const EsiReturnPage = () => {
   return (
     <React.Fragment>
       <Helmet>
-        <title>ESI Return Filing - ClientFilingIndia</title>
+        <title>ESI Return Filing - Clientfilingindia</title>
         <meta
           name='description'
-          content='Established under the ESI Act, 1948, ESIC (Employees’ State Insurance Corporation) provides benefits to employees in the event of their sickness, death, disablement, injury, etc. The finance of this scheme comes from contributions from both employees and employers.'
+          content='Employees’ State Insurance Corporation provides benefits to employees in the event of their sickness, death, disablement, injury etc.'
         />
       </Helmet>
       <HeaderComponent />
       <ServiceBannerComponent
         head='ESI Return Filing'
-        para='Register for your Company. A GST registration is a key business identification number which mandatory for export from India or Import to India.'
         btn='Register now'
         img={model}
         tagline='Get your ESI Return filing @₹ 6,779/-'

@@ -17,16 +17,15 @@ const IsoPage = () => {
   return (
     <React.Fragment>
       <Helmet>
-        <title>ISO Registration - ClientFilingIndia</title>
+        <title>ISO Registration Online - Clientfilingindia</title>
         <meta
           name='description'
-          content='ISO 9001 is the international standard for a quality management system (“QMS”). In order to be certified to the ISO 9001 standard, a company must follow the requirements set forth in the ISO 9001 Standard.'
+          content='In order to be certified to the ISO 9001 standard, a company must follow the requirements set forth in the ISO 9001 Standard.'
         />
       </Helmet>
       <HeaderComponent />
       <ServiceBannerComponent
         head='ISO Registration'
-        para='Register for your Company. A GST registration is a key business identification number which mandatory for export from India or Import to India.'
         btn='Register now'
         img={model}
         tagline='Get your ISO registered @₹ 6,000 excluding GST'

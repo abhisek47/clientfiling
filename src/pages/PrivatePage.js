@@ -16,16 +16,15 @@ const PrivatePage = () => {
   return (
     <React.Fragment>
       <Helmet>
-        <title>Private Limited Company Registration - ClientFilingIndia</title>
+        <title>Private Limited Company Registration - Clientfilingindia</title>
         <meta
           name='description'
-          content='Company is a popular option to start a business in India by startups and businesses with higher growth aspirations. Pvt Ltd company is incorporated under the Companies Act of 2013, and governed by the Ministry of Corporate Affairs (MCA).'
+          content='Private Limited Company is a popular option to start a business in India by startups and businesses with higher growth aspirations.'
         />
       </Helmet>
       <HeaderComponent />
       <ServiceBannerComponent
         head='Private Limited Company'
-        para='Register for your Company. A GST registration is a key business identification number which mandatory for export from India or Import to India.'
         btn='Register now'
         img={model}
         id='private-company'

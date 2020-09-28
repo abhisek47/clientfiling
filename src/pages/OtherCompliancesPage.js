@@ -16,16 +16,15 @@ const PrivateCompliancesPage = () => {
   return (
     <React.Fragment>
       <Helmet>
-        <title>Compliances For Partnership Firm - ClientFilingIndia</title>
+        <title>Compliances For Partnership Firm - Clientfilingindia</title>
         <meta
           name='description'
-          content='A Private Company is an entity enjoying a separate identity which requires maintaining its active status through the regular filing with MCA. For every company, it is compulsory to file an annual return and audited financial statements with MCA for every financial year.'
+          content='The Annual Compliances for Proprietorship Firm includes preparation of the tax audit and filing of the income tax return with the IT department.'
         />
       </Helmet>
       <HeaderComponent />
       <ServiceBannerComponent
         head='Compliances For Partnership Firm, Society, Trust, NGO'
-        para='Register for your Company. A GST registration is a key business identification number which mandatory for export from India or Import to India.'
         btn='Register now'
         img={model}
         tagline='Get your Annual Compliances registered under Partnership Firm @₹ 23,600/-'

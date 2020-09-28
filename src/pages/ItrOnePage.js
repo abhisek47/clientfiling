@@ -17,16 +17,15 @@ const ItrOnePage = () => {
   return (
     <React.Fragment>
       <Helmet>
-        <title>Income Tax Return Filing (ITR-1) - ClientFilingIndia</title>
+        <title>Income Tax Return Filing (ITR-1) - Clientfilingindia</title>
         <meta
           name='description'
-          content='ITR 1 - This Form is filed by the taxpayers and the individuals being a Resident (other thanNot Ordinarily Resident) having Total Income up to INR 50 lakhs, having Income from Salaries, One House Property, Other Sources (Interest etc.), and Agricultural Income up to INR 5 thousand.'
+          content='ITR-1 this form is filed by the taxpayers and the individuals being a resident having total income up to INR 50 lakhs.'
         />
       </Helmet>
       <HeaderComponent />
       <ServiceBannerComponent
         head='Income Tax Return - 1'
-        para='Register for your Company. A GST registration is a key business identification number which mandatory for export from India or Import to India.'
         btn='Register now'
         img={model}
         id='itr'

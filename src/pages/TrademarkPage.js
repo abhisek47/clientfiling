@@ -16,16 +16,15 @@ const ItrThreePage = () => {
   return (
     <React.Fragment>
       <Helmet>
-        <title>Trademark Registration - ClientFilingIndia</title>
+        <title>Trademark Registration - Clientfilingindia</title>
         <meta
           name='description'
-          content='A trademark  is a type of intellectual property consisting of a recognizable sign, design,or expression which identifies products or services of a particular source from those of others, although trademarks used to identify services are usually called service marks.'
+          content='A trademark is a type of intellectual property consisting of a recognisable sign or expression which identifies products or services of a particular source.'
         />
       </Helmet>
       <HeaderComponent />
       <ServiceBannerComponent
         head='Trademark Registration'
-        para='Register for your Company. A GST registration is a key business identification number which mandatory for export from India or Import to India.'
         btn='Register now'
         img={model}
         id='trademark'

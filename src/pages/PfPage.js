@@ -17,16 +17,15 @@ const PfPage = () => {
   return (
     <React.Fragment>
       <Helmet>
-        <title>Provident Fund Registration - ClientFilingIndia</title>
+        <title>Provident Fund Registration - Clientfilingindia</title>
         <meta
           name='description'
-          content='Establishment Registration with Employers Provident Fund Organisation (EPFO) is mandatory if the number of employees exceeds 20 and may be obtained voluntarily if the employee’s number is less than twenty. Our dedicated team will help you to your company with EPFO'
+          content='Establishment Registration with Employers Provident Fund Organisation (EPFO) is mandatory if the number of employees exceeds 20.'
         />
       </Helmet>
       <HeaderComponent />
       <ServiceBannerComponent
         head='Provident Fund Registration'
-        para='Register for your Company. A GST registration is a key business identification number which mandatory for export from India or Import to India.'
         btn='Register now'
         img={model}
         tagline='Get your Provident Fund filing @₹ 8,000/-'

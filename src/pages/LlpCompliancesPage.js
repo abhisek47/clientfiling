@@ -18,17 +18,16 @@ const PrivateCompliancesPage = () => {
       <Helmet>
         <title>
           Annual Compliances For Limited Liability Partnership -
-          ClientFilingIndia
+          Clientfilingindia
         </title>
         <meta
           name='description'
-          content='A Limited Liability Partnership enjoys a separate status. Thus, an organization needs to maintain its active status by regularly filing with the Ministry of Corporate Affairs (MCA). Annual compliance filing is mandatory for any LLP, whether having a business or not.'
+          content='LLP enjoys a separate status. Thus, an organisation needs to maintain its active status by regularly filing with the Ministry of Corporate Affairs (MCA).'
         />
       </Helmet>
       <HeaderComponent />
       <ServiceBannerComponent
         head='Compliances For Limited Liability Partnership'
-        para='Register for your Company. A GST registration is a key business identification number which mandatory for export from India or Import to India.'
         btn='Register now'
         img={model}
         tagline='Get your Annual LLP registered  @₹ 18,000/-'

@@ -17,16 +17,15 @@ const ItrSevenPage = () => {
   return (
     <React.Fragment>
       <Helmet>
-        <title>Income Tax Return Filing (ITR-7) - ClientFilingIndia</title>
+        <title>Income Tax Return Filing (ITR-7) - Clientfilingindia</title>
         <meta
           name='description'
-          content='For individuals and HUF with income from profits of a business or profession. ITR-7 is the form used by the individuals and Hindu Undivided Families who are registered as ‘Partners’ in a firm. . This is applicable for the professionals but in a partnership profession. The partner must be earning income in the form of interest, salary, bonus, commission, etc.'
+          content='ITR-7 is the form used by the individuals and Hindu undivided families who are registered as ‘Partners’ in a firm.'
         />
       </Helmet>
       <HeaderComponent />
       <ServiceBannerComponent
         head='Income Tax Return - 7'
-        para='Register for your Company. A GST registration is a key business identification number which mandatory for export from India or Import to India.'
         btn='Register now'
         img={model}
         id='itr'
