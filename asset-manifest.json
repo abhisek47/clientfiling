@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.f5740b2a.chunk.css",
-    "main.js": "/static/js/main.2416ee60.chunk.js",
-    "main.js.map": "/static/js/main.2416ee60.chunk.js.map",
+    "main.css": "/static/css/main.b2a32ec1.chunk.css",
+    "main.js": "/static/js/main.987eee5e.chunk.js",
+    "main.js.map": "/static/js/main.987eee5e.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.8eac0563.js",
     "runtime-main.js.map": "/static/js/runtime-main.8eac0563.js.map",
     "static/css/2.84841081.chunk.css": "/static/css/2.84841081.chunk.css",
-    "static/js/2.9a82ab63.chunk.js": "/static/js/2.9a82ab63.chunk.js",
-    "static/js/2.9a82ab63.chunk.js.map": "/static/js/2.9a82ab63.chunk.js.map",
+    "static/js/2.d9355077.chunk.js": "/static/js/2.d9355077.chunk.js",
+    "static/js/2.d9355077.chunk.js.map": "/static/js/2.d9355077.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.4038ecd47c202a63aea3f789c2f9a14e.js": "/precache-manifest.4038ecd47c202a63aea3f789c2f9a14e.js",
+    "precache-manifest.428e9872e87198c825c5020f37f0aa3d.js": "/precache-manifest.428e9872e87198c825c5020f37f0aa3d.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.84841081.chunk.css.map": "/static/css/2.84841081.chunk.css.map",
-    "static/css/main.f5740b2a.chunk.css.map": "/static/css/main.f5740b2a.chunk.css.map",
-    "static/js/2.9a82ab63.chunk.js.LICENSE.txt": "/static/js/2.9a82ab63.chunk.js.LICENSE.txt",
+    "static/css/main.b2a32ec1.chunk.css.map": "/static/css/main.b2a32ec1.chunk.css.map",
+    "static/js/2.d9355077.chunk.js.LICENSE.txt": "/static/js/2.d9355077.chunk.js.LICENSE.txt",
     "static/media/ITR-1-Form-2019to2020.pdf": "/static/media/ITR-1-Form-2019to2020.5397e425.pdf",
-    "static/media/banner2.svg": "/static/media/banner2.d079f3db.svg",
+    "static/media/bts.png": "/static/media/bts.1c55e1df.png",
     "static/media/chief@2x.png": "/static/media/chief@2x.b38822b6.png",
     "static/media/company-docs.svg": "/static/media/company-docs.b1c17887.svg",
     "static/media/esi-benefits.svg": "/static/media/esi-benefits.ccafc2fa.svg",
@@ -85,8 +85,8 @@
   "entrypoints": [
     "static/js/runtime-main.8eac0563.js",
     "static/css/2.84841081.chunk.css",
-    "static/js/2.9a82ab63.chunk.js",
-    "static/css/main.f5740b2a.chunk.css",
-    "static/js/main.2416ee60.chunk.js"
+    "static/js/2.d9355077.chunk.js",
+    "static/css/main.b2a32ec1.chunk.css",
+    "static/js/main.987eee5e.chunk.js"
   ]
 }
