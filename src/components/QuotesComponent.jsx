@@ -5,11 +5,11 @@ import director from '../assets/chief@2x.png';
 const QuotesComponent = () => {
   const { Title, Paragraph, Text } = Typography;
   return (
-    <React.Fragment>
+    <>
       <Layout className='quotes'>
         <div className='container'>
           <Row gutter={16} align='middle'>
-            <Col className='ant-col-sm-24 ant-col-lg-16'>
+            <Col className='ant-col-sm-24 ant-col-lg-16 ant-col-md-12'>
               <Typography>
                 <div>
                   <Title
@@ -47,13 +47,13 @@ const QuotesComponent = () => {
                 </div>
               </Typography>
             </Col>
-            <Col className='ant-col-sm-24 ant-col-lg-8'>
+            <Col className='ant-col-sm-24 ant-col-lg-8 ant-col-md-12'>
               <img src={director} className='director-img' alt='director' />
             </Col>
           </Row>
         </div>
       </Layout>
-    </React.Fragment>
+    </>
   );
 };
 

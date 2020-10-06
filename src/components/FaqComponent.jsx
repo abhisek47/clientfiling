@@ -55,10 +55,10 @@ const FaqComponent = () => {
               data-sal='slide-up'
               data-sal-delay='300'
               data-sal-easing='ease-out-back'>
-              Frequently Asked Questions
+              Frequently asked questions
             </Title>
             <Row gutter={16}>
-              <Col className='ant-col-sm-24 ant-col-lg-12'>
+              <Col className='ant-col-sm-24 ant-col-md-12 '>
                 <Collapse
                   bordered={false}
                   defaultActiveKey={['1']}
@@ -76,7 +76,7 @@ const FaqComponent = () => {
                   ))}
                 </Collapse>
               </Col>
-              <Col className='ant-col-sm-24 ant-col-lg-12'>
+              <Col className='ant-col-sm-24 ant-col-md-12'>
                 <Collapse
                   bordered={false}
                   defaultActiveKey={['1']}

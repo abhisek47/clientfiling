@@ -1,10 +1,5 @@
 import React from 'react';
 import { Layout, Row, Col, Card, Typography } from 'antd';
-// import {
-//   HeartFilled,
-//   MessageFilled,
-//   SafetyCertificateFilled,
-// } from '@ant-design/icons';
 import one from '../assets/one.png';
 import two from '../assets/two.png';
 import three from '../assets/three.png';
@@ -12,11 +7,11 @@ import three from '../assets/three.png';
 const SupportComponent = () => {
   const { Title, Paragraph } = Typography;
   return (
-    <React.Fragment>
+    <>
       <Layout className='support' style={{ background: '#e2f3f5' }}>
         <div className='container'>
           <Row gutter={16}>
-            <Col className='ant-col-sm-24 ant-col-lg-8'>
+            <Col className='ant-col-sm-24 ant-col-lg-8 ant-col-md-8'>
               <Card>
                 <Typography>
                   <div>
@@ -38,7 +33,7 @@ const SupportComponent = () => {
                 </Typography>
               </Card>
             </Col>
-            <Col className='ant-col-sm-24 ant-col-lg-8'>
+            <Col className='ant-col-sm-24 ant-col-lg-8 ant-col-md-8'>
               <Card>
                 <Typography>
                   <div>
@@ -60,7 +55,7 @@ const SupportComponent = () => {
                 </Typography>
               </Card>
             </Col>
-            <Col className='ant-col-sm-24 ant-col-lg-8'>
+            <Col className='ant-col-sm-24 ant-col-lg-8 ant-col-md-8'>
               <Card>
                 <Typography>
                   <div>
@@ -85,7 +80,7 @@ const SupportComponent = () => {
           </Row>
         </div>
       </Layout>
-    </React.Fragment>
+    </>
   );
 };
 

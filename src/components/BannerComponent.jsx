@@ -12,7 +12,7 @@ const BannerComponent = ({ head, para, btn, img, goTo }) => {
   return (
     <React.Fragment>
       <Layout>
-        <Content style={{ background: '#e2f3f5' }}>
+        <Content className='banner-bg'>
           <div className='banner-container'>
             <Row gutter={16} align='middle'>
               <Col className='ant-col-sm-24 ant-col-md-12'>

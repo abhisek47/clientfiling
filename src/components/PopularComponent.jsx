@@ -10,7 +10,7 @@ import { TagsFilled } from '@ant-design/icons';
 const PopularComponent = () => {
   const { Meta } = Card;
   return (
-    <React.Fragment>
+    <>
       <Layout>
         <div className='container'>
           <div className='popular-entities'>
@@ -18,10 +18,10 @@ const PopularComponent = () => {
               data-sal='slide-up'
               data-sal-delay='300'
               data-sal-easing='ease-out-back'>
-              We Provide Multi Professional Services
+              We provide multi professional services
             </Typography.Title>
             <Row gutter={16}>
-              <Col className='ant-col-sm-24 ant-col-lg-6'>
+              <Col className='ant-col-sm-24 ant-col-lg-6 ant-col-md-12'>
                 <div className='service-card'>
                   <Card cover={<img alt='example' src={serviceOne} />}>
                     <Meta
@@ -36,7 +36,7 @@ const PopularComponent = () => {
                   </Card>
                 </div>
               </Col>
-              <Col className='ant-col-sm-24 ant-col-lg-6'>
+              <Col className='ant-col-sm-24 ant-col-lg-6 ant-col-md-12'>
                 <div className='service-card'>
                   <Card cover={<img alt='example' src={serviceTwo} />}>
                     <Meta
@@ -51,7 +51,7 @@ const PopularComponent = () => {
                   </Card>
                 </div>
               </Col>
-              <Col className='ant-col-sm-24 ant-col-lg-6 '>
+              <Col className='ant-col-sm-24 ant-col-lg-6 ant-col-md-12'>
                 <div className='service-card'>
                   <Card cover={<img alt='example' src={serviceThree} />}>
                     <Meta
@@ -67,7 +67,7 @@ const PopularComponent = () => {
                 </div>
               </Col>
 
-              <Col className='ant-col-sm-24 ant-col-lg-6'>
+              <Col className='ant-col-sm-24 ant-col-lg-6 ant-col-md-12'>
                 <div className='service-card'>
                   <Card cover={<img alt='example' src={serviceFour} />}>
                     <Meta
@@ -86,7 +86,7 @@ const PopularComponent = () => {
           </div>
         </div>
       </Layout>
-    </React.Fragment>
+    </>
   );
 };
 
